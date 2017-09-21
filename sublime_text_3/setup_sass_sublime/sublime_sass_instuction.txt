@@ -1,0 +1,11 @@
+			
+
+	1) first if you have sass installed on your system by 
+
+		sass -v ( if it is installed prints as Sass 3.4.2xx
+	if comes back as sass is not found commmand you need to install it by 
+
+	2) install sass 
+		gem install sass or sudo gem install sass 
+
+	3)then go to Sublime Text 3 and in Package Control (CMD+SHIFT+P) install 	pacckage called : sass 

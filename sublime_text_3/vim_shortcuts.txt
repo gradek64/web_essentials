@@ -1,0 +1,8 @@
+Vim commands in short:
+
+1) cursor movement
+					k - up 
+				h -right l-left 
+					j down 
+					
+those allow you to move cursor in whatever direction you can multiply movement by 5J (5 times down) or 6K (6 times up);

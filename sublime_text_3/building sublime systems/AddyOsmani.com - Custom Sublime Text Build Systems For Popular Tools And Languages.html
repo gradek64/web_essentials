@@ -1,0 +1,141 @@
+<!DOCTYPE html><html lang=en><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge,chrome=1"><meta name=viewport content="width=device-width, initial-scale=1"><meta name=description content="Addy Osmani is a web tooling engineer at Google working with the Chrome team. He is author of open-source projects like Yeoman, TodoMVC and Material Design Lite. He has also written books like Learning JavaScript Design Patterns with O'Reilly."><meta name=author content="Addy Osmani"><meta name=twitter:card content=summary><meta name=twitter:description content="Addy Osmani is a web tooling engineer at Google working with the Chrome team. He is author of open-source projects like Yeoman and books like Learning JavaScript Design Patterns (O'Reilly)."><meta property=og:image content=http://addyosmani.com/assets/images/avatar@2x.png><meta name=twitter:image:src content=http://addyosmani.com/assets/images/avatar@2x.png><meta name=twitter:creator content=@addyosmani><meta name=twitter:url content="http://www.addyosmani.com/"><meta name=twitter:title content="Addy Osmani"><link rel=alternate type=application/rss+xml title="AddyOsmani.com RSS Feed" href=http://addyosmani.com/rss.xml><title>AddyOsmani.com - Custom Sublime Text Build Systems For Popular Tools And Languages</title><link rel=apple-touch-icon sizes=57x57 href=/assets/images/favicons/apple-touch-icon-57x57.png><link rel=apple-touch-icon sizes=60x60 href=/assets/images/favicons/apple-touch-icon-60x60.png><link rel=apple-touch-icon sizes=72x72 href=/assets/images/favicons/apple-touch-icon-72x72.png><link rel=apple-touch-icon sizes=76x76 href=/assets/images/favicons/apple-touch-icon-76x76.png><link rel=apple-touch-icon sizes=114x114 href=/assets/images/favicons/apple-touch-icon-114x114.png><link rel=apple-touch-icon sizes=120x120 href=/assets/images/favicons/apple-touch-icon-120x120.png><link rel=apple-touch-icon sizes=144x144 href=/assets/images/favicons/apple-touch-icon-144x144.png><link rel=apple-touch-icon sizes=152x152 href=/assets/images/favicons/apple-touch-icon-152x152.png><link rel=apple-touch-icon sizes=180x180 href=/assets/images/favicons/apple-touch-icon-180x180.png><link rel=icon type=image/png href=/assets/images/favicons/favicon-32x32.png sizes=32x32><link rel=icon type=image/png href=/assets/images/favicons/android-chrome-192x192.png sizes=192x192><link rel=icon type=image/png href=/assets/images/favicons/favicon-96x96.png sizes=96x96><link rel=icon type=image/png href=/assets/images/favicons/favicon-16x16.png sizes=16x16><link rel=manifest href=/manifest.json><link rel=mask-icon href=/assets/images/favicons/safari-pinned-tab.svg color=#5bbad5><meta name=msapplication-TileColor content=#ffc40d><meta name=msapplication-TileImage content=/assets/images/favicons/mstile-144x144.png><meta name=theme-color content=#eb298c><link rel=stylesheet href=/assets/css/style.css><link rel=stylesheet href=/assets/css/post-page.css><link rel=stylesheet href=/assets/css/highlight.css><link rel=alternate type=application/rss+xml title="My Blog" href=/rss.xml></head><body><nav class=main-nav><a href="/"><span class=arrow></span> Home</a> <a href=https://github.com/addyosmani>GitHub</a> <a href=https://twitter.com/addyosmani>Twitter</a> <a class=cta href=/blog>Blog</a></nav><section id=wrapper><article class=post><header><h1>Custom Sublime Text Build Systems For Popular Tools And Languages</h1><h2 class=headline>August 17, 2012</h2></header><section id=post-body><p><a href=http://addyosmani.com/blog/custom-sublime-text-build-systems-for-popular-tools-and-languages><img border=0 class="aligncenter size-full wp-image-4839" height=342 src=/../assets/4537.jpg title=4537 width=540></a></p><p><a href=http://sublimetext.com>Sublime Text</a> is currently the text editor of choice for a number of developers in the open-source community. It&rsquo;s sophisticated, has powerful <a href=http://sublimetext.com>text selection</a> and customization support and also includes a feature not used by many - its build system. In this post, I&rsquo;d like to take you through the Sublime build system and share build scripts for working with many of the languages and tools we use today.</p><p></p><p>These will include scripts for <a href=https://github.com/cowboy/grunt>Grunt</a>, <a href="http://coffeescript.org/">CoffeeScript</a>, <a href="http://sass-lang.com/">SASS</a> and others.</p><h2>Introduction</h2><p>Sublime Text <a href=http://docs.sublimetext.info/en/latest/file_processing/build_systems.html>build systems</a> can be considered simplistic, but highly customizable. The basic idea is that each type of Build profile is powered by a &ldquo;.sublime-build&rdquo; file - a JSON representations of the commands, paths and configuration needed to build a project using a specific tool or set of tools.</p><p>Builds can be executed using a keyboard shortcut (Command+B on Mac is the default on Mac or F7 on Windows), via the Tools menu or when a file is saved. If a project is currently open, the build system we last selected (e.g grunt) will be remembered.</p><p><img class="aligncenter size-full wp-image-4842" height=273 src=/../assets/Screen-Shot-2012-08-17-at-2.33.01-PM.png title="Screen Shot 2012-08-17 at 2.33.01 PM" width=510></p><p>When Sublime is passed references to external tools/binaries via a &ldquo;.sublime-build&rdquo; files, it can execute these applications with any arguments or flags that may be necessary. It is also able to pipe back the output of calling any of these apps using the built-in console in Sublime. Effectively this allows us to easily build projects without the need to leave our editor.</p><p><img class="aligncenter size-full wp-image-4843" height=214 src=/../assets/Screen-Shot-2012-08-17-at-2.36.42-PM.png title="Screen Shot 2012-08-17 at 2.36.42 PM" width=510></p><h2>Adding a custom Build System</h2><p>Sublime populates its Tools/Build System menu based on the &ldquo;.sublime-build&rdquo; files stored in the Sublime &ldquo;Packages&rdquo; directory. Should one need to locate this, it can be found in &ldquo;~/Library/Application Support/Sublime Text 2/Packages/User&rdquo; (if using OS X) or the corresponding Packages/User directory on other platforms.</p><p><img class="aligncenter size-full wp-image-4841" height=298 src=/../assets/Screen-Shot-2012-08-17-at-2.36.08-PM.png title="Screen Shot 2012-08-17 at 2.36.08 PM" width=510></p><p>A basic &ldquo;.sublime-build&rdquo; file could be represented in key/value form as follows:</p><pre class=javascript name=code>{
+    &quot;cmd&quot;: [&quot;command&quot;, &quot;argument&quot;, &quot;--flag&quot;],
+    &quot;selector&quot;: [&quot;source.js&quot;],
+    &quot;path&quot;: &quot;/usr/local/bin&quot;,
+    &quot;working_dir&quot;: &quot;/projects/&quot;
+}
+</pre><h3>Keys supported include:</h3><ul><li><strong>cmd</strong>- An array containing a command to run and its desired arguments and flags. Note that Sublime will search your PATH for any tools listed unless an absolute path has been used to point to them.</li><li><strong>selector</strong> - An optional string used to locate the best builder to use for the current file scope. This is only relevant if Tools/Build System/Automatic is true.</li><li><strong>path</strong> - An optional string that replaces your current process&rsquo;s PATH before calling the commands listed.</li><li><strong>working_dir</strong> - An optional string defining a directory to switch the current directory to prior to calling any commands.</li><li><strong>shell</strong>- An optional boolean that defines whether commands should be run through the shell (e.g bash).</li><li><strong>file_regex</strong> - An optional regular expression used to capture error output from commands.</li></ul><p>For a comprehensive list of keys supported in Sublime build scripts, see the <a href=http://docs.sublimetext.info/en/latest/reference/build_systems.html>unofficial docs</a>.</p><h3>Build Variables:</h3><p>In addition, Sublime supports variable substitutions in build files such as <code>$file_path</code> (for the path to the current file) and more. These include:</p><ul><li><strong>$file_path</strong> - the directory of the current file being viewed</li><li><strong>$file_name</strong>- only the name portion of the current file (extension included)</li><li><strong>$file_base_name</strong>- the name portion of the current file (extension excluded)</li><li><strong>$project_path</strong>- the directory path to the current project</li><li><strong>$project_name</strong> - the name portion of the current project</li></ul><p>A complete list of <a href=http://docs.sublimetext.info/en/latest/reference/build_systems.html>substitutions</a> supported is also available.</p><h3>Grouping build tasks</h3><p>Some developers also like to group together tasks within an external bash script (or equivalent). For example, here&rsquo;s a simple <a href=https://github.com/resmo/git-ftp>git-ftp</a> deploy script you can use with Sublime to commit and push your latest changes with <code>git</code> and then upload your latest files to FTP.</p><h3>Example: Commit, Push And Upload To FTP</h3><p><strong>deployment.sh:</strong></p><pre class=javascript name=code>#!/bin/bash
+git add . &amp;&amp; git commit -m &#39;deployment&#39; &amp;&amp; git push &amp;&amp; git ftp init -u username  -p password - ftp://host.example.com/public_html
+</pre><p><strong>deployment.sublime-build:</strong></p><pre class=javascript name=code>{
+  &quot;cmd&quot;: [&quot;deployment&quot;],
+  &quot;working_dir&quot;: &quot;${project_path:${folder}}&quot;
+}
+</pre><p>If you haven&rsquo;t used git-ftp before, Alex Fluger has a solid <a href=http://alexfluger.blogspot.co.uk/2012/01/easy-deploy-to-ftp-from-git.html>article</a> about using it that may be of interest.</p><h3>Targeting Platforms:</h3><p>Sublime build files also support specifying configuration data for specific platforms (namely, OS X, Windows and Linux). Targeting a platform can easily be done by specifying another element in our config with the name of the platform. e.g</p><pre class=javascript name=code>{
+    &quot;cmd&quot;: ...
+    ...
+
+    &quot;windows&quot;:
+    {
+        &quot;cmd&quot;:  ...
+    },
+
+    &quot;osx&quot;:
+    {
+            &quot;cmd&quot;: ...
+    },
+
+    &quot;linux&quot;:
+    {
+            &quot;cmd&quot;: ...
+    }
+}
+</pre><h2>Build files for popular front-end tools</h2><p>To help you get started, I&rsquo;ve written a <a href=https://github.com/addyosmani/sublime-build-systems>collection</a> of &ldquo;.sublime-build&rdquo; files for some of the front-end tools I&rsquo;m aware web developers are using these days below.</p><p><a href=http://addyosmani.com/blog/wp-content/uploads/2012/08/Screen-Shot-2012-08-17-at-2.55.20-PM.png><img class="aligncenter size-full wp-image-4844" height=143 src=/../assets/Screen-Shot-2012-08-17-at-2.55.20-PM.png title="Screen Shot 2012-08-17 at 2.55.20 PM" width=510></a></p><p>Most of these will function fine without the need to specify <code>path</code>, but if you run into an issue with paths, try including it to your config (e.g <code>&quot;path&quot;: &quot;/usr/local/bin&quot;</code>).</p><p><strong>grunt:</strong></p><pre class=javascript name=code>{
+    &quot;cmd&quot;: [&quot;grunt&quot;, &quot;--no-color&quot;],
+    &quot;selector&quot;: [&quot;source.js&quot;, &quot;source.less&quot;, &quot;source.json&quot;]
+}
+</pre><p><strong>Node Build Script:</strong></p><pre class=javascript name=code>{
+    &quot;cmd&quot;: [&quot;h5bp&quot;, &quot;--no-color&quot;],
+    &quot;selector&quot;: [&quot;source.js&quot;, &quot;source.less&quot;, &quot;source.json&quot;]
+}
+</pre><p><strong>CoffeeScript:</strong></p><pre class=javascript name=code>{
+    &quot;cmd&quot;: [&quot;coffee&quot;,&quot;-c&quot;, &quot;$file&quot;],
+    &quot;selector&quot; : &quot;source.coffee&quot;
+}
+</pre><p><strong>SASS:</strong></p><pre class=javascript name=code>{
+    &quot;cmd&quot;: [&quot;sass&quot;, &quot;--watch&quot;, &quot;.:.&quot;],
+    &quot;working_dir&quot;: &quot;$file_path&quot;,
+    &quot;selector&quot;: [&quot;source.scss&quot;, &quot;source.sass&quot;]
+}
+</pre><p>Whilst a more verbose version with automatic minification and watch config could be written:</p><pre class=javascript name=code>{
+    &quot;cmd&quot;: [&quot;sass&quot;, &quot;--watch&quot;, &quot;sass:stylesheets&quot;, &quot;--style&quot;, &quot;compressed&quot;],
+    &quot;working_dir&quot;: &quot;$project_path&quot;,
+    &quot;selector&quot;: [&quot;source.scss&quot;, &quot;source.sass&quot;]
+}
+</pre><p><strong>LESS:</strong></p><pre class=javascript name=code>{
+    &quot;cmd&quot;: [&quot;lessc&quot;, &quot;-x&quot;, &quot;$file&quot;, &quot;$file_path/$file_base_name.css&quot;, &quot;--verbose&quot;],
+    &quot;shell&quot; : true,
+    &quot;selector&quot;: &quot;source.css.less&quot;
+}
+</pre><p><strong>Stylus:</strong></p><pre class=javascript name=code>{
+    &quot;cmd&quot;: [&quot;stylus&quot;, &quot;$file&quot;],
+    &quot;file_regex&quot;: &quot;.&quot;,
+    &quot;selector&quot;: &quot;source.stylus&quot;
+}
+</pre><p>(a more comprehensive version of this can be found in the <a href="https://github.com/berfarah/LESS-build-sublime/">LESS-build-sublime</a> project.)</p><p><strong>Jade:</strong></p><pre class=javascript name=code>{
+   &quot;cmd&quot;: [&quot;cmd&quot;, &quot;/c&quot;, &quot;jade&quot;, &quot;$file&quot;],
+   &quot;selector&quot;: &quot;source.jade&quot;
+}
+</pre><p><strong>r.js (RequireJS Optimizer):</strong></p><pre class=javascript name=code>{
+    &quot;cmd&quot;: [&quot;node&quot;, &quot;r.js&quot;, &quot;-o&quot;, &quot;app.build.js&quot;],
+    &quot;working_dir&quot;: &quot;$project_path&quot;,
+    &quot;selector&quot;: &quot;source.js&quot;
+}
+</pre><p><strong>UglifyJS:</strong></p><pre class=javascript name=code>{
+   &quot;cmd&quot;: [ &quot;node&quot;, &quot;uglifyjs&quot;, &quot;-o&quot;, &quot;${file_path}/${file_base_name}.min.js&quot;, &quot;$file&quot;],
+   &quot;selector&quot;: &quot;source.js&quot;
+}
+</pre><p><strong>Node (just passing in directly):</strong></p><pre class=javascript name=code>{
+     &quot;cmd&quot;: [&quot;node&quot;, &quot;$file&quot;],
+     &quot;file_regex&quot;: &quot;^[ ]*File <pre wp-pre-tag-14=""></pre>quot;(...*?)<pre wp-pre-tag-14=""></pre>quot;, line ([0-9]*)&quot;,
+     &quot;selector&quot;: &quot;source.js&quot;
+}
+</pre><p><strong>Pandoc (Markdown to HTML):</strong></p><pre class=javascript name=code>{
+    &quot;cmd&quot;: [&quot;pandoc&quot;, &quot;-S&quot;, &quot;-s&quot;, &quot;-f&quot;, &quot;markdown&quot;, &quot;-t&quot;, &quot;html&quot;, &quot;-o&quot;, &quot;$file_base_name.html&quot;, &quot;$file&quot;],
+    &quot;selector&quot;: &quot;text.html.markdown&quot;
+}
+</pre><p><strong>(and when it&rsquo;s released, Yeoman):</strong></p><pre class=javascript name=code>{
+     &quot;cmd&quot;: [&quot;yeoman&quot;, &quot;build&quot;, &quot;--no-color&quot;],
+     &quot;selector&quot;: [&quot;source.js&quot;, &quot;source.scss&quot;, &quot;source.sass&quot;, &quot;source.html&quot;]
+}
+</pre><p><strong>JSHint:</strong></p><p>I imagine most web developers would want to run JSHint from within a broader build process, but if you&rsquo;d also like to run it standalone via a Sublime build file, the <a href=https://github.com/uipoet/sublime-jshint>sublime-jshint</a> package has a <a href=https://raw.github.com/uipoet/sublime-jshint/master/JSHint.sublime-build>build file</a> that will work fine on both OS X and Windows.</p><h2>Build files for specific programming languages</h2><p>I also thought that while we were looking at build files, it would be useful to demonstrate how these can be used to build/compile with some popular programming languages. These may differ to those included with Sublime by default, but are useful for reference:</p><p><strong>Ruby (using RVM):</strong></p><pre class=javascript name=code>{
+    &quot;cmd&quot;: [&quot;~/.rvm/bin/rvm-auto-ruby&quot;, &quot;$file&quot;],
+    &quot;file_regex&quot;: &quot;^(...*?):([0-9]*):?([0-9]*)&quot;,
+    &quot;selector&quot;: &quot;source.ruby&quot;
+}
+</pre><p><strong>Python:</strong></p><pre class=javascript name=code>{
+    &quot;cmd&quot;: [&quot;python&quot;, &quot;-u&quot;, &quot;$file&quot;],
+    &quot;file_regex&quot;: &quot;^[ ]*File <pre wp-pre-tag-18=""></pre>quot;(...*?)<pre wp-pre-tag-18=""></pre>quot;, line ([0-9]*)&quot;,
+    &quot;selector&quot;: &quot;source.python&quot;
+}
+</pre><p><strong>PHP:</strong></p><pre class=javascript name=code>{
+    &quot;cmd&quot;: [&quot;/usr/bin/php&quot;, &quot;-l&quot;, &quot;$file&quot;], &lt;- Couldn&#39;t just use &quot;php&quot; ?
+    &quot;file_regex&quot;: &quot;^Parse error: .* in (.*?) on line ([0-9]*)&quot;,
+    &quot;selector&quot;: &quot;source.php&quot;
+}
+</pre><p><strong>Java:</strong></p><pre class=javascript name=code>{
+    &quot;cmd&quot;: [&quot;javac&quot;, &quot;$file_name&quot;, &quot;&amp;&amp;&quot;, &quot;java&quot;, &quot;$file_base_name&quot;],
+    &quot;working_dir&quot;: &quot;${project_path:${folder}}&quot;,
+    &quot;selector&quot;: &quot;source.java&quot;,
+    &quot;shell&quot;: true
+}
+</pre><p><strong>.Net (Windows):</strong></p><pre class=javascript name=code>{
+    &quot;cmd&quot;: [&quot;%WINDIR%\Microsoft.NET\Framework\v4.0.30319\msbuild&quot;, &quot;${project_base_name}.sln&quot;],
+    &quot;shell&quot;: true,
+    &quot;working_dir&quot;: &quot;${project_path:${folder}}&quot;
+}
+</pre><p><strong>C:</strong></p><pre class=javascript name=code>{
+    &quot;cmd&quot;: [&quot;make &amp;&amp; ./a.out&quot;],
+    &quot;path&quot;: &quot;/usr/bin:/usr/local/bin:...&quot;,
+    &quot;shell&quot;: true
+}
+</pre><p><strong>C++ (via g++):</strong></p><p>(Note that we&rsquo;re also able to specify OS-specific configurations too, as in the below):</p><pre class=javascript name=code>{
+    &quot;cmd&quot;: [&quot;g++&quot;, &quot;$file&quot;, &quot;-o&quot;, &quot;$file_base_name&quot;, &quot;-I/usr/local/include&quot;],
+    &quot;selector&quot;: &quot;source.c++&quot;,
+    &quot;windows&quot;: {
+       &quot;cmd&quot;: [&quot;cl&quot;, &quot;/Fo${file_path}&quot;, &quot;/O2&quot;, &quot;$file&quot;]
+    }
+}
+</pre><p><strong>Haskell:</strong></p><pre class=javascript name=code>{
+    &quot;cmd&quot;: [&quot;runhaskell&quot;, &quot;$file&quot;],
+    &quot;file_regex&quot;: &quot;^(...*?):([0-9]*):?([0-9]*)&quot;,
+    &quot;selector&quot;: &quot;source.haskell&quot;
+}
+</pre><h2>Conclusions</h2><p>Sublime build systems are awesome and can help you avoid the need to manually switch between your editor and external build tools regularly. As you&rsquo;ve hopefully now learned, putting together your own custom build systems is a straight-forward process and I&rsquo;d recommend trying it out if Sublime happens to be your editor of choice.</p><p><em>(Technically reviewed by Sindre Sorhus)</em></p></section></article><footer id=post-meta class=clearfix><a href=http://twitter.com/addyosmani><img class=avatar src=/assets/images/avatar.png><div><span class=dark>Addy Osmani</span> <span>Engineer at Google working on open web tooling</span></div></a><section id=sharing><a class=twitter href="https://twitter.com/intent/tweet?text=http://addyosmani.com/blog/custom-sublime-text-build-systems-for-popular-tools-and-languages/ - Custom Sublime Text Build Systems For Popular Tools And Languages by @addyosmani"><span class=icon-twitter>Tweet</span></a> <a class=facebook href=# onclick="window.open( 'https://www.facebook.com/sharer/sharer.php?u='+encodeURIComponent(location.href), 'facebook-share-dialog', 'width=626,height=436'); return false;"><span class=icon-facebook-rect>Share</span></a></section></footer></section><script src=https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js></script><script src=/assets/js/highlight.js></script><script>hljs.initHighlightingOnLoad();</script><script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-46754295-1', 'auto');
+    ga('send', 'pageview');
+  </script></body></html>

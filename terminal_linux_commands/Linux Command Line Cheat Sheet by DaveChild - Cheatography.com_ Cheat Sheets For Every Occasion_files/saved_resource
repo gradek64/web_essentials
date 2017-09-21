@@ -1,0 +1,1018 @@
+<!DOCTYPE html><html
+lang="en"><head><title>Build Cheat Sheets and Share Your Favourites! - Cheatography.com: Cheat Sheets For Every Occasion</title><meta
+content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta
+http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta
+http-equiv="Content-Style-Type" content="text/css"><meta
+http-equiv="X-UA-Compatible" content="IE=Edge"><base
+href="https://www.cheatography.com/"><link
+rel="shortcut icon" href="favicon.png"><link
+rel="apple-touch-icon" href="/images/cheatography-iphone.png"><link
+rel="alternate" type="application/rss+xml" title="New Cheat Sheets RSS feed." href="http://www.cheatography.com/explore/new/rss/"> <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script> <link
+href="/styles/styles.scss.css?v=1" rel="stylesheet" type="text/css"><link
+href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet"><link
+href="/styles/bootstrap-tour-standalone.min.css" rel="stylesheet"> <script src="/scripts/bootstrap-tour-standalone.min.js"></script> <script type="text/javascript">var defaultLanguages = false;
+            var rememberTagCookieName = false;
+            var ratableCheatSheetId = false;
+            var isRateable = true;</script> </head><body>
+ <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-4997759-8', 'auto');
+        ga('send', 'pageview');</script> <div
+id="mobile_wrap_outer"><a
+href="#" id="mobileTrigger">Show Menu</a><div
+id="mobile_wrap_inner"><div
+id="header"><div
+id="header_inner"><a
+href="https://www.cheatography.com/" class="imagelink logolink"><img
+width="156" height="25" id="title_logo" src="//media.cheatography.com/images/cheatography_logo.png" alt="Cheatography"></a><div
+id="user_info"><div
+class="logged_in" style="position: relative; margin: 0; white-space: nowrap; line-height: 40px; height: 69px; z-index: 1001;">
+<a
+style="vertical-align: middle; margin: 11px 0 0 0; padding-right: 0;" class="imagelink gravatar replace_userlink" href="/{{alias}}/"><img
+class="gravatar replace_usergravatar" style="background: #fff; vertical-align: middle" src="#" width="32" height="32"></a>
+<a
+style="margin-top: 19px; color: #fff;" href="/{{alias}}/" class="replace_userlink replace_username"></a>
+<a
+href="/messages/" title="You have 1 new messages." class="imageline" style="margin-top: 18px;"><i
+class="fa fa-fw fa-envelope"></i></a></div><div
+id="user_dropdown"><div
+class="biptych1"><ul><li
+class=" "><i
+class="fa fa-fw fa-star"></i><a
+href="/favourites/">Your Favourite Cheat Sheets</a></li><li
+class=" "><i
+class="fa fa-fw fa-star"></i><a
+href="/favourite-lists/">Your Favourite Lists</a></li></ul><ul><li
+class=" "><i
+class="fa fa-fw fa-envelope"></i><a
+href="/messages/">Your Messages</a></li><li
+class=" replace_userlink"><i
+class="fa fa-fw fa-trophy"></i><a
+href="/{{alias}}/badges/">Your Badges</a></li><li
+class=" replace_userlink"><i
+class="fa fa-fw fa-heart"></i><a
+href="/{{alias}}/followers/">Your Friends</a></li><li
+class=" replace_userlink"><i
+class="fa fa-fw fa-comments"></i><a
+href="/{{alias}}/comments/">Your Comments</a></li></ul><ul><li
+class="on  replace_userlink"><i
+class="fa fa-fw fa-smile-o"></i>View Profile</li><li
+class=" replace_userlink"><i
+class="fa fa-fw fa-edit"></i><a
+href="/{{alias}}/edit/">Edit Profile</a></li><li
+class=" replace_userlink"><i
+class="fa fa-fw fa-key"></i><a
+href="/{{alias}}/password/">Change Password</a></li></ul><ul><li
+class=" replace_userlink"><i
+class="fa fa-fw fa-sign-out"></i><a
+href="/{{alias}}/log-out/">Log out</a></li></ul></div><div
+class="biptych2"><ul><li
+class=" replace_userlink"><i
+class="fa fa-fw fa-columns"></i><a
+href="/{{alias}}/cheat-sheets/new/">New Cheat Sheet</a></li><li
+class=" replace_userlink"><i
+class="fa fa-fw fa-link"></i><a
+href="/{{alias}}/cheat-sheets/new-link/">New Link</a></li><li
+class=" replace_userlink"><i
+class="fa fa-fw fa-upload"></i><a
+href="/{{alias}}/cheat-sheets/new-upload/">New Upload</a></li><li
+class=" replace_userlink"><i
+class="fa fa-fw fa-list"></i><a
+href="/{{alias}}/lists/new/">New List</a></li></ul><ul><li
+class=" replace_userlink"><i
+class="fa fa-fw fa-columns"></i><a
+href="/{{alias}}/cheat-sheets/live/">Live Cheat Sheets</a></li><li
+class=" replace_userlink"><i
+class="fa fa-fw fa-columns"></i><a
+href="/{{alias}}/cheat-sheets/drafts/">Draft Cheat Sheets</a></li><li
+class=" replace_userlink"><i
+class="fa fa-fw fa-group"></i><a
+href="/{{alias}}/cheat-sheets/collaborations/">Collaborations</a></li><li
+class=" replace_userlink"><i
+class="fa fa-fw fa-link"></i><a
+href="/{{alias}}/cheat-sheets/links/">Links</a></li></ul><ul><li
+class=" replace_userlink"><i
+class="fa fa-fw fa-list"></i><a
+href="/{{alias}}/lists/">Cheat Sheet Lists</a></li></ul></div><div
+class="clear"></div></div><div
+class="logged_out" style="margin: 13px 15px 0; color: #fff;"><a
+class="imagelink login_button" href="/members/login">Login</a> &nbsp;or&nbsp; <a
+class="imagelink login_button" href="/members/register/">Register</a></div><div
+class="clear"></div></div>
+<nav><ul><li
+class="on"><a
+href="/">Home</a></li><li
+class="hidden showMobile logged_out"><a
+href="/members/login/">Login</a></li><li
+class="hidden showMobile logged_out"><a
+href="/members/register/">Register</a></li><li ><a
+id="tourbrowse" href="/explore/">Cheat Sheets</a><ul
+class="hideMobile"><li
+class=" "><i
+class="fa fa-fw fa-graduation-cap"></i><a
+href="/explore/new/">New Cheat Sheets</a></li><li
+class=" "><i
+class="fa fa-fw fa-star"></i><a
+href="/explore/popular/">Popular Cheat Sheets</a></li><li
+class=" menu_separate  "><i
+class="fa fa-fw fa-book"></i><a
+href="/explore/">Cheat Sheets by Topic</a></li><li
+class=" "><i
+class="fa fa-fw fa-tag"></i><a
+href="/explore/tags/">Cheat Sheets by Tag</a></li><li
+class=" "><i
+class="fa fa-fw fa-globe"></i><a
+href="/language/">Cheat Sheets by Language</a></li><li
+class=" "><i
+class="fa fa-fw fa-list"></i><a
+href="/explore/lists/">Cheat Sheets Lists</a></li><li
+class=" menu_separate  "><i
+class="fa fa-fw fa-link"></i><a
+href="/external/">Cheat Sheet Links</a></li><li
+class="menu_separate"><form
+method="GET" action="/explore/search/"><span
+style="color: #666;"><i
+class="fa fa-fw fa-search"></i>Find:</span> <input
+id="q" name="q" type="text" style="width: 100px;" value=""> <input
+type="submit" value="Search"></form></li></ul></li><li
+class="hideMobile"><a
+id="tourcreate" href="/create/">Create</a><ul
+class="hideMobile"><li
+class=" "><i
+class="fa fa-fw fa-question"></i><a
+href="/create/">Getting Started</a></li><li
+class=" logged_in"><i
+class="fa fa-fw fa-columns"></i><a
+href="/create/cheat-sheet/">Create a New Cheat Sheet</a></li><li
+class=" logged_in"><i
+class="fa fa-fw fa-upload"></i><a
+href="/create/cheat-sheet-upload/">Upload a Cheat Sheet</a></li><li
+class=" logged_in"><i
+class="fa fa-fw fa-link"></i><a
+href="/create/cheat-sheet-link/">Link to a Cheat Sheet</a></li><li
+class=" menu_separate  logged_in"><i
+class="fa fa-fw fa-list"></i><a
+href="/create/list/">New Cheat Sheet List</a></li><li
+class="menu_separate"><i
+class="fa fa-fw fa-smile-o"></i>A <a
+href="/davechild/cheat-sheets/cheatography/">Cheat Sheet</a> for Making Cheat Sheets!</li></ul></li><li><a
+id="tourcommunity" href="/members/">Community</a><ul
+class="hideMobile"><li
+class=" "><i
+class="fa fa-fw fa-globe"></i><a
+href="/members/">Community</a></li><li
+class=" "><i
+class="fa fa-fw fa-sitemap"></i><a
+href="/members/forum/">Forum</a></li><li
+class=" "><i
+class="fa fa-fw fa-bookmark"></i><a
+href="/blog/">Blog</a></li><li
+class=" "><i
+class="fa fa-fw fa-trophy"></i><a
+href="/badges/">Badges</a></li><li
+class=" menu_separate  logged_in"><i
+class="fa fa-fw fa-heart"></i><a
+href="/{{alias}}/followers/">Friends</a></li><li
+class=" logged_out"><i
+class="fa fa-fw fa-user"></i><a
+href="/members/register/">Join Us!</a></li><li
+class=" menu_separate  logged_out"><i
+class="fa fa-fw fa-key"></i><a
+href="/members/login/">Login</a></li><li
+class=" menu_separate  "><i
+class="fa fa-fw fa-twitter"></i><a
+href="http://twitter.com/Cheatography/">Twitter</a></li><li
+class=" "><i
+class="fa fa-fw fa-facebook"></i><a
+href="http://www.facebook.com/pages/Cheatography/255012094556007">Facebook</a></li><li
+class=" "><i
+class="fa fa-fw fa-pinterest"></i><a
+href="http://www.pinterest.com/source/cheatography.com/">Pinterest</a></li></ul></li><li
+class="last"><a
+href="/help/">Help</a><ul
+class="hideMobile"><li
+class=" "><i
+class="fa fa-fw fa-info-circle"></i><a
+href="/help/">General Help Information</a></li><li
+class=" "><i
+class="fa fa-fw fa-sitemap"></i><a
+href="/members/forum/support/">Support Form</a></li><li><i
+class="fa fa-fw fa-ticket"></i><a
+href="http://getsatisfaction.com/cheatography">Cheatography Support</a></li><li
+class="logged_in"><i
+class="fa fa-fw fa-location-arrow"></i><a
+href="/davechild/cheat-sheets/cheatography/?show_tour">Take the Tour!</a></li></ul></li></ul><div
+class="hidden showMobile" id="user_dropdown_mobile"></div></nav><div
+class="clear"></div></div></div><div
+class="adsense logged_out"><div
+class="adsense_inner"> <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> 
+<ins
+class="adsbygoogle"
+style="display:block"
+data-ad-client="ca-pub-2965569270921917"
+data-ad-slot="5963409473"
+data-ad-format="auto"></ins> <script>(adsbygoogle = window.adsbygoogle || []).push({});</script> </div></div><div
+id="content"><div
+id="content_inner"><div
+id="body_wide"><div
+id="body_wide_inner"><div
+id="body_wide_shadow"><div
+id="intro"><h1>Welcome to Cheatography!</h1><p>Cheatography is a cheat sheet builder and repository where you can build, upload and share cheat sheets and quick references.</p><form
+method="GET" action="/explore/search/"><p><label>Find a cheat sheet: <input
+id="q" name="q" type="text" style="padding: 10px; font-size: 1.2em; width: 160px;" value=""> <input
+type="submit" value="Search" style="padding: 10px; font-size: 0.8em;"></label></p></form></div><div
+class="triptychdbll"><h2 class="notopmargin">Latest Cheat Sheet</h2><div
+id="cheat_sheet_8009" class="cheat_sheet_row altrow tag-rspec tag-selenium tag-capybara lang-en rating-unrated" style="margin-bottom: 20px; position: relative; padding: 10px 0 0 0; min-height: 220px; background: #007290;"><a
+style="position: absolute; bottom: 0; left: 10px; right: 10px; background: #007290 url('//media.cheatography.com/storage/thumb/corey_capybara-with-rspec.750.jpg?time=1461621571') -28px -101px no-repeat; height: 220px;" href="/corey/cheat-sheets/capybara-with-rspec/"></a><div
+style="z-index: 801; position: absolute; bottom: 0; left: 0; right: 0; color: #D3EBF2; background: #00475A;"><div
+style="padding: 10px 15px;"><strong><a
+style="font-size: 1.3em; color: #D3EBF2; border-color: #D3EBF2;" href="/corey/cheat-sheets/capybara-with-rspec/">Capybara with RSpec Cheat Sheet</a></strong><div
+class="extrainfo" style="display: none; line-height: 25px; padding: 0 0 5px;"><div
+style="padding: 5px 0 0;">Capybara with RSpec. Content largely taken from ddovii's great cheat sheet and zhengjia's gist. I hope they don't mind!</div><div
+class="triptych1"><span
+style="white-space: nowrap;"><img
+style="position: relative; left: 0; top: 5px; padding-right: 5px;" width="16" height="16" src="//media.cheatography.com/images/users/4ceadb88714e427e6a42dc1f8c1a7929.16.jpg"><a
+style="color: #D3EBF2; border-color: #D3EBF2;" href="/corey/" class="user_hover">Corey</a></span></div><div
+class="triptych2"><i
+class="fa fa-fw fa-calendar"></i>25 Apr 16</div><div
+class="triptych3"><i
+class="fa fa-fw fa-book"></i>1 Page</div><div
+class="clear"></div><div><i
+class="fa fa-fw fa-tag"></i><a
+style="color: #D3EBF2; border-color: #D3EBF2;" href="/tag/rspec/cheat-sheets/">rspec</a>, <a
+style="color: #D3EBF2; border-color: #D3EBF2;" href="/tag/selenium/cheat-sheets/">selenium</a>, <a
+style="color: #D3EBF2; border-color: #D3EBF2;" href="/tag/capybara/cheat-sheets/">capybara</a></div></div></div></div><div
+class="clear"></div></div></div><div
+class="triptych3"><h2 class="notopmargin">Cheat Sheets by Topic</h2><ul
+class="noicon"><li
+class=" "><i
+class="fa fa-fw fa-desktop"></i> <a
+href="/office-business-and-technology/">Office, Business and Technology</a></li><li
+class="icon icon_blank"><p>including <a
+href="/tag/php/">PHP</a>, <a
+href="/tag/regex/">RegEx</a> and <a
+href="/tag/linux/">Linux</a></p></li><li
+class=" "><i
+class="fa fa-fw fa-tree"></i> <a
+href="/home-kitchen-and-garden/">Home, Kitchen and Garden</a></li><li
+class="icon icon_blank"><p>including <a
+href="/tag/food/">Food</a>, <a
+href="/tag/cocktails/">Cocktails</a> and <a
+href="/tag/recipes/">Recipes</a></p></li><li
+class=" "><i
+class="fa fa-fw fa-globe"></i> <a
+href="/travel-culture-and-language/">Travel, Culture and Language</a></li><li
+class="icon icon_blank"><p>including <a
+href="/tag/french/">French</a>, <a
+href="/tag/spanish/">Spanish</a> and <a
+href="/tag/history/">History</a></p></li><li
+class=" "><i
+class="fa fa-fw fa-heart"></i> <a
+href="/hobbies-games-and-leisure/">Hobbies, Games and Leisure</a></li><li
+class="icon icon_blank"><p>including <a
+href="/tag/audio/">Audio</a>, <a
+href="/tag/chess/">Chess</a> and <a
+href="/tag/poker/">Poker</a></p></li></ul></div><div
+class="clear"></div><div
+class="triptych1"><h2>New Cheat Sheets (<a
+href="/explore/new/rss/">RSS</a>)</h2><div
+id="cheat_sheet_7612" class="cheat_sheet_row altrow tag-android tag-movil lang-en lang-es rating-unrated" style="margin-bottom: 20px; position: relative; padding: 10px 0 0 0; min-height: 220px; background: #838383;"><a
+style="position: absolute; bottom: 0; left: 10px; right: 10px; background: #838383 url('//media.cheatography.com/storage/thumb/jesusconde_android-studio-atajos-teclado.400.jpg?time=1461655506') -13px -52px no-repeat; height: 220px;" href="/jesusconde/cheat-sheets/android-studio-atajos-teclado/"></a><div
+style="z-index: 801; position: absolute; bottom: 0; left: 0; right: 0; color: #EFEFEF; background: #525252;"><div
+style="padding: 10px 15px;"><strong><a
+style="font-size: 1.3em; color: #EFEFEF; border-color: #EFEFEF;" href="/jesusconde/cheat-sheets/android-studio-atajos-teclado/">Android Studio Atajos Teclado Keyboard Shortcuts</a></strong><div
+class="extrainfo" style="display: none; line-height: 25px; padding: 0 0 5px;"><div
+style="padding: 5px 0 0;">Acceso rápido a los principales atajos de teclado de Android Studio</div><div
+class="triptych1"><span
+style="white-space: nowrap;"><img
+style="position: relative; left: 0; top: 5px; padding-right: 5px;" width="16" height="16" src="//media.cheatography.com/images/users/e80b0ae1f75b719d0460b1f6f9f91079.16.jpg"><a
+style="color: #EFEFEF; border-color: #EFEFEF;" href="/jesusconde/" class="user_hover">jesusconde</a></span></div><div
+class="triptych2"><i
+class="fa fa-fw fa-calendar"></i>23 Apr 16</div><div
+class="triptych3"><i
+class="fa fa-fw fa-book"></i>1 Page</div><div
+class="clear"></div><div><i
+class="fa fa-fw fa-tag"></i><a
+style="color: #EFEFEF; border-color: #EFEFEF;" href="/tag/android/cheat-sheets/">android</a>, <a
+style="color: #EFEFEF; border-color: #EFEFEF;" href="/tag/movil/cheat-sheets/">movil</a></div><div><i
+class="fa fa-fw fa-globe"></i><a
+style="color: #EFEFEF; border-color: #EFEFEF;" href="/language/en/">English</a>, <a
+style="color: #EFEFEF; border-color: #EFEFEF;" href="/language/es/">español (Spanish)</a></div></div></div></div><div
+class="clear"></div></div><div
+id="cheat_sheet_7918" class="cheat_sheet_row altrow tag-russian tag-vocabulary tag-russianvocabulary tag-russiannumbers tag-russianphrases lang-en lang-ru rating-unrated" style="margin-bottom: 20px; position: relative; padding: 10px 0 0 0; min-height: 220px; background: #666666;"><a
+style="position: absolute; bottom: 0; left: 10px; right: 10px; background: #666666 url('//media.cheatography.com/storage/thumb/draskers_beginners-russian.400.jpg?time=1461253222') -13px -52px no-repeat; height: 220px;" href="/draskers/cheat-sheets/beginners-russian/"></a><div
+style="z-index: 801; position: absolute; bottom: 0; left: 0; right: 0; color: #E9E9E9; background: #404040;"><div
+style="padding: 10px 15px;"><strong><a
+style="font-size: 1.3em; color: #E9E9E9; border-color: #E9E9E9;" href="/draskers/cheat-sheets/beginners-russian/">Beginners Russian Cheat Sheet</a></strong><div
+class="extrainfo" style="display: none; line-height: 25px; padding: 0 0 5px;"><div
+style="padding: 5px 0 0;">Russian vocabulary on key topics such as numbers, days, months, periods of time, family, people and useful basic phrases.</div><div
+class="triptych1"><span
+style="white-space: nowrap;"><img
+style="position: relative; left: 0; top: 5px; padding-right: 5px;" width="16" height="16" src="//media.cheatography.com/images/users/4e58bd8b89fb83e88796bc8ac8b58774.16.jpg"><a
+style="color: #E9E9E9; border-color: #E9E9E9;" href="/draskers/" class="user_hover">Draskers</a></span></div><div
+class="triptych2"><i
+class="fa fa-fw fa-calendar"></i>21 Apr 16</div><div
+class="triptych3"><i
+class="fa fa-fw fa-book"></i>2 Pages</div><div
+class="clear"></div><div><i
+class="fa fa-fw fa-tag"></i><a
+style="color: #E9E9E9; border-color: #E9E9E9;" href="/tag/russian/cheat-sheets/">russian</a>, <a
+style="color: #E9E9E9; border-color: #E9E9E9;" href="/tag/vocabulary/cheat-sheets/">vocabulary</a>, <a
+style="color: #E9E9E9; border-color: #E9E9E9;" href="/tag/russianvocabulary/cheat-sheets/">russianvocabulary</a>, <a
+style="color: #E9E9E9; border-color: #E9E9E9;" href="/tag/russiannumbers/cheat-sheets/">russiannumbers</a>, <a
+style="color: #E9E9E9; border-color: #E9E9E9;" href="/tag/russianphrases/cheat-sheets/">russianphrases</a></div><div><i
+class="fa fa-fw fa-globe"></i><a
+style="color: #E9E9E9; border-color: #E9E9E9;" href="/language/en/">English</a>, <a
+style="color: #E9E9E9; border-color: #E9E9E9;" href="/language/ru/">русский язык (Russian)</a></div></div></div></div><div
+class="clear"></div></div><div
+id="cheat_sheet_7972" class="cheat_sheet_row altrow tag-science tag-ecology tag-geology tag-geography tag-soil tag-biosphere tag-pedosphere tag-lithosphere lang-en rating-unrated" style="margin-bottom: 20px; position: relative; padding: 10px 0 0 0; min-height: 220px; background: #CC3B0F;"><a
+style="position: absolute; bottom: 0; left: 10px; right: 10px; background: #CC3B0F url('//media.cheatography.com/storage/thumb/leahs-notes_soils-of-the-world.400.jpg?time=1461643243') -13px -52px no-repeat; height: 220px;" href="/leahs-notes/cheat-sheets/soils-of-the-world/"></a><div
+style="z-index: 801; position: absolute; bottom: 0; left: 0; right: 0; color: #FFE0D6; background: #802509;"><div
+style="padding: 10px 15px;"><strong><a
+style="font-size: 1.3em; color: #FFE0D6; border-color: #FFE0D6;" href="/leahs-notes/cheat-sheets/soils-of-the-world/">Soils of the World Cheat Sheet</a></strong><div
+class="extrainfo" style="display: none; line-height: 25px; padding: 0 0 5px;"><div
+style="padding: 5px 0 0;">A brief tour through the most common types of soils, how they're formed, and where they can be found.</div><div
+class="triptych1"><span
+style="white-space: nowrap;"><img
+style="position: relative; left: 0; top: 5px; padding-right: 5px;" width="16" height="16" src="//media.cheatography.com/images/users/8e36cf51cfb2ac129fa095df0f26578c.16.jpg"><a
+style="color: #FFE0D6; border-color: #FFE0D6;" href="/leahs-notes/" class="user_hover">Leahs_Notes</a></span></div><div
+class="triptych2"><i
+class="fa fa-fw fa-calendar"></i>21 Apr 16</div><div
+class="triptych3"><i
+class="fa fa-fw fa-book"></i>2 Pages</div><div
+class="clear"></div><div><i
+class="fa fa-fw fa-tag"></i><a
+style="color: #FFE0D6; border-color: #FFE0D6;" href="/tag/science/cheat-sheets/">science</a>, <a
+style="color: #FFE0D6; border-color: #FFE0D6;" href="/tag/ecology/cheat-sheets/">ecology</a>, <a
+style="color: #FFE0D6; border-color: #FFE0D6;" href="/tag/geology/cheat-sheets/">geology</a>, <a
+style="color: #FFE0D6; border-color: #FFE0D6;" href="/tag/geography/cheat-sheets/">geography</a>, <a
+style="color: #FFE0D6; border-color: #FFE0D6;" href="/tag/soil/cheat-sheets/">soil</a> and 3 more&nbsp;...</div></div></div></div><div
+class="clear"></div></div><div
+id="cheat_sheet_7969" class="cheat_sheet_row altrow tag-c- tag-c- tag-format tag-formatting tag-vb lang-en rating-unrated" style="margin-bottom: 20px; position: relative; padding: 10px 0 0 0; min-height: 220px; background: #C48D6A;"><a
+style="position: absolute; bottom: 0; left: 10px; right: 10px; background: #C48D6A url('//media.cheatography.com/storage/thumb/pezmat_numeric-formats.400.jpg?time=1461239322') -13px -52px no-repeat; height: 220px;" href="/pezmat/cheat-sheets/numeric-formats/"></a><div
+style="z-index: 801; position: absolute; bottom: 0; left: 0; right: 0; color: #FDF1EA; background: #7A5842;"><div
+style="padding: 10px 15px;"><strong><a
+style="font-size: 1.3em; color: #FDF1EA; border-color: #FDF1EA;" href="/pezmat/cheat-sheets/numeric-formats/">Numeric Formats Cheat Sheet</a></strong><div
+class="extrainfo" style="display: none; line-height: 25px; padding: 0 0 5px;"><div
+style="padding: 5px 0 0;">Characters used to export numbers in a desired format</div><div
+class="triptych1"><span
+style="white-space: nowrap;"><img
+style="position: relative; left: 0; top: 5px; padding-right: 5px;" width="16" height="16" src="//media.cheatography.com/images/users/29027c6ed9e65e4c0c71fb53ba780889.16.jpg"><a
+style="color: #FDF1EA; border-color: #FDF1EA;" href="/pezmat/" class="user_hover">PezMat</a></span></div><div
+class="triptych2"><i
+class="fa fa-fw fa-calendar"></i>21 Apr 16</div><div
+class="triptych3"><i
+class="fa fa-fw fa-book"></i>4 Pages</div><div
+class="clear"></div><div><i
+class="fa fa-fw fa-tag"></i><a
+style="color: #FDF1EA; border-color: #FDF1EA;" href="/tag/c-/cheat-sheets/">c-</a>, <a
+style="color: #FDF1EA; border-color: #FDF1EA;" href="/tag/c-/cheat-sheets/">c-</a>, <a
+style="color: #FDF1EA; border-color: #FDF1EA;" href="/tag/format/cheat-sheets/">format</a>, <a
+style="color: #FDF1EA; border-color: #FDF1EA;" href="/tag/formatting/cheat-sheets/">formatting</a>, <a
+style="color: #FDF1EA; border-color: #FDF1EA;" href="/tag/vb/cheat-sheets/">vb</a></div></div></div></div><div
+class="clear"></div></div><div
+id="cheat_sheet_7962" class="cheat_sheet_row altrow tag-docker lang-en rating-unrated" style="margin-bottom: 20px; position: relative; padding: 10px 0 0 0; min-height: 220px; background: #207D12;"><a
+style="position: absolute; bottom: 0; left: 10px; right: 10px; background: #207D12 url('//media.cheatography.com/storage/thumb/tobix10_docker-commands.400.jpg?time=1461619539') -13px -52px no-repeat; height: 220px;" href="/tobix10/cheat-sheets/docker-commands/"></a><div
+style="z-index: 801; position: absolute; bottom: 0; left: 0; right: 0; color: #DAEED7; background: #144E0B;"><div
+style="padding: 10px 15px;"><strong><a
+style="font-size: 1.3em; color: #DAEED7; border-color: #DAEED7;" href="/tobix10/cheat-sheets/docker-commands/">Docker commands Cheat Sheet</a></strong><div
+class="extrainfo" style="display: none; line-height: 25px; padding: 0 0 5px;"><div
+class="triptych1"><span
+style="white-space: nowrap;"><img
+style="position: relative; left: 0; top: 5px; padding-right: 5px;" width="16" height="16" src="//media.cheatography.com/images/users/4d7793cf6ce32171fad1667d72fedcff.16.jpg"><a
+style="color: #DAEED7; border-color: #DAEED7;" href="/tobix10/" class="user_hover">tobix10</a></span></div><div
+class="triptych2"><i
+class="fa fa-fw fa-calendar"></i>20 Apr 16</div><div
+class="triptych3"><i
+class="fa fa-fw fa-book"></i>1 Page</div><div
+class="clear"></div><div><i
+class="fa fa-fw fa-tag"></i><a
+style="color: #DAEED7; border-color: #DAEED7;" href="/tag/docker/cheat-sheets/">docker</a></div></div></div></div><div
+class="clear"></div></div></div><div
+class="triptych2"><h2>Most Popular Cheat Sheets</h2><div
+id="cheat_sheet_5" class="cheat_sheet_row altrow tag-development tag-regex tag-regular tag-expressions tag-programming lang-en rating-5" style="margin-bottom: 20px; position: relative; padding: 10px 0 0 0; min-height: 220px; background: #9B0436;"><div
+style="z-index: 100; position: absolute; top: 0; padding: 0 0 0 6px; border-bottom-left-radius: 3px; right: 10px; color: #F4D4DF; background: #9B0436;"><i
+class="fa fa-star"></i> <i
+class="fa fa-star"></i> <i
+class="fa fa-star"></i> <i
+class="fa fa-star"></i> <i
+class="fa fa-star"></i></div><a
+style="position: absolute; bottom: 0; left: 10px; right: 10px; background: #9B0436 url('//media.cheatography.com/storage/thumb/davechild_regular-expressions.400.jpg?time=1403865686') -13px -52px no-repeat; height: 220px;" href="/davechild/cheat-sheets/regular-expressions/"></a><div
+style="z-index: 801; position: absolute; bottom: 0; left: 0; right: 0; color: #F4D4DF; background: #610222;"><div
+style="padding: 10px 15px;"><strong><a
+style="font-size: 1.3em; color: #F4D4DF; border-color: #F4D4DF;" href="/davechild/cheat-sheets/regular-expressions/">Regular Expressions Cheat Sheet</a></strong><div
+class="extrainfo" style="display: none; line-height: 25px; padding: 0 0 5px;"><div
+style="padding: 5px 0 0;">A quick reference guide for regular expressions (regex), including symbols, ranges, grouping, assertions and some sample patterns to get you started.</div><div
+class="triptych1"><span
+style="white-space: nowrap;"><img
+style="position: relative; left: 0; top: 5px; padding-right: 5px;" width="16" height="16" src="//media.cheatography.com/images/users/fd7e3b77a3f3007ff30d932b65084851.16.jpg"><a
+style="color: #F4D4DF; border-color: #F4D4DF;" href="/davechild/" class="user_hover">DaveChild</a></span></div><div
+class="triptych2"><i
+class="fa fa-fw fa-calendar"></i>19 Oct 11</div><div
+class="triptych3"><i
+class="fa fa-fw fa-book"></i>1 Page</div><div
+class="clear"></div><div><i
+class="fa fa-fw fa-tag"></i><a
+style="color: #F4D4DF; border-color: #F4D4DF;" href="/tag/development/cheat-sheets/">development</a>, <a
+style="color: #F4D4DF; border-color: #F4D4DF;" href="/tag/regex/cheat-sheets/">regex</a>, <a
+style="color: #F4D4DF; border-color: #F4D4DF;" href="/tag/regular/cheat-sheets/">regular</a>, <a
+style="color: #F4D4DF; border-color: #F4D4DF;" href="/tag/expressions/cheat-sheets/">expressions</a>, <a
+style="color: #F4D4DF; border-color: #F4D4DF;" href="/tag/programming/cheat-sheets/">programming</a></div></div></div></div><div
+class="clear"></div></div><div
+id="cheat_sheet_73" class="cheat_sheet_row altrow tag-eq tag-audio tag-mix tag-beginner tag-equalization tag-equalizer lang-en rating-5" style="margin-bottom: 20px; position: relative; padding: 10px 0 0 0; min-height: 220px; background: #9D6720;"><div
+style="z-index: 100; position: absolute; top: 0; padding: 0 0 0 6px; border-bottom-left-radius: 3px; right: 10px; color: #F4E9DA; background: #9D6720;"><i
+class="fa fa-star"></i> <i
+class="fa fa-star"></i> <i
+class="fa fa-star"></i> <i
+class="fa fa-star"></i> <i
+class="fa fa-star"></i></div><a
+style="position: absolute; bottom: 0; left: 10px; right: 10px; background: #9D6720 url('//media.cheatography.com/storage/thumb/fredv_eq-tips.400.jpg?time=1397565331') -13px -52px no-repeat; height: 220px;" href="/fredv/cheat-sheets/eq-tips/"></a><div
+style="z-index: 801; position: absolute; bottom: 0; left: 0; right: 0; color: #F4E9DA; background: #624014;"><div
+style="padding: 10px 15px;"><strong><a
+style="font-size: 1.3em; color: #F4E9DA; border-color: #F4E9DA;" href="/fredv/cheat-sheets/eq-tips/">EQ tips Cheat Sheet</a></strong><div
+class="extrainfo" style="display: none; line-height: 25px; padding: 0 0 5px;"><div
+style="padding: 5px 0 0;">Tips for equalization. By frequency, by instrument with a glossary.</div><div
+class="triptych1"><span
+style="white-space: nowrap;"><img
+style="position: relative; left: 0; top: 5px; padding-right: 5px;" width="16" height="16" src="//media.cheatography.com/images/users/a4c3e92078bf19551f5fdd5cb08ba2d9.16.jpg"><a
+style="color: #F4E9DA; border-color: #F4E9DA;" href="/fredv/" class="user_hover">fredv</a></span></div><div
+class="triptych2"><i
+class="fa fa-fw fa-calendar"></i>15 Nov 11</div><div
+class="triptych3"><i
+class="fa fa-fw fa-book"></i>2 Pages</div><div
+class="clear"></div><div><i
+class="fa fa-fw fa-tag"></i><a
+style="color: #F4E9DA; border-color: #F4E9DA;" href="/tag/eq/cheat-sheets/">eq</a>, <a
+style="color: #F4E9DA; border-color: #F4E9DA;" href="/tag/audio/cheat-sheets/">audio</a>, <a
+style="color: #F4E9DA; border-color: #F4E9DA;" href="/tag/mix/cheat-sheets/">mix</a>, <a
+style="color: #F4E9DA; border-color: #F4E9DA;" href="/tag/beginner/cheat-sheets/">beginner</a>, <a
+style="color: #F4E9DA; border-color: #F4E9DA;" href="/tag/equalization/cheat-sheets/">equalization</a> and 1 more&nbsp;...</div></div></div></div><div
+class="clear"></div></div><div
+id="cheat_sheet_513" class="cheat_sheet_row altrow tag-javascript tag-beginner tag-intermediate tag-framework tag-angularjs tag-angular lang-en rating-5" style="margin-bottom: 20px; position: relative; padding: 10px 0 0 0; min-height: 220px; background: #850F0B;"><div
+style="z-index: 100; position: absolute; top: 0; padding: 0 0 0 6px; border-bottom-left-radius: 3px; right: 10px; color: #EFD6D5; background: #850F0B;"><i
+class="fa fa-star"></i> <i
+class="fa fa-star"></i> <i
+class="fa fa-star"></i> <i
+class="fa fa-star"></i> <i
+class="fa fa-star"></i></div><a
+style="position: absolute; bottom: 0; left: 10px; right: 10px; background: #850F0B url('//media.cheatography.com/storage/thumb/proloser_angularjs.400.jpg?time=1461655982') -13px -52px no-repeat; height: 220px;" href="/proloser/cheat-sheets/angularjs/"></a><div
+style="z-index: 801; position: absolute; bottom: 0; left: 0; right: 0; color: #EFD6D5; background: #530907;"><div
+style="padding: 10px 15px;"><strong><a
+style="font-size: 1.3em; color: #EFD6D5; border-color: #EFD6D5;" href="/proloser/cheat-sheets/angularjs/">AngularJS Cheat Sheet</a></strong><div
+class="extrainfo" style="display: none; line-height: 25px; padding: 0 0 5px;"><div
+style="padding: 5px 0 0;">The official - unofficial AngularJS cheatsheet.</div><div
+class="triptych1"><span
+style="white-space: nowrap;"><img
+style="position: relative; left: 0; top: 5px; padding-right: 5px;" width="16" height="16" src="//media.cheatography.com/images/users/ae341f7eb365518d32b1b6bec287fa8b.16.jpg"><a
+style="color: #EFD6D5; border-color: #EFD6D5;" href="/proloser/" class="user_hover">ProLoser</a></span></div><div
+class="triptych2"><i
+class="fa fa-fw fa-calendar"></i>9 Aug 12</div><div
+class="triptych3"><i
+class="fa fa-fw fa-book"></i>4 Pages</div><div
+class="clear"></div><div><i
+class="fa fa-fw fa-tag"></i><a
+style="color: #EFD6D5; border-color: #EFD6D5;" href="/tag/javascript/cheat-sheets/">javascript</a>, <a
+style="color: #EFD6D5; border-color: #EFD6D5;" href="/tag/beginner/cheat-sheets/">beginner</a>, <a
+style="color: #EFD6D5; border-color: #EFD6D5;" href="/tag/intermediate/cheat-sheets/">intermediate</a>, <a
+style="color: #EFD6D5; border-color: #EFD6D5;" href="/tag/framework/cheat-sheets/">framework</a>, <a
+style="color: #EFD6D5; border-color: #EFD6D5;" href="/tag/angularjs/cheat-sheets/">angularjs</a> and 1 more&nbsp;...</div></div></div></div><div
+class="clear"></div></div><div
+id="cheat_sheet_217" class="cheat_sheet_row altrow tag-shortcuts tag-keyboard tag-windows tag-vlc tag-osx lang-en rating-5" style="margin-bottom: 20px; position: relative; padding: 10px 0 0 0; min-height: 220px; background: #C47000;"><div
+style="z-index: 100; position: absolute; top: 0; padding: 0 0 0 6px; border-bottom-left-radius: 3px; right: 10px; color: #FDEBD3; background: #C47000;"><i
+class="fa fa-star"></i> <i
+class="fa fa-star"></i> <i
+class="fa fa-star"></i> <i
+class="fa fa-star"></i> <i
+class="fa fa-star"></i></div><a
+style="position: absolute; bottom: 0; left: 10px; right: 10px; background: #C47000 url('//media.cheatography.com/storage/thumb/shaunumb_vlc-windows-and-os-x.400.jpg?time=1397564504') -13px -52px no-repeat; height: 220px;" href="/shaunumb/cheat-sheets/vlc-windows-and-os-x/"></a><div
+style="z-index: 801; position: absolute; bottom: 0; left: 0; right: 0; color: #FDEBD3; background: #7A4600;"><div
+style="padding: 10px 15px;"><strong><a
+style="font-size: 1.3em; color: #FDEBD3; border-color: #FDEBD3;" href="/shaunumb/cheat-sheets/vlc-windows-and-os-x/">VLC (Windows & OS X) Keyboard Shortcuts</a></strong><div
+class="extrainfo" style="display: none; line-height: 25px; padding: 0 0 5px;"><div
+style="padding: 5px 0 0;">Useful keyboard shortcuts for OS X and Windows. Did you know you can easily re-sync audio and subtitles?</div><div
+class="triptych1"><span
+style="white-space: nowrap;"><img
+style="position: relative; left: 0; top: 5px; padding-right: 5px;" width="16" height="16" src="//media.cheatography.com/images/users/d368cbbc79a6caa9086ce2f0c3a284df.16.jpg"><a
+style="color: #FDEBD3; border-color: #FDEBD3;" href="/shaunumb/" class="user_hover">shaunumb</a></span></div><div
+class="triptych2"><i
+class="fa fa-fw fa-calendar"></i>22 Jan 12</div><div
+class="triptych3"><i
+class="fa fa-fw fa-book"></i>1 Page</div><div
+class="clear"></div><div><i
+class="fa fa-fw fa-tag"></i><a
+style="color: #FDEBD3; border-color: #FDEBD3;" href="/tag/shortcuts/cheat-sheets/">shortcuts</a>, <a
+style="color: #FDEBD3; border-color: #FDEBD3;" href="/tag/keyboard/cheat-sheets/">keyboard</a>, <a
+style="color: #FDEBD3; border-color: #FDEBD3;" href="/tag/windows/cheat-sheets/">windows</a>, <a
+style="color: #FDEBD3; border-color: #FDEBD3;" href="/tag/vlc/cheat-sheets/">vlc</a>, <a
+style="color: #FDEBD3; border-color: #FDEBD3;" href="/tag/osx/cheat-sheets/">osx</a></div></div></div></div><div
+class="clear"></div></div><div
+id="cheat_sheet_243" class="cheat_sheet_row altrow tag-regex tag-regular tag-expressions tag-google tag-analytics tag-google-analytics lang-en rating-5" style="margin-bottom: 20px; position: relative; padding: 10px 0 0 0; min-height: 220px; background: #CC610F;"><div
+style="z-index: 100; position: absolute; top: 0; padding: 0 0 0 6px; border-bottom-left-radius: 3px; right: 10px; color: #FFE8D6; background: #CC610F;"><i
+class="fa fa-star"></i> <i
+class="fa fa-star"></i> <i
+class="fa fa-star"></i> <i
+class="fa fa-star"></i> <i
+class="fa fa-star"></i></div><a
+style="position: absolute; bottom: 0; left: 10px; right: 10px; background: #CC610F url('//media.cheatography.com/storage/thumb/jay-taylor_google-analytics-regular-expressions.400.jpg?time=1461645909') -13px -52px no-repeat; height: 220px;" href="/jay-taylor/cheat-sheets/google-analytics-regular-expressions/"></a><div
+style="z-index: 801; position: absolute; bottom: 0; left: 0; right: 0; color: #FFE8D6; background: #803D09;"><div
+style="padding: 10px 15px;"><strong><a
+style="font-size: 1.3em; color: #FFE8D6; border-color: #FFE8D6;" href="/jay-taylor/cheat-sheets/google-analytics-regular-expressions/">Google Analytics Regular Expressions Cheat Sheet</a></strong><div
+class="extrainfo" style="display: none; line-height: 25px; padding: 0 0 5px;"><div
+style="padding: 5px 0 0;">A list of Regular Expression functionality supported by Google Analytics</div><div
+class="triptych1"><span
+style="white-space: nowrap;"><img
+style="position: relative; left: 0; top: 5px; padding-right: 5px;" width="16" height="16" src="//media.cheatography.com/images/users/63284bd138018488e775a985405879e1.16.jpg"><a
+style="color: #FFE8D6; border-color: #FFE8D6;" href="/jay-taylor/" class="user_hover">Jay Taylor</a></span></div><div
+class="triptych2"><i
+class="fa fa-fw fa-calendar"></i>10 Feb 12</div><div
+class="triptych3"><i
+class="fa fa-fw fa-book"></i>1 Page</div><div
+class="clear"></div><div><i
+class="fa fa-fw fa-tag"></i><a
+style="color: #FFE8D6; border-color: #FFE8D6;" href="/tag/regex/cheat-sheets/">regex</a>, <a
+style="color: #FFE8D6; border-color: #FFE8D6;" href="/tag/regular/cheat-sheets/">regular</a>, <a
+style="color: #FFE8D6; border-color: #FFE8D6;" href="/tag/expressions/cheat-sheets/">expressions</a>, <a
+style="color: #FFE8D6; border-color: #FFE8D6;" href="/tag/google/cheat-sheets/">google</a>, <a
+style="color: #FFE8D6; border-color: #FFE8D6;" href="/tag/analytics/cheat-sheets/">analytics</a> and 1 more&nbsp;...</div></div></div></div><div
+class="clear"></div></div></div><div
+class="triptych3"><h2>New Cheat Sheet Links</h2><div
+id="cheat_sheet_7905" class="cheat_sheet_row altrow tag-cv tag-job tag-resume lang-en rating-4" style="margin-bottom: 20px; position: relative; padding: 10px 0 0 0; min-height: 220px; background: #525252;"><div
+style="z-index: 100; position: absolute; top: 0; padding: 0 0 0 6px; border-bottom-left-radius: 3px; right: 10px; color: #E4E4E4; background: #525252;"><i
+class="fa fa-star"></i> <i
+class="fa fa-star"></i> <i
+class="fa fa-star"></i> <i
+class="fa fa-star"></i> <i
+class="fa fa-star-o"></i></div><a
+style="position: absolute; bottom: 0; left: 10px; right: 10px; background: #525252 url('//media.cheatography.com/storage/thumb/cheatography_resume.400.jpg?time=1460718026') -13px -52px no-repeat; height: 220px;" href="/cheatography/cheat-sheets/resume/"></a><div
+style="z-index: 801; position: absolute; bottom: 0; left: 0; right: 0; color: #E4E4E4; background: #333333;"><div
+style="padding: 10px 15px;"><strong><i
+class="fa fa-external-link-square"></i>&nbsp; <a
+style="font-size: 1.3em; color: #E4E4E4; border-color: #E4E4E4;" href="/cheatography/cheat-sheets/resume/">Resume Cheat Sheet</a> by <a
+style="color: #E4E4E4; border-color: #E4E4E4;" href="/external/anita-rahman/">Anita Rahman</a>, <a
+style="color: #E4E4E4; border-color: #E4E4E4;" href="/external/david-mielach/">David Mielach</a> and <a
+style="color: #E4E4E4; border-color: #E4E4E4;" href="/external/business-news-daily/">Business News Daily</a></strong><div
+class="extrainfo" style="display: none; line-height: 25px; padding: 0 0 5px;"><div
+class="triptych1"><span
+style="white-space: nowrap;"><img
+style="position: relative; left: 0; top: 5px; padding-right: 5px;" width="16" height="16" src="//media.cheatography.com/images/users/ae07a15380055b9d1da4dd5fb7538457.16.jpg"><a
+style="color: #E4E4E4; border-color: #E4E4E4;" href="/cheatography/" class="user_hover">Cheatography</a></span></div><div
+class="triptych2"><i
+class="fa fa-fw fa-calendar"></i>15 Apr 16</div><div
+class="triptych3"></div><div
+class="clear"></div><div><i
+class="fa fa-fw fa-tag"></i><a
+style="color: #E4E4E4; border-color: #E4E4E4;" href="/tag/cv/cheat-sheets/">cv</a>, <a
+style="color: #E4E4E4; border-color: #E4E4E4;" href="/tag/job/cheat-sheets/">job</a>, <a
+style="color: #E4E4E4; border-color: #E4E4E4;" href="/tag/resume/cheat-sheets/">resume</a></div></div></div></div><div
+class="clear"></div></div><div
+id="cheat_sheet_7901" class="cheat_sheet_row altrow tag-git tag-version tag-control tag-salesforce tag-vcs lang-en rating-unrated" style="margin-bottom: 20px; position: relative; padding: 10px 0 0 0; min-height: 220px; background: #525252;"><a
+style="position: absolute; bottom: 0; left: 10px; right: 10px; background: #525252 url('//media.cheatography.com/storage/thumb/cheatography_salesforce-git.400.jpg?time=1460715606') -13px -52px no-repeat; height: 220px;" href="/cheatography/cheat-sheets/salesforce-git/"></a><div
+style="z-index: 801; position: absolute; bottom: 0; left: 0; right: 0; color: #E4E4E4; background: #333333;"><div
+style="padding: 10px 15px;"><strong><i
+class="fa fa-external-link-square"></i>&nbsp; <a
+style="font-size: 1.3em; color: #E4E4E4; border-color: #E4E4E4;" href="/cheatography/cheat-sheets/salesforce-git/">Salesforce Git Cheat Sheet</a> by <a
+style="color: #E4E4E4; border-color: #E4E4E4;" href="/external/salesforce/">Salesforce</a></strong><div
+class="extrainfo" style="display: none; line-height: 25px; padding: 0 0 5px;"><div
+class="triptych1"><span
+style="white-space: nowrap;"><img
+style="position: relative; left: 0; top: 5px; padding-right: 5px;" width="16" height="16" src="//media.cheatography.com/images/users/ae07a15380055b9d1da4dd5fb7538457.16.jpg"><a
+style="color: #E4E4E4; border-color: #E4E4E4;" href="/cheatography/" class="user_hover">Cheatography</a></span></div><div
+class="triptych2"><i
+class="fa fa-fw fa-calendar"></i>15 Apr 16</div><div
+class="triptych3"></div><div
+class="clear"></div><div><i
+class="fa fa-fw fa-tag"></i><a
+style="color: #E4E4E4; border-color: #E4E4E4;" href="/tag/git/cheat-sheets/">git</a>, <a
+style="color: #E4E4E4; border-color: #E4E4E4;" href="/tag/version/cheat-sheets/">version</a>, <a
+style="color: #E4E4E4; border-color: #E4E4E4;" href="/tag/control/cheat-sheets/">control</a>, <a
+style="color: #E4E4E4; border-color: #E4E4E4;" href="/tag/salesforce/cheat-sheets/">salesforce</a>, <a
+style="color: #E4E4E4; border-color: #E4E4E4;" href="/tag/vcs/cheat-sheets/">vcs</a></div></div></div></div><div
+class="clear"></div></div><div
+id="cheat_sheet_7904" class="cheat_sheet_row altrow tag-salesforce tag-crm lang-en rating-unrated" style="margin-bottom: 20px; position: relative; padding: 10px 0 0 0; min-height: 220px; background: #525252;"><a
+style="position: absolute; bottom: 0; left: 10px; right: 10px; background: #525252 url('//media.cheatography.com/storage/thumb/cheatography_crm-lightning-experience.400.jpg?time=1461647546') -13px -52px no-repeat; height: 220px;" href="/cheatography/cheat-sheets/crm-lightning-experience/"></a><div
+style="z-index: 801; position: absolute; bottom: 0; left: 0; right: 0; color: #E4E4E4; background: #333333;"><div
+style="padding: 10px 15px;"><strong><i
+class="fa fa-external-link-square"></i>&nbsp; <a
+style="font-size: 1.3em; color: #E4E4E4; border-color: #E4E4E4;" href="/cheatography/cheat-sheets/crm-lightning-experience/">CRM Lightning Experience Cheat Sheet</a> by <a
+style="color: #E4E4E4; border-color: #E4E4E4;" href="/external/salesforce/">Salesforce</a></strong><div
+class="extrainfo" style="display: none; line-height: 25px; padding: 0 0 5px;"><div
+class="triptych1"><span
+style="white-space: nowrap;"><img
+style="position: relative; left: 0; top: 5px; padding-right: 5px;" width="16" height="16" src="//media.cheatography.com/images/users/ae07a15380055b9d1da4dd5fb7538457.16.jpg"><a
+style="color: #E4E4E4; border-color: #E4E4E4;" href="/cheatography/" class="user_hover">Cheatography</a></span></div><div
+class="triptych2"><i
+class="fa fa-fw fa-calendar"></i>15 Apr 16</div><div
+class="triptych3"></div><div
+class="clear"></div><div><i
+class="fa fa-fw fa-tag"></i><a
+style="color: #E4E4E4; border-color: #E4E4E4;" href="/tag/salesforce/cheat-sheets/">salesforce</a>, <a
+style="color: #E4E4E4; border-color: #E4E4E4;" href="/tag/crm/cheat-sheets/">crm</a></div></div></div></div><div
+class="clear"></div></div><div
+id="cheat_sheet_7903" class="cheat_sheet_row altrow tag-salesforce tag-crm lang-en rating-unrated" style="margin-bottom: 20px; position: relative; padding: 10px 0 0 0; min-height: 220px; background: #525252;"><a
+style="position: absolute; bottom: 0; left: 10px; right: 10px; background: #525252 url('//media.cheatography.com/storage/thumb/cheatography_crm.400.jpg?time=1460715566') -13px -52px no-repeat; height: 220px;" href="/cheatography/cheat-sheets/crm/"></a><div
+style="z-index: 801; position: absolute; bottom: 0; left: 0; right: 0; color: #E4E4E4; background: #333333;"><div
+style="padding: 10px 15px;"><strong><i
+class="fa fa-external-link-square"></i>&nbsp; <a
+style="font-size: 1.3em; color: #E4E4E4; border-color: #E4E4E4;" href="/cheatography/cheat-sheets/crm/">CRM Cheat Sheet</a> by <a
+style="color: #E4E4E4; border-color: #E4E4E4;" href="/external/salesforce/">Salesforce</a></strong><div
+class="extrainfo" style="display: none; line-height: 25px; padding: 0 0 5px;"><div
+class="triptych1"><span
+style="white-space: nowrap;"><img
+style="position: relative; left: 0; top: 5px; padding-right: 5px;" width="16" height="16" src="//media.cheatography.com/images/users/ae07a15380055b9d1da4dd5fb7538457.16.jpg"><a
+style="color: #E4E4E4; border-color: #E4E4E4;" href="/cheatography/" class="user_hover">Cheatography</a></span></div><div
+class="triptych2"><i
+class="fa fa-fw fa-calendar"></i>15 Apr 16</div><div
+class="triptych3"></div><div
+class="clear"></div><div><i
+class="fa fa-fw fa-tag"></i><a
+style="color: #E4E4E4; border-color: #E4E4E4;" href="/tag/salesforce/cheat-sheets/">salesforce</a>, <a
+style="color: #E4E4E4; border-color: #E4E4E4;" href="/tag/crm/cheat-sheets/">crm</a></div></div></div></div><div
+class="clear"></div></div><div
+id="cheat_sheet_7902" class="cheat_sheet_row altrow tag-salesforce lang-en rating-unrated" style="margin-bottom: 20px; position: relative; padding: 10px 0 0 0; min-height: 220px; background: #525252;"><a
+style="position: absolute; bottom: 0; left: 10px; right: 10px; background: #525252 url('//media.cheatography.com/storage/thumb/cheatography_service-cloud.400.jpg?time=1461662719') -13px -52px no-repeat; height: 220px;" href="/cheatography/cheat-sheets/service-cloud/"></a><div
+style="z-index: 801; position: absolute; bottom: 0; left: 0; right: 0; color: #E4E4E4; background: #333333;"><div
+style="padding: 10px 15px;"><strong><i
+class="fa fa-external-link-square"></i>&nbsp; <a
+style="font-size: 1.3em; color: #E4E4E4; border-color: #E4E4E4;" href="/cheatography/cheat-sheets/service-cloud/">Service Cloud Cheat Sheet</a> by <a
+style="color: #E4E4E4; border-color: #E4E4E4;" href="/external/salesforce/">Salesforce</a></strong><div
+class="extrainfo" style="display: none; line-height: 25px; padding: 0 0 5px;"><div
+class="triptych1"><span
+style="white-space: nowrap;"><img
+style="position: relative; left: 0; top: 5px; padding-right: 5px;" width="16" height="16" src="//media.cheatography.com/images/users/ae07a15380055b9d1da4dd5fb7538457.16.jpg"><a
+style="color: #E4E4E4; border-color: #E4E4E4;" href="/cheatography/" class="user_hover">Cheatography</a></span></div><div
+class="triptych2"><i
+class="fa fa-fw fa-calendar"></i>15 Apr 16</div><div
+class="triptych3"></div><div
+class="clear"></div><div><i
+class="fa fa-fw fa-tag"></i><a
+style="color: #E4E4E4; border-color: #E4E4E4;" href="/tag/salesforce/cheat-sheets/">salesforce</a></div></div></div></div><div
+class="clear"></div></div></div><div
+class="clear"></div><div
+class="triptych1"><h2>Languages</h2><ul
+class="iconlist"><li
+class=" "><a
+href="/language/en/">English</a>  (2244)</li><li
+class=" "><a
+href="/language/pl/">język polski, polszczyzna (Polish)</a>  (73)</li><li
+class=" "><a
+href="/language/fr/">français (French)</a>  (58)</li><li
+class=" "><a
+href="/language/de/">Deutsch (German)</a>  (38)</li><li
+class=" "><a
+href="/language/es/">español (Spanish)</a>  (22)</li><li
+class=" "><a
+href="/language/pt/">português (Portuguese)</a>  (8)</li><li
+class=" "><a
+href="/language/nb/">Norsk bokmål (Norwegian Bokmål)</a>  (7)</li><li
+class=" "><a
+href="/language/ru/">русский язык (Russian)</a>  (7)</li><li
+class=" "><a
+href="/language/da/">dansk (Danish)</a>  (6)</li><li
+class=" "><a
+href="/language/zh/">中文 (Zhōngwén), 汉语, 漢語 (Chinese)</a>  (5)</li><li
+class=" "><a
+href="/language/tr/">Türkçe (Turkish)</a>  (5)</li><li
+class=" "><a
+href="/language/sv/">Svenska (Swedish)</a>  (4)</li><li
+class=" "><a
+href="/language/no/">Norsk (Norwegian)</a>  (4)</li><li
+class=" "><a
+href="/language/he/">עברית  (Hebrew (modern))</a>  (3)</li><li
+class=" "><a
+href="/language/ca/">català, valencià (Catalan, Valencian)</a>  (3)</li><li
+class=" "><a
+href="/language/id/">Bahasa Indonesia (Indonesian)</a>  (3)</li><li
+class=" "><a
+href="/language/th/">ไทย (Thai)</a>  (2)</li><li
+class=" "><a
+href="/language/nl/">Nederlands, Vlaams (Dutch)</a>  (2)</li><li
+class=" "><a
+href="/language/it/">italiano (Italian)</a>  (2)</li><li
+class=" "><a
+href="/language/ja/">日本語 (にほんご) (Japanese)</a>  (2)</li><li
+class=" "><a
+href="/language/ha/">(Hausa) هَوُسَ  (Hausa)</a>  (1)</li><li
+class=" "><a
+href="/language/fa/">فارسی  (Persian (Farsi))</a>  (1)</li><li
+class=" "><a
+href="/language/is/">Íslenska (Icelandic)</a>  (1)</li><li
+class=" "><a
+href="/language/sk/">slovenčina, slovenský jazyk (Slovak)</a>  (1)</li><li
+class=" "><a
+href="/language/ti/">ትግርኛ (Tigrinya)</a>  (1)</li></ul></div><div
+class="triptych2"><h2>Top Tags</h2><ul
+class="iconlist"><li
+class=" "><a
+href="/tag/development/">Development</a>  (113)</li><li
+class=" "><a
+href="/tag/linux/">Linux</a>  (98)</li><li
+class=" "><a
+href="/tag/web/">Web</a>  (60)</li><li
+class=" "><a
+href="/tag/principles/">Principles</a>  (57)</li><li
+class=" "><a
+href="/tag/healthcare/">Healthcare</a>  (53)</li><li
+class=" "><a
+href="/tag/design/">Design</a>  (49)</li><li
+class=" "><a
+href="/tag/programming/">Programming</a>  (48)</li><li
+class=" "><a
+href="/tag/javascript/">JavaScript</a>  (44)</li><li
+class=" "><a
+href="/tag/beginner/">Beginner</a>  (44)</li><li
+class=" "><a
+href="/tag/keyboard/">Keyboard</a>  (40)</li></ul><ul
+class="iconlist"><li
+class="icon icon_forward"><a
+href="/explore/tags/">See All Tags</a></li><li
+class="icon icon_forward"><form
+method="POST" action="/redirect/"><input
+type="hidden" name="action" value="tag">
+Go to a tag: <input
+type="text" name="tag" id="tag" size="5"> <input
+type="submit" value="Go"></form></li></ul></div><div
+class="triptych3"><h2>Latest Lists</h2><div
+class="list_row"><div
+class="list_icon">
+<i
+class="fa fa-dollar fa-4x"></i></div><div
+class="list_title" style="border-bottom: none; margin-bottom: 0;">
+<strong><a
+href="/lauer-2015/lists/peli-peli/">Peli Peli</a></strong> - 1 cheat sheet</div><div
+class="clear"></div></div><div
+class="list_row"><div
+class="list_icon">
+<i
+class="fa fa-list fa-4x"></i></div><div
+class="list_title" style="border-bottom: none; margin-bottom: 0;">
+<strong><a
+href="/apk/lists/tdd-tools-for-javascript/">TDD tools for JavaScript</a></strong> - 2 cheat sheets</div><div
+class="clear"></div></div><div
+class="list_row"><div
+class="list_icon">
+<i
+class="fa fa-briefcase fa-4x"></i></div><div
+class="list_title" style="border-bottom: none; margin-bottom: 0;">
+<strong><a
+href="/nataliemoore/lists/it-project-cheatsheet-collection/">IT Project Cheatsheet Collection</a></strong> - 9 cheat sheets</div><div
+class="clear"></div></div></div><div
+class="clear"></div><div
+class="clear"></div></div></div></div><div
+class="clear"></div></div></div><div
+class="clear"></div><div
+id="footer"><div
+id="footer_inner"><div
+class="triptych1"><h2>Latest Cheat Sheet</h2><div
+class="sidebar_box"><div
+class="sidebar_box_row"><div
+id="cheat_sheet_8009" class="cheat_sheet_row altrow tag-rspec tag-selenium tag-capybara lang-en rating-unrated" style="margin-bottom: 20px; position: relative; padding: 10px 0 0 0; min-height: 220px; background: #007290;"><a
+style="position: absolute; bottom: 0; left: 10px; right: 10px; background: #007290 url('//media.cheatography.com/storage/thumb/corey_capybara-with-rspec.750.jpg?time=1461621571') -28px -101px no-repeat; height: 220px;" href="/corey/cheat-sheets/capybara-with-rspec/"></a><div
+style="z-index: 801; position: absolute; bottom: 0; left: 0; right: 0; color: #D3EBF2; background: #00475A;"><div
+style="padding: 10px 15px;"><strong><a
+style="font-size: 1.3em; color: #D3EBF2; border-color: #D3EBF2;" href="/corey/cheat-sheets/capybara-with-rspec/">Capybara with RSpec Cheat Sheet</a></strong><div
+class="extrainfo" style="display: none; line-height: 25px; padding: 0 0 5px;"><div
+style="padding: 5px 0 0;">Capybara with RSpec. Content largely taken from ddovii's great cheat sheet and zhengjia's gist. I hope they don't mind!</div><div
+class="triptych1"><span
+style="white-space: nowrap;"><img
+style="position: relative; left: 0; top: 5px; padding-right: 5px;" width="16" height="16" src="//media.cheatography.com/images/users/4ceadb88714e427e6a42dc1f8c1a7929.16.jpg"><a
+style="color: #D3EBF2; border-color: #D3EBF2;" href="/corey/" class="user_hover">Corey</a></span></div><div
+class="triptych2"><i
+class="fa fa-fw fa-calendar"></i>25 Apr 16</div><div
+class="triptych3"><i
+class="fa fa-fw fa-book"></i>1 Page</div><div
+class="clear"></div><div><i
+class="fa fa-fw fa-tag"></i><a
+style="color: #D3EBF2; border-color: #D3EBF2;" href="/tag/rspec/cheat-sheets/">rspec</a>, <a
+style="color: #D3EBF2; border-color: #D3EBF2;" href="/tag/selenium/cheat-sheets/">selenium</a>, <a
+style="color: #D3EBF2; border-color: #D3EBF2;" href="/tag/capybara/cheat-sheets/">capybara</a></div></div></div></div><div
+class="clear"></div></div></div></div></div><div
+class="triptych2"><h2>Most Popular Cheat Sheet</h2><div
+class="sidebar_box"><div
+class="sidebar_box_row"><div
+id="cheat_sheet_5" class="cheat_sheet_row altrow tag-development tag-regex tag-regular tag-expressions tag-programming lang-en rating-5" style="margin-bottom: 20px; position: relative; padding: 10px 0 0 0; min-height: 220px; background: #9B0436;"><div
+style="z-index: 100; position: absolute; top: 0; padding: 0 0 0 6px; border-bottom-left-radius: 3px; right: 10px; color: #F4D4DF; background: #9B0436;"><i
+class="fa fa-star"></i> <i
+class="fa fa-star"></i> <i
+class="fa fa-star"></i> <i
+class="fa fa-star"></i> <i
+class="fa fa-star"></i></div><a
+style="position: absolute; bottom: 0; left: 10px; right: 10px; background: #9B0436 url('//media.cheatography.com/storage/thumb/davechild_regular-expressions.750.jpg?time=1403865686') -28px -101px no-repeat; height: 220px;" href="/davechild/cheat-sheets/regular-expressions/"></a><div
+style="z-index: 801; position: absolute; bottom: 0; left: 0; right: 0; color: #F4D4DF; background: #610222;"><div
+style="padding: 10px 15px;"><strong><a
+style="font-size: 1.3em; color: #F4D4DF; border-color: #F4D4DF;" href="/davechild/cheat-sheets/regular-expressions/">Regular Expressions Cheat Sheet</a></strong><div
+class="extrainfo" style="display: none; line-height: 25px; padding: 0 0 5px;"><div
+style="padding: 5px 0 0;">A quick reference guide for regular expressions (regex), including symbols, ranges, grouping, assertions and some sample patterns to get you started.</div><div
+class="triptych1"><span
+style="white-space: nowrap;"><img
+style="position: relative; left: 0; top: 5px; padding-right: 5px;" width="16" height="16" src="//media.cheatography.com/images/users/fd7e3b77a3f3007ff30d932b65084851.16.jpg"><a
+style="color: #F4D4DF; border-color: #F4D4DF;" href="/davechild/" class="user_hover">DaveChild</a></span></div><div
+class="triptych2"><i
+class="fa fa-fw fa-calendar"></i>19 Oct 11</div><div
+class="triptych3"><i
+class="fa fa-fw fa-book"></i>1 Page</div><div
+class="clear"></div><div><i
+class="fa fa-fw fa-tag"></i><a
+style="color: #F4D4DF; border-color: #F4D4DF;" href="/tag/development/cheat-sheets/">development</a>, <a
+style="color: #F4D4DF; border-color: #F4D4DF;" href="/tag/regex/cheat-sheets/">regex</a>, <a
+style="color: #F4D4DF; border-color: #F4D4DF;" href="/tag/regular/cheat-sheets/">regular</a>, <a
+style="color: #F4D4DF; border-color: #F4D4DF;" href="/tag/expressions/cheat-sheets/">expressions</a>, <a
+style="color: #F4D4DF; border-color: #F4D4DF;" href="/tag/programming/cheat-sheets/">programming</a></div></div></div></div><div
+class="clear"></div></div></div></div></div><div
+class="triptych3"><h2>Random Cheat Sheet</h2><div
+class="sidebar_box"><div
+class="sidebar_box_row"><div
+id="cheat_sheet_7489" class="cheat_sheet_row altrow tag-test tag-physics tag-science tag-revision tag-atomic lang-en rating-unrated" style="margin-bottom: 20px; position: relative; padding: 10px 0 0 0; min-height: 220px; background: #252525;"><a
+style="position: absolute; bottom: 0; left: 10px; right: 10px; background: #252525 url('//media.cheatography.com/storage/thumb/bendash13_nuclear-physics.750.jpg?time=1457854270') -28px -101px no-repeat; height: 220px;" href="/bendash13/cheat-sheets/nuclear-physics/"></a><div
+style="z-index: 801; position: absolute; bottom: 0; left: 0; right: 0; color: #DBDBDB; background: #171717;"><div
+style="padding: 10px 15px;"><strong><a
+style="font-size: 1.3em; color: #DBDBDB; border-color: #DBDBDB;" href="/bendash13/cheat-sheets/nuclear-physics/">Nuclear Physics Cheat Sheet</a></strong><div
+class="extrainfo" style="display: none; line-height: 25px; padding: 0 0 5px;"><div
+class="triptych1"><span
+style="white-space: nowrap;"><img
+style="position: relative; left: 0; top: 5px; padding-right: 5px;" width="16" height="16" src="//media.cheatography.com/images/users/a40dc92cecea4846c679e34d3b266b33.16.jpg"><a
+style="color: #DBDBDB; border-color: #DBDBDB;" href="/bendash13/" class="user_hover">Bendash13</a></span></div><div
+class="triptych2"><i
+class="fa fa-fw fa-calendar"></i>13 Mar 16</div><div
+class="triptych3"><i
+class="fa fa-fw fa-book"></i>2 Pages</div><div
+class="clear"></div><div><i
+class="fa fa-fw fa-tag"></i><a
+style="color: #DBDBDB; border-color: #DBDBDB;" href="/tag/test/cheat-sheets/">test</a>, <a
+style="color: #DBDBDB; border-color: #DBDBDB;" href="/tag/physics/cheat-sheets/">physics</a>, <a
+style="color: #DBDBDB; border-color: #DBDBDB;" href="/tag/science/cheat-sheets/">science</a>, <a
+style="color: #DBDBDB; border-color: #DBDBDB;" href="/tag/revision/cheat-sheets/">revision</a>, <a
+style="color: #DBDBDB; border-color: #DBDBDB;" href="/tag/atomic/cheat-sheets/">atomic</a></div></div></div></div><div
+class="clear"></div></div></div></div></div><div
+class="clear"></div><div
+class="triptych1"><h2>About Cheatography</h2><div
+class="sidebar_box"><div
+class="sidebar_box_row"><strong><a
+href="/about/">Cheatography</a></strong> is a collection of <strong><a
+href="/explore/">2436 cheat sheets</a></strong> and quick references in <strong><a
+href="/language/">25 languages</a></strong> for everything from <strong><a
+href="/tag/science/">science</a></strong> to <strong><a
+href="/tag/google/">google</a></strong>!</div></div></div><div
+class="triptych2"><div
+class="sidebar_box footer_blog"><div
+class="sidebar_box_first_row"><h4><em
+style="float: right; font-weight: normal;">2nd May</em>On The Blog</h4></div><div
+class="sidebar_box_row sidebar_box_last_row"><strong
+style="display: block; padding: 10px 0;"><a
+href="/blog/cheat-sheet-statistics-with-google-analytics/">Cheat Sheet Statistics with Google Analytics!</a></strong>Want to know more about the people downloading your cheat sheets? No problem! You can now link your cheat sheets to your Google Analytics account!</div></div></div><div
+class="triptych3"><h2>Recent Activity</h2><div
+class="sidebar_box"><div
+class="sidebar_box_row footer_recent_activity_1"><a
+class="imagelink" style="float: left; margin: 5px 8px 5px 0;" href="davidpol/"><img
+class="gravatar" src="//media.cheatography.com/images/users/eb694a9eff9d21c2efc3e82183bebbd7.32.jpg" width="32" height="32" alt="Davidpol"></a> <a
+href="davidpol/" class="user_hover">Davidpol</a> updated <a
+href="/davidpol/cheat-sheets/human-resources-employee-termination/">Human Resources: Employee Termination</a>.<br><span
+class="sidebar_event_date">6 hours 42 mins ago</span></div><div
+class="sidebar_box_row footer_recent_activity_2"><a
+class="imagelink" style="float: left; margin: 5px 8px 5px 0;" href="nataliemoore/"><img
+class="gravatar" src="//media.cheatography.com/images/users/5e8f12b717dbb310c6baf3b258b029f7.32.jpg" width="32" height="32" alt="NatalieMoore"></a> <a
+href="nataliemoore/" class="user_hover">NatalieMoore</a> updated <a
+href="/nataliemoore/cheat-sheets/specialisation/">Specialisation</a>.<br><span
+class="sidebar_event_date">12 hours 26 mins ago</span></div><div
+class="sidebar_box_row footer_recent_activity_3"><a
+class="imagelink" style="float: left; margin: 5px 8px 5px 0;" href="corey/"><img
+class="gravatar" src="//media.cheatography.com/images/users/4ceadb88714e427e6a42dc1f8c1a7929.32.jpg" width="32" height="32" alt="Corey"></a> <a
+href="corey/" class="user_hover">Corey</a> published <a
+href="/corey/cheat-sheets/capybara-with-rspec/">Capybara with RSpec</a>.<br><span
+class="sidebar_event_date">12 hours 47 mins ago</span></div><div
+class="sidebar_box_row footer_recent_activity_4"><a
+class="imagelink" style="float: left; margin: 5px 8px 5px 0;" href="jay42/"><img
+class="gravatar" src="//media.cheatography.com/images/users/5c29bde849c440a931c668248d6b61b5.32.jpg" width="32" height="32" alt="jay42"></a> <a
+href="jay42/" class="user_hover">jay42</a> updated <a
+href="/jay42/cheat-sheets/diplome-de-niveau-1-en-vins-du-wset/">Diplôme de Niveau 1 en vins du WSET®</a>.<br><span
+class="sidebar_event_date">17 hours ago</span></div><div
+class="sidebar_box_row sidebar_box_last_row footer_recent_activity_5"><a
+class="imagelink" style="float: left; margin: 5px 8px 5px 0;" href="adyg/"><img
+class="gravatar" src="//media.cheatography.com/images/users/737e26fd1be774a4d039d3517e8c7ac1.32.jpg" width="32" height="32" alt="AdyG"></a> <a
+href="adyg/" class="user_hover">AdyG</a> posted a new forum thread: <a
+href="/members/forum/cheat-sheets/134-feature-request-versions/">Feature Request: Versions</a>.<br><span
+class="sidebar_event_date">17 hours 8 mins ago</span></div><div
+class="clear"></div></div></div><div
+class="clear"></div><div
+class="triptych1"><div
+class="sidebar_box"><div
+class="sidebar_box_first_row"><h4>Behind the Scenes</h4></div><div
+class="sidebar_box_row">If you have any problems, or just want to say hi, you can find us right here:</div><div
+class="sidebar_box_row"><div
+class="biptych1"><a
+class="imagelink" style="float: left; margin: 5px 8px 0 0;" href="davechild/"><img
+class="gravatar" src="//media.cheatography.com/images/users/fd7e3b77a3f3007ff30d932b65084851.32.jpg" width="32" height="32" alt="DaveChild"></a> <a
+href="davechild/" class="user_hover" style="line-height: 42px;">DaveChild</a><div
+class="clear"></div></div><div
+class="biptych2"><a
+class="imagelink" style="float: left; margin: 5px 8px 0 0;" href="spaceduck/"><img
+class="gravatar" src="//media.cheatography.com/images/users/e5f4dc698559e9cdd546c749924c2342.32.jpg" width="32" height="32" alt="SpaceDuck"></a> <a
+href="spaceduck/" class="user_hover" style="line-height: 42px;">SpaceDuck</a><div
+class="clear"></div></div><div
+class="biptych1"><a
+class="imagelink" style="float: left; margin: 5px 8px 0 0;" href="cheatography/"><img
+class="gravatar" src="//media.cheatography.com/images/users/ae07a15380055b9d1da4dd5fb7538457.32.jpg" width="32" height="32" alt="Cheatography"></a> <a
+href="cheatography/" class="user_hover" style="line-height: 42px;">Cheatography</a><div
+class="clear"></div></div></div><div
+class="clear"></div></div></div><div
+class="triptych2"><div
+class="sidebar_box"><div
+class="sidebar_box_first_row"><h4>Cheatography RSS Feeds</h4></div><ul><li
+class="icon_feed"><a
+href="/explore/new/rss/">Latest Cheat Sheets</a></li><li
+class="icon_feed"><a
+href="/blog/rss/">Latest Blog Posts</a></li></ul></div></div><div
+class="triptych3"><div
+class="imagelink addthis_toolbox addthis_default_style addthis_32x32_style" style="margin: 0 0 50px;" addthis:url="http://www.cheatography.com" addthis:title="Cheatography: Make and Share Free Cheat Sheets!"><h2 style="margin: 0 0 5px 0;">Share Cheatography!</h2><div
+class="padded">
+<a
+class="addthis_button_facebook"></a>
+<a
+class="addthis_button_twitter"></a>
+<a
+class="addthis_button_reddit"></a>
+<a
+class="addthis_button_stumbleupon"></a>
+<a
+class="addthis_button_favorites"></a>
+<a
+class="addthis_button_compact"></a>
+<a
+class="addthis_counter addthis_bubble_style"></a></div> <script type="text/javascript">var addthis_config = {
+                            "data_track_clickback":true,
+                            "services_exclude":'print',
+                            data_ga_property:'UA-4997759-8'
+                        };</script> <script async type="text/javascript" src="//s7.addthis.com/js/250/addthis_widget.js#pubid=ra-4db5226a16bf710d"></script> </div></div><div
+class="clear"></div><div
+class="legal"><div
+class="legal_left">
+&copy; 2011  - 2016 Cheatography.com &nbsp; | &nbsp; <a
+href="http://creativecommons.org/licenses/by-nc-sa/2.0/uk/">CC License</a> &nbsp; | &nbsp; <a
+href="/terms-and-conditions/">Terms</a> &nbsp; | &nbsp;  <a
+href="/privacy/">Privacy</a></div><div
+class="legal_right">
+Site by <a
+href="http://www.addedbytes.com/">Added Bytes Magento Development Brighton</a></div><div
+class="clear"></div></div><div
+class="clear"></div></div><div
+class="clear"></div></div><div
+class="clear"></div></div></div><div
+class="hidden">
+<a
+href="#welcome_popup" id="welcome_popup_trigger">open</a><div
+id="welcome_popup"><div
+id="welcome_popup_inner"><div
+style="padding: 20px; width: 400px;" ><h1 class="notopmargin">Keep Up To Date!</h1><p>We announce all new cheat sheet releases on our Twitter account. Follow us to make sure you don't miss out!</p><p
+style="text-align: center; margin: 30px; font-size: 3em;"><a
+class="imagelink" style="background: #fa6900; color: #fff; padding: 12px 25px; border-radius: 5px; white-space: nowrap;" href="http://twitter.com/Cheatography" target="_blank" onclick="$.fancybox.close();"><i
+class="fa fa-twitter"></i> Cheatography</a></p></div></div></div></div></body><head><link
+href="/scripts/fancybox/jquery.fancybox.css" rel="stylesheet" type="text/css"> <script type="text/javascript" src="/scripts/fancybox/jquery.fancybox.pack.js"></script> <script type="text/javascript" src="/scripts/jquery.cookie.js"></script> <script type="text/javascript" src="/scripts/jquery.formalize.min.js"></script> <script type="text/javascript" src="/scripts/jquery.hoverintent.js"></script> <script type="text/javascript" src="/scripts/jquery.tagsinput.min.js"></script> <script type="text/javascript" src="/scripts/jquery.matchheight.js"></script> <script type="text/javascript" src="/scripts/jquery.validation.min.js"></script> <script type="text/javascript" src="/scripts/jquery.hoverIntent.minified.js"></script> <script type="text/javascript" src="/scripts/chosen.jquery.min.js"></script> <link
+href='//fonts.googleapis.com/css?family=Noto+Serif' rel='stylesheet' type='text/css'><!--[if lt IE 7]> <script type="text/javascript" src="https://www.cheatography.com/scripts/iepngfix.htc"></script> <style type="text/css">body {
+                behavior: url("https://www.cheatography.com/scripts/csshover.htc");
+            }</style><![endif]-->
+<!--[if IE 7]><style type="text/css"></style><![endif]--> <script type="text/javascript" src="/scripts/mobile.min.js"></script> <script type="text/javascript" src="/scripts/ajax.min.js"></script> <script type="text/javascript" src="/scripts/useful.min.js"></script> <script type="text/javascript">$(document).ready(function() {
+            $('#welcome_popup_trigger').fancybox({
+                'autoDimensions': true
+            });
+            if (!$.cookie('seenTwitterPrompt')) {
+                $('#welcome_popup_trigger').trigger('click');
+                $.cookie('seenTwitterPrompt', 'yes', { expires: 60, path: '/' });
+            };
+
+            // Hide elements not relevant to non-logged-in users
+            var loggedIn = $.cookie('frontLoggedIn');
+            var loggedInUserId = $.cookie('frontUserId');
+            var isAdmin = $.cookie('frontUserAdmin');
+            if (loggedIn == 1) {
+                // Replacements
+                $('.replace_username').html($.cookie('frontUserName'));
+                $('a.replace_userlink, .replace_userlink a').each(function(){
+                    var oldHref = $(this).attr('href');
+                    var newHref = oldHref.replace('{{alias}}', $.cookie('frontUserAlias'));
+                    $(this).attr('href', newHref);
+                });
+                $('.replace_usergravatar').attr('src', $.cookie('frontUserAvatar32'));
+                // Show and hide
+                //$('.logged_in').show();
+                $('.logged_out').hide();
+
+                if (isAdmin) {
+                    $('.admin_view').show();
+                }
+
+                $('.user_view').each(function(){
+                    var userIds = $(this).attr('data-userid').split(',');
+                    if ($.inArray(loggedInUserId, userIds)) {
+                        $(this).show();
+                    }
+                });
+
+            } else {
+                $('.logged_in').hide();
+                //$('.logged_out').show();
+            }
+        });</script> </head></html>
+
+<!-- http://www.cheatography.com/ from cache: 7546d531573a044a1a3c8332d5d594c5.cache -->

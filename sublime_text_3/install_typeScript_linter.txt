@@ -1,0 +1,1 @@
+in a package control look for: typescript and install wrapper IO one 

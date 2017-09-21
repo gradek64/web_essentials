@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<!-- saved from url=(0060)https://samypesse.gitbooks.io/heroku-node/configuration.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Configuration | Heroku + Node.JS</title>
+        
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.5.2">
+        <meta name="author" content="Samy Pessé">
+        
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://samypesse.gitbooks.io/heroku-node/gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="https://samypesse.gitbooks.io/heroku-node/gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="./Configuration _ Heroku + Node.JS_files/style.css">
+    
+        
+        <link rel="stylesheet" href="./Configuration _ Heroku + Node.JS_files/plugin.css">
+        
+    
+        
+        <link rel="stylesheet" href="./Configuration _ Heroku + Node.JS_files/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="./Configuration _ Heroku + Node.JS_files/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="./Configuration _ Heroku + Node.JS_files/website(1).css">
+        
+    
+    
+
+        
+    
+    
+    
+    <link rel="prev" href="https://samypesse.gitbooks.io/heroku-node/deployment.html">
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book without-animation with-summary font-size-2 font-family-1" data-level="5" data-chapter-title="Configuration" data-filepath="configuration.md" data-basepath="." data-revision="Fri Nov 20 2015 23:30:48 GMT+0000 (UTC)">
+    
+
+<div class="book-summary"><div class="book-search" role="search"><input type="text" class="form-control" placeholder="Type to search"></div>
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+                
+                <li>
+                    <a href="https://www.gitbook.com/book/samypesse/heroku-node" target="blank" class="custom-link">Heroku + Node.JS</a>
+                </li>
+            
+            
+
+            
+            <li class="divider"></li>
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="https://samypesse.gitbooks.io/heroku-node/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        Introduction
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="creation.html">
+            
+                
+                    <a href="https://samypesse.gitbooks.io/heroku-node/creation.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        Creating the application
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="coding.html">
+            
+                
+                    <a href="https://samypesse.gitbooks.io/heroku-node/coding.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        Coding the application
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="testing.html">
+            
+                
+                    <a href="https://samypesse.gitbooks.io/heroku-node/testing.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        Testing
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="deployment.html">
+            
+                
+                    <a href="https://samypesse.gitbooks.io/heroku-node/deployment.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        Deployment
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="5" data-path="configuration.html">
+            
+                
+                    <a href="https://samypesse.gitbooks.io/heroku-node/configuration.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                        Configuration
+                    </a>
+            
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com/" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <a class="btn pull-left js-toolbar-action" aria-label="" href="https://samypesse.gitbooks.io/heroku-node/configuration.html#"><i class="fa fa-align-justify"></i></a><a class="btn pull-left js-toolbar-action" aria-label="Search" href="https://samypesse.gitbooks.io/heroku-node/configuration.html#"><i class="fa fa-search"></i></a><div class="dropdown pull-right  js-toolbar-action"><a class="btn toggle-dropdown" aria-label="Share" href="https://samypesse.gitbooks.io/heroku-node/configuration.html#"><i class="fa fa-share-alt"></i></a><div class="dropdown-menu dropdown-left"><div class="dropdown-caret"><span class="caret-outer"></span><span class="caret-inner"></span></div><div class="buttons"><button class="button size-5 ">Facebook</button><button class="button size-5 ">Google+</button><button class="button size-5 ">Twitter</button><button class="button size-5 ">Weibo</button><button class="button size-5 ">Instapaper</button></div></div></div><a class="btn pull-right js-toolbar-action" aria-label="" href="https://samypesse.gitbooks.io/heroku-node/configuration.html#"><i class="fa fa-facebook"></i></a><a class="btn pull-right js-toolbar-action" aria-label="" href="https://samypesse.gitbooks.io/heroku-node/configuration.html#"><i class="fa fa-twitter"></i></a><div class="dropdown pull-left font-settings js-toolbar-action"><a class="btn toggle-dropdown" aria-label="Font Settings" href="https://samypesse.gitbooks.io/heroku-node/configuration.html#"><i class="fa fa-font"></i></a><div class="dropdown-menu dropdown-right"><div class="dropdown-caret"><span class="caret-outer"></span><span class="caret-inner"></span></div><div class="buttons"><button class="button size-2 font-reduce">A</button><button class="button size-2 font-enlarge">A</button></div><div class="buttons"><button class="button size-2 ">Serif</button><button class="button size-2 ">Sans</button></div><div class="buttons"><button class="button size-3 ">White</button><button class="button size-3 ">Sepia</button><button class="button size-3 ">Night</button></div></div></div><h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="https://samypesse.gitbooks.io/heroku-node/">Heroku + Node.JS</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="configuration">Configuration</h1>
+<p class="comments-section">In this chapter, we'll learn how to manage different configurations for our applications (locally and in production).<div class="comments-icon"><div class="marker">+</div></div></p>
+<h3 id="environment-variables">Environment variables</h3>
+<p class="comments-section">The best way to configure an application on Heroku is to use <strong>environment variables</strong>. It's a key value storage managed by the system  that can affect the way running processes will behave on a computer.<div class="comments-icon"><div class="marker">+</div></div></p>
+<p class="comments-section">Exemple of an env variable:<div class="comments-icon"><div class="marker">+</div></div></p>
+<pre><code>MESSAGE=Hello World
+</code></pre><p class="comments-section">You can list all current environment variables using the command <code>env</code>.<div class="comments-icon"><div class="marker">+</div></div></p>
+<p class="comments-section">Heroku defines by default 2 environement variables:<div class="comments-icon"><div class="marker">+</div></div></p>
+<ul>
+<li><code>PORT</code> which equals the port our application should be running on.</li>
+<li><code>DYNO</code> which gives you a id/name for the current process dyno.</li>
+</ul>
+<h3 id="with-nodejs">With Node.js</h3>
+<p class="comments-section">In Node.js, it's really easy to read environment variable, the varibale <code>process.env</code> is an object containing all current env variables.<div class="comments-icon"><div class="marker">+</div></div></p>
+<p class="comments-section">We already used it to start our application on the right port: <code>var port = Number(process.env.PORT || 5000);</code>.<div class="comments-icon"><div class="marker">+</div></div></p>
+<p class="comments-section">Notice that environment variables are always <strong>string</strong>.<div class="comments-icon"><div class="marker">+</div></div></p>
+<h3 id="modifying-our-application">Modifying our application</h3>
+<p class="comments-section">We are going to change our application to show a message instead of "Hello World" that will be stored in a en environment variables.<div class="comments-icon"><div class="marker">+</div></div></p>
+<p class="comments-section">Edit the <strong>main.js</strong> file to change the <code>app.get</code> to:<div class="comments-icon"><div class="marker">+</div></div></p>
+<pre><code class="lang-js">app.get(<span class="hljs-string">'/'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">req, res</span>) </span>{
+  res.send(process.env.MESSAGE || <span class="hljs-string">'Default message!'</span>);
+});
+</code></pre>
+<p class="comments-section">If you run the application using <code>foreman start</code> and access <code>http://localhost:5000</code>, you'll see : <code>Default message!</code>.<div class="comments-icon"><div class="marker">+</div></div></p>
+<p class="comments-section">But you can test changing the value of <strong>MESSAGE</strong> in your terminal and running the application with:<div class="comments-icon"><div class="marker">+</div></div></p>
+<pre><code>$ export MESSAGE=Hello
+$ foreman start
+</code></pre><h3 id="storing-a-fixed-configuration-for-foreman">Storing a fixed configuration for foreman</h3>
+<p class="comments-section">You don't want to define using <code>export</code> our all configuration each time you want to start working on your application!<div class="comments-icon"><div class="marker">+</div></div></p>
+<p class="comments-section">So we need to store our configuration in a file. By default foreman use a file named <code>.env</code> but we are going to use this file for your production configuration.<div class="comments-icon"><div class="marker">+</div></div></p>
+<p class="comments-section">So we'll store our configuration in a file named <code>.env.local</code>:<div class="comments-icon"><div class="marker">+</div></div></p>
+<pre><code>MESSAGE=Hello from the local version
+</code></pre><p class="comments-section">And we need to update foreman configuration by writting the file <code>.foreman</code>:<div class="comments-icon"><div class="marker">+</div></div></p>
+<pre><code>port: 5000
+env: .env.local
+</code></pre><p class="comments-section">You can then test using <code>foreman start</code> and see teh output: <code>Hello from the local version</code>.<div class="comments-icon"><div class="marker">+</div></div></p>
+<h3 id="deployment-of-a-production-configuration">Deployment of a production configuration</h3>
+<p class="comments-section">We are going to store our production configuration in a file named <code>.env</code>:<div class="comments-icon"><div class="marker">+</div></div></p>
+<pre><code>MESSAGE=Hello from the production version
+</code></pre><p class="comments-section">Then we need to commit all these changes and deploy the last update of our code to Heroku:<div class="comments-icon"><div class="marker">+</div></div></p>
+<pre><code># Commit changes
+$ git add .
+$ git commit -m "Use environment variables as configuration"
+
+# Deploy to heroku
+$ git push heroku master
+</code></pre><p class="comments-section">But if you take a look at your application (using <code>heroku open</code>), you can see that the message is still "Default message!". It's because we didn't pushed your configuration to heroku yet.<div class="comments-icon"><div class="marker">+</div></div></p>
+<p class="comments-section">For this we are going to use the plugin <a href="https://github.com/ddollar/heroku-config" target="_blank">heroku-config</a>, install it using:<div class="comments-icon"><div class="marker">+</div></div></p>
+<pre><code>$ heroku plugins:install git://github.com/ddollar/heroku-config.git
+</code></pre><p class="comments-section">And then we can push our all configuration using:<div class="comments-icon"><div class="marker">+</div></div></p>
+<pre><code>$ heroku config:push
+</code></pre><p class="comments-section">Now take a look at your application and you'll see "Hello from the production version".<div class="comments-icon"><div class="marker">+</div></div></p>
+<h3 id="managing-heroku-configuration-by-hand">Managing Heroku configuration by hand</h3>
+<table>
+<thead>
+<tr>
+<th>I want to...</th>
+<th>Command</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>List all my configuraton</td>
+<td><code>heroku config</code></td>
+</tr>
+<tr>
+<td>Get a variable value</td>
+<td><code>heroku config:get MESSAGE</code></td>
+</tr>
+<tr>
+<td>Set a variable value</td>
+<td><code>heroku config:set MESSAGE=Test</code></td>
+</tr>
+<tr>
+<td>Delete a variable</td>
+<td><code>heroku config:unset MESSAGE</code></td>
+</tr>
+</tbody>
+</table>
+<p class="comments-section">And with the plugin <strong>heroku-config</strong>:<div class="comments-icon"><div class="marker">+</div></div></p>
+<table>
+<thead>
+<tr>
+<th>I want to...</th>
+<th>Command</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Push my .env to heroku</td>
+<td><code>heroku config:push</code></td>
+</tr>
+<tr>
+<td>Update my .env with my heroku config</td>
+<td><code>heroku config:pull</code></td>
+</tr>
+<tr>
+<td>Rewrite my .env with my heroku config</td>
+<td><code>heroku config:pull --overwrite</code></td>
+</tr>
+</tbody>
+</table>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="https://samypesse.gitbooks.io/heroku-node/deployment.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Deployment"><i class="fa fa-angle-left"></i></a>
+        
+        
+    </div>
+</div>
+
+        
+<script src="./Configuration _ Heroku + Node.JS_files/app.js"></script>
+
+    
+    <script src="./Configuration _ Heroku + Node.JS_files/plugin.js"></script>
+    
+
+    
+    <script src="./Configuration _ Heroku + Node.JS_files/lunr.min.js"></script>
+    
+
+    
+    <script src="./Configuration _ Heroku + Node.JS_files/search.js"></script>
+    
+
+    
+    <script src="./Configuration _ Heroku + Node.JS_files/buttons.js"></script>
+    
+
+    
+    <script src="./Configuration _ Heroku + Node.JS_files/buttons(1).js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"comment":{},"autocover":{},"highlight":{},"search":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    
+    
+
+</body></html>
