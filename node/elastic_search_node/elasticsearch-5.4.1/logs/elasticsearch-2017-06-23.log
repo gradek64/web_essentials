@@ -1,0 +1,343 @@
+[2017-06-23T09:33:43,896][INFO ][o.e.n.Node               ] [] initializing ...
+[2017-06-23T09:33:44,059][INFO ][o.e.e.NodeEnvironment    ] [_h1h-U9] using [1] data paths, mounts [[/ (/dev/disk1)]], net usable_space [66.1gb], net total_space [232.6gb], spins? [unknown], types [hfs]
+[2017-06-23T09:33:44,060][INFO ][o.e.e.NodeEnvironment    ] [_h1h-U9] heap size [1.9gb], compressed ordinary object pointers [true]
+[2017-06-23T09:33:44,167][INFO ][o.e.n.Node               ] node name [_h1h-U9] derived from node ID [_h1h-U9BTimL7eEx1BH6mA]; set [node.name] to override
+[2017-06-23T09:33:44,168][INFO ][o.e.n.Node               ] version[5.4.1], pid[3658], build[2cfe0df/2017-05-29T16:05:51.443Z], OS[Mac OS X/10.12.5/x86_64], JVM[Oracle Corporation/Java HotSpot(TM) 64-Bit Server VM/1.8.0_131/25.131-b11]
+[2017-06-23T09:33:44,168][INFO ][o.e.n.Node               ] JVM arguments [-Xms2g, -Xmx2g, -XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -XX:+DisableExplicitGC, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -Djdk.io.permissionsUseCanonicalPath=true, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Dlog4j.skipJansi=true, -XX:+HeapDumpOnOutOfMemoryError, -Des.path.home=/Users/ggil01/my_tutorials_and_short/node/elastic_search_node/elasticsearch-5.4.1]
+[2017-06-23T09:33:46,345][INFO ][o.e.p.PluginsService     ] [_h1h-U9] loaded module [aggs-matrix-stats]
+[2017-06-23T09:33:46,345][INFO ][o.e.p.PluginsService     ] [_h1h-U9] loaded module [ingest-common]
+[2017-06-23T09:33:46,345][INFO ][o.e.p.PluginsService     ] [_h1h-U9] loaded module [lang-expression]
+[2017-06-23T09:33:46,346][INFO ][o.e.p.PluginsService     ] [_h1h-U9] loaded module [lang-groovy]
+[2017-06-23T09:33:46,346][INFO ][o.e.p.PluginsService     ] [_h1h-U9] loaded module [lang-mustache]
+[2017-06-23T09:33:46,346][INFO ][o.e.p.PluginsService     ] [_h1h-U9] loaded module [lang-painless]
+[2017-06-23T09:33:46,346][INFO ][o.e.p.PluginsService     ] [_h1h-U9] loaded module [percolator]
+[2017-06-23T09:33:46,346][INFO ][o.e.p.PluginsService     ] [_h1h-U9] loaded module [reindex]
+[2017-06-23T09:33:46,347][INFO ][o.e.p.PluginsService     ] [_h1h-U9] loaded module [transport-netty3]
+[2017-06-23T09:33:46,347][INFO ][o.e.p.PluginsService     ] [_h1h-U9] loaded module [transport-netty4]
+[2017-06-23T09:33:46,348][INFO ][o.e.p.PluginsService     ] [_h1h-U9] no plugins loaded
+[2017-06-23T09:33:49,971][INFO ][o.e.d.DiscoveryModule    ] [_h1h-U9] using discovery type [zen]
+[2017-06-23T09:33:51,000][INFO ][o.e.n.Node               ] initialized
+[2017-06-23T09:33:51,001][INFO ][o.e.n.Node               ] [_h1h-U9] starting ...
+[2017-06-23T09:33:51,292][INFO ][o.e.t.TransportService   ] [_h1h-U9] publish_address {127.0.0.1:9300}, bound_addresses {[fe80::1]:9300}, {[::1]:9300}, {127.0.0.1:9300}
+[2017-06-23T09:33:54,379][INFO ][o.e.c.s.ClusterService   ] [_h1h-U9] new_master {_h1h-U9}{_h1h-U9BTimL7eEx1BH6mA}{XBvAg-GnRHqvGfaL257LGg}{127.0.0.1}{127.0.0.1:9300}, reason: zen-disco-elected-as-master ([0] nodes joined)
+[2017-06-23T09:33:54,417][INFO ][o.e.h.n.Netty4HttpServerTransport] [_h1h-U9] publish_address {127.0.0.1:9200}, bound_addresses {[fe80::1]:9200}, {[::1]:9200}, {127.0.0.1:9200}
+[2017-06-23T09:33:54,422][INFO ][o.e.n.Node               ] [_h1h-U9] started
+[2017-06-23T09:33:54,824][INFO ][o.e.g.GatewayService     ] [_h1h-U9] recovered [10] indices into cluster_state
+[2017-06-23T09:33:56,811][INFO ][o.e.c.r.a.AllocationService] [_h1h-U9] Cluster health status changed from [RED] to [YELLOW] (reason: [shards started [[recipes][4]] ...]).
+[2017-06-23T09:37:57,900][INFO ][o.e.m.j.JvmGcMonitorService] [_h1h-U9] [gc][246] overhead, spent [323ms] collecting in the last [1.1s]
+[2017-06-23T16:30:19,545][DEBUG][o.e.a.s.TransportSearchAction] [_h1h-U9] [autocompletion][4], node[_h1h-U9BTimL7eEx1BH6mA], [P], s[STARTED], a[id=udDH_o4YSdycmIZCoXy6mA]: Failed to execute [SearchRequest{searchType=QUERY_THEN_FETCH, indices=[autocompletion], indicesOptions=IndicesOptions[id=38, ignore_unavailable=false, allow_no_indices=true, expand_wildcards_open=true, expand_wildcards_closed=false, allow_alisases_to_multiple_indices=true, forbid_closed_indices=true], types=[product], routing='null', preference='null', requestCache=false, scroll=null, source={
+  "suggest" : {
+    "product_suggest" : {
+      "completion" : {
+        "field" : "tag_suggest"
+      }
+    }
+  }
+}}]
+org.elasticsearch.transport.RemoteTransportException: [_h1h-U9][127.0.0.1:9300][indices:data/read/search[phase/query]]
+Caused by: java.lang.IllegalArgumentException: The required text option is missing
+	at org.elasticsearch.search.suggest.SuggestBuilder.build(SuggestBuilder.java:177) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:651) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:472) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:448) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:252) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:339) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:336) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:69) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.transport.TransportService$7.doRun(TransportService.java:627) [elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:638) [elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) [elasticsearch-5.4.1.jar:5.4.1]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [?:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [?:1.8.0_131]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_131]
+[2017-06-23T16:30:19,541][DEBUG][o.e.a.s.TransportSearchAction] [_h1h-U9] [autocompletion][2], node[_h1h-U9BTimL7eEx1BH6mA], [P], s[STARTED], a[id=pBLvR2x4Qr2WgF3EwLcg0Q]: Failed to execute [SearchRequest{searchType=QUERY_THEN_FETCH, indices=[autocompletion], indicesOptions=IndicesOptions[id=38, ignore_unavailable=false, allow_no_indices=true, expand_wildcards_open=true, expand_wildcards_closed=false, allow_alisases_to_multiple_indices=true, forbid_closed_indices=true], types=[product], routing='null', preference='null', requestCache=false, scroll=null, source={
+  "suggest" : {
+    "product_suggest" : {
+      "completion" : {
+        "field" : "tag_suggest"
+      }
+    }
+  }
+}}] lastShard [true]
+org.elasticsearch.transport.RemoteTransportException: [_h1h-U9][127.0.0.1:9300][indices:data/read/search[phase/query]]
+Caused by: java.lang.IllegalArgumentException: The required text option is missing
+	at org.elasticsearch.search.suggest.SuggestBuilder.build(SuggestBuilder.java:177) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:651) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:472) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:448) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:252) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:339) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:336) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:69) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.transport.TransportService$7.doRun(TransportService.java:627) [elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:638) [elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) [elasticsearch-5.4.1.jar:5.4.1]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [?:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [?:1.8.0_131]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_131]
+[2017-06-23T16:30:19,544][DEBUG][o.e.a.s.TransportSearchAction] [_h1h-U9] [autocompletion][0], node[_h1h-U9BTimL7eEx1BH6mA], [P], s[STARTED], a[id=h8JblS0kSb2itdFdt696nQ]: Failed to execute [SearchRequest{searchType=QUERY_THEN_FETCH, indices=[autocompletion], indicesOptions=IndicesOptions[id=38, ignore_unavailable=false, allow_no_indices=true, expand_wildcards_open=true, expand_wildcards_closed=false, allow_alisases_to_multiple_indices=true, forbid_closed_indices=true], types=[product], routing='null', preference='null', requestCache=false, scroll=null, source={
+  "suggest" : {
+    "product_suggest" : {
+      "completion" : {
+        "field" : "tag_suggest"
+      }
+    }
+  }
+}}] lastShard [true]
+org.elasticsearch.transport.RemoteTransportException: [_h1h-U9][127.0.0.1:9300][indices:data/read/search[phase/query]]
+Caused by: java.lang.IllegalArgumentException: The required text option is missing
+	at org.elasticsearch.search.suggest.SuggestBuilder.build(SuggestBuilder.java:177) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:651) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:472) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:448) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:252) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:339) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:336) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:69) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.transport.TransportService$7.doRun(TransportService.java:627) [elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:638) [elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) [elasticsearch-5.4.1.jar:5.4.1]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [?:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [?:1.8.0_131]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_131]
+[2017-06-23T16:30:19,615][DEBUG][o.e.a.s.TransportSearchAction] [_h1h-U9] All shards failed for phase: [query]
+org.elasticsearch.ElasticsearchException$1: The required text option is missing
+	at org.elasticsearch.ElasticsearchException.guessRootCauses(ElasticsearchException.java:618) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.action.search.AbstractSearchAsyncAction.executeNextPhase(AbstractSearchAsyncAction.java:126) [elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.action.search.AbstractSearchAsyncAction.onPhaseDone(AbstractSearchAsyncAction.java:241) [elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.action.search.InitialSearchPhase.onShardFailure(InitialSearchPhase.java:87) [elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.action.search.InitialSearchPhase.access$100(InitialSearchPhase.java:47) [elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.action.search.InitialSearchPhase$1.onFailure(InitialSearchPhase.java:155) [elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.action.ActionListenerResponseHandler.handleException(ActionListenerResponseHandler.java:51) [elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.transport.TransportService$ContextRestoreResponseHandler.handleException(TransportService.java:1050) [elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.transport.TransportService$DirectResponseChannel.processException(TransportService.java:1154) [elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.transport.TransportService$DirectResponseChannel.sendResponse(TransportService.java:1132) [elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.transport.TransportService$7.onFailure(TransportService.java:638) [elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.onFailure(ThreadContext.java:623) [elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:39) [elasticsearch-5.4.1.jar:5.4.1]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [?:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [?:1.8.0_131]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_131]
+Caused by: java.lang.IllegalArgumentException: The required text option is missing
+	at org.elasticsearch.search.suggest.SuggestBuilder.build(SuggestBuilder.java:177) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:651) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:472) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:448) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:252) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:339) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:336) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:69) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.transport.TransportService$7.doRun(TransportService.java:627) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:638) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) ~[elasticsearch-5.4.1.jar:5.4.1]
+	... 3 more
+[2017-06-23T16:30:19,544][DEBUG][o.e.a.s.TransportSearchAction] [_h1h-U9] [autocompletion][3], node[_h1h-U9BTimL7eEx1BH6mA], [P], s[STARTED], a[id=vtF4HDmTQ8KdYbCnlDAzWg]: Failed to execute [SearchRequest{searchType=QUERY_THEN_FETCH, indices=[autocompletion], indicesOptions=IndicesOptions[id=38, ignore_unavailable=false, allow_no_indices=true, expand_wildcards_open=true, expand_wildcards_closed=false, allow_alisases_to_multiple_indices=true, forbid_closed_indices=true], types=[product], routing='null', preference='null', requestCache=false, scroll=null, source={
+  "suggest" : {
+    "product_suggest" : {
+      "completion" : {
+        "field" : "tag_suggest"
+      }
+    }
+  }
+}}] lastShard [true]
+org.elasticsearch.transport.RemoteTransportException: [_h1h-U9][127.0.0.1:9300][indices:data/read/search[phase/query]]
+Caused by: java.lang.IllegalArgumentException: The required text option is missing
+	at org.elasticsearch.search.suggest.SuggestBuilder.build(SuggestBuilder.java:177) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:651) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:472) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:448) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:252) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:339) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:336) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:69) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.transport.TransportService$7.doRun(TransportService.java:627) [elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:638) [elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) [elasticsearch-5.4.1.jar:5.4.1]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [?:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [?:1.8.0_131]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_131]
+[2017-06-23T16:30:19,543][DEBUG][o.e.a.s.TransportSearchAction] [_h1h-U9] [autocompletion][1], node[_h1h-U9BTimL7eEx1BH6mA], [P], s[STARTED], a[id=ri0l_ZEGSOSiV_EsCcj9uA]: Failed to execute [SearchRequest{searchType=QUERY_THEN_FETCH, indices=[autocompletion], indicesOptions=IndicesOptions[id=38, ignore_unavailable=false, allow_no_indices=true, expand_wildcards_open=true, expand_wildcards_closed=false, allow_alisases_to_multiple_indices=true, forbid_closed_indices=true], types=[product], routing='null', preference='null', requestCache=false, scroll=null, source={
+  "suggest" : {
+    "product_suggest" : {
+      "completion" : {
+        "field" : "tag_suggest"
+      }
+    }
+  }
+}}] lastShard [true]
+org.elasticsearch.transport.RemoteTransportException: [_h1h-U9][127.0.0.1:9300][indices:data/read/search[phase/query]]
+Caused by: java.lang.IllegalArgumentException: The required text option is missing
+	at org.elasticsearch.search.suggest.SuggestBuilder.build(SuggestBuilder.java:177) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:651) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:472) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:448) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:252) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:339) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:336) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:69) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.transport.TransportService$7.doRun(TransportService.java:627) [elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:638) [elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) [elasticsearch-5.4.1.jar:5.4.1]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [?:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [?:1.8.0_131]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_131]
+[2017-06-23T16:32:16,473][DEBUG][o.e.a.s.TransportSearchAction] [_h1h-U9] [autocompletion][3], node[_h1h-U9BTimL7eEx1BH6mA], [P], s[STARTED], a[id=vtF4HDmTQ8KdYbCnlDAzWg]: Failed to execute [SearchRequest{searchType=QUERY_THEN_FETCH, indices=[autocompletion], indicesOptions=IndicesOptions[id=38, ignore_unavailable=false, allow_no_indices=true, expand_wildcards_open=true, expand_wildcards_closed=false, allow_alisases_to_multiple_indices=true, forbid_closed_indices=true], types=[product], routing='null', preference='null', requestCache=false, scroll=null, source={
+  "suggest" : {
+    "product_suggest" : {
+      "completion" : {
+        "field" : "tag_suggest"
+      }
+    }
+  }
+}}] lastShard [true]
+org.elasticsearch.transport.RemoteTransportException: [_h1h-U9][127.0.0.1:9300][indices:data/read/search[phase/query]]
+Caused by: java.lang.IllegalArgumentException: The required text option is missing
+	at org.elasticsearch.search.suggest.SuggestBuilder.build(SuggestBuilder.java:177) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:651) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:472) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:448) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:252) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:339) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:336) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:69) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.transport.TransportService$7.doRun(TransportService.java:627) [elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:638) [elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) [elasticsearch-5.4.1.jar:5.4.1]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [?:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [?:1.8.0_131]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_131]
+[2017-06-23T16:32:16,473][DEBUG][o.e.a.s.TransportSearchAction] [_h1h-U9] [autocompletion][4], node[_h1h-U9BTimL7eEx1BH6mA], [P], s[STARTED], a[id=udDH_o4YSdycmIZCoXy6mA]: Failed to execute [SearchRequest{searchType=QUERY_THEN_FETCH, indices=[autocompletion], indicesOptions=IndicesOptions[id=38, ignore_unavailable=false, allow_no_indices=true, expand_wildcards_open=true, expand_wildcards_closed=false, allow_alisases_to_multiple_indices=true, forbid_closed_indices=true], types=[product], routing='null', preference='null', requestCache=false, scroll=null, source={
+  "suggest" : {
+    "product_suggest" : {
+      "completion" : {
+        "field" : "tag_suggest"
+      }
+    }
+  }
+}}]
+org.elasticsearch.transport.RemoteTransportException: [_h1h-U9][127.0.0.1:9300][indices:data/read/search[phase/query]]
+Caused by: java.lang.IllegalArgumentException: The required text option is missing
+	at org.elasticsearch.search.suggest.SuggestBuilder.build(SuggestBuilder.java:177) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:651) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:472) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:448) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:252) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:339) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:336) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:69) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.transport.TransportService$7.doRun(TransportService.java:627) [elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:638) [elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) [elasticsearch-5.4.1.jar:5.4.1]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [?:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [?:1.8.0_131]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_131]
+[2017-06-23T16:32:16,473][DEBUG][o.e.a.s.TransportSearchAction] [_h1h-U9] [autocompletion][0], node[_h1h-U9BTimL7eEx1BH6mA], [P], s[STARTED], a[id=h8JblS0kSb2itdFdt696nQ]: Failed to execute [SearchRequest{searchType=QUERY_THEN_FETCH, indices=[autocompletion], indicesOptions=IndicesOptions[id=38, ignore_unavailable=false, allow_no_indices=true, expand_wildcards_open=true, expand_wildcards_closed=false, allow_alisases_to_multiple_indices=true, forbid_closed_indices=true], types=[product], routing='null', preference='null', requestCache=false, scroll=null, source={
+  "suggest" : {
+    "product_suggest" : {
+      "completion" : {
+        "field" : "tag_suggest"
+      }
+    }
+  }
+}}] lastShard [true]
+org.elasticsearch.transport.RemoteTransportException: [_h1h-U9][127.0.0.1:9300][indices:data/read/search[phase/query]]
+Caused by: java.lang.IllegalArgumentException: The required text option is missing
+	at org.elasticsearch.search.suggest.SuggestBuilder.build(SuggestBuilder.java:177) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:651) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:472) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:448) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:252) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:339) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:336) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:69) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.transport.TransportService$7.doRun(TransportService.java:627) [elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:638) [elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) [elasticsearch-5.4.1.jar:5.4.1]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [?:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [?:1.8.0_131]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_131]
+[2017-06-23T16:32:16,473][DEBUG][o.e.a.s.TransportSearchAction] [_h1h-U9] [autocompletion][1], node[_h1h-U9BTimL7eEx1BH6mA], [P], s[STARTED], a[id=ri0l_ZEGSOSiV_EsCcj9uA]: Failed to execute [SearchRequest{searchType=QUERY_THEN_FETCH, indices=[autocompletion], indicesOptions=IndicesOptions[id=38, ignore_unavailable=false, allow_no_indices=true, expand_wildcards_open=true, expand_wildcards_closed=false, allow_alisases_to_multiple_indices=true, forbid_closed_indices=true], types=[product], routing='null', preference='null', requestCache=false, scroll=null, source={
+  "suggest" : {
+    "product_suggest" : {
+      "completion" : {
+        "field" : "tag_suggest"
+      }
+    }
+  }
+}}] lastShard [true]
+org.elasticsearch.transport.RemoteTransportException: [_h1h-U9][127.0.0.1:9300][indices:data/read/search[phase/query]]
+Caused by: java.lang.IllegalArgumentException: The required text option is missing
+	at org.elasticsearch.search.suggest.SuggestBuilder.build(SuggestBuilder.java:177) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:651) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:472) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:448) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:252) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:339) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:336) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:69) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.transport.TransportService$7.doRun(TransportService.java:627) [elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:638) [elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) [elasticsearch-5.4.1.jar:5.4.1]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [?:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [?:1.8.0_131]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_131]
+[2017-06-23T16:32:16,473][DEBUG][o.e.a.s.TransportSearchAction] [_h1h-U9] [autocompletion][2], node[_h1h-U9BTimL7eEx1BH6mA], [P], s[STARTED], a[id=pBLvR2x4Qr2WgF3EwLcg0Q]: Failed to execute [SearchRequest{searchType=QUERY_THEN_FETCH, indices=[autocompletion], indicesOptions=IndicesOptions[id=38, ignore_unavailable=false, allow_no_indices=true, expand_wildcards_open=true, expand_wildcards_closed=false, allow_alisases_to_multiple_indices=true, forbid_closed_indices=true], types=[product], routing='null', preference='null', requestCache=false, scroll=null, source={
+  "suggest" : {
+    "product_suggest" : {
+      "completion" : {
+        "field" : "tag_suggest"
+      }
+    }
+  }
+}}] lastShard [true]
+org.elasticsearch.transport.RemoteTransportException: [_h1h-U9][127.0.0.1:9300][indices:data/read/search[phase/query]]
+Caused by: java.lang.IllegalArgumentException: The required text option is missing
+	at org.elasticsearch.search.suggest.SuggestBuilder.build(SuggestBuilder.java:177) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:651) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:472) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:448) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:252) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:339) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:336) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:69) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.transport.TransportService$7.doRun(TransportService.java:627) [elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:638) [elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) [elasticsearch-5.4.1.jar:5.4.1]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [?:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [?:1.8.0_131]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_131]
+[2017-06-23T16:32:16,481][DEBUG][o.e.a.s.TransportSearchAction] [_h1h-U9] All shards failed for phase: [query]
+org.elasticsearch.ElasticsearchException$1: The required text option is missing
+	at org.elasticsearch.ElasticsearchException.guessRootCauses(ElasticsearchException.java:618) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.action.search.AbstractSearchAsyncAction.executeNextPhase(AbstractSearchAsyncAction.java:126) [elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.action.search.AbstractSearchAsyncAction.onPhaseDone(AbstractSearchAsyncAction.java:241) [elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.action.search.InitialSearchPhase.onShardFailure(InitialSearchPhase.java:87) [elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.action.search.InitialSearchPhase.access$100(InitialSearchPhase.java:47) [elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.action.search.InitialSearchPhase$1.onFailure(InitialSearchPhase.java:155) [elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.action.ActionListenerResponseHandler.handleException(ActionListenerResponseHandler.java:51) [elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.transport.TransportService$ContextRestoreResponseHandler.handleException(TransportService.java:1050) [elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.transport.TransportService$DirectResponseChannel.processException(TransportService.java:1154) [elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.transport.TransportService$DirectResponseChannel.sendResponse(TransportService.java:1132) [elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.transport.TransportService$7.onFailure(TransportService.java:638) [elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.onFailure(ThreadContext.java:623) [elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:39) [elasticsearch-5.4.1.jar:5.4.1]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [?:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [?:1.8.0_131]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_131]
+Caused by: java.lang.IllegalArgumentException: The required text option is missing
+	at org.elasticsearch.search.suggest.SuggestBuilder.build(SuggestBuilder.java:177) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:651) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:472) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:448) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:252) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:339) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:336) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:69) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.transport.TransportService$7.doRun(TransportService.java:627) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:638) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) ~[elasticsearch-5.4.1.jar:5.4.1]
+	... 3 more
+[2017-06-23T18:01:16,563][INFO ][o.e.n.Node               ] [_h1h-U9] stopping ...
+[2017-06-23T18:01:16,878][INFO ][o.e.n.Node               ] [_h1h-U9] stopped
+[2017-06-23T18:01:16,880][INFO ][o.e.n.Node               ] [_h1h-U9] closing ...
+[2017-06-23T18:01:16,918][INFO ][o.e.n.Node               ] [_h1h-U9] closed

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="javascripts/tinymce/tinymce.min.js"></script>
+  <script>
+
+  tinymce.init({
+    selector: '#my_editor',
+   toolbar: [
+    'undo redo | styleselect | bold italic | link image',
+    'alignleft aligncenter alignright',
+    'forecolor backcolor'
+  ],
+    plugins: ["image","save","textcolor"],
+    file_browser_callback: function(field_name, url, type, win) {
+        if(type=='image') $('#my_form input').click();
+    }
+	});
+
+  </script>
+  <script type="text/javascript">
+$(function(){
+	$("body").click(function(){
+		console.log($("#my_editor_ifr").contents().find("body")[0]);
+	})
+
+});
+  </script>
+</head>
+<body>
+  <textarea id="my_editor"></textarea>
+
+<iframe id="form_target" name="form_target" style="display:none"></iframe>
+
+<form id="my_form" action="/upload/" target="form_target" method="post" enctype="multipart/form-data" style="width:0px;height:0;overflow:hidden"><input name="image" type="file" onchange="$('#my_form').submit();this.value='';"></form>
+</body>
+</html>

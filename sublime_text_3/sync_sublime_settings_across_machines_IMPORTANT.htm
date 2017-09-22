@@ -1,0 +1,1069 @@
+<!DOCTYPE html>
+<!-- saved from url=(0115)https://adamdehaven.com/blog/how-to-sync-sublime-text-packages-and-settings-across-multiple-computers-with-dropbox/ -->
+<html lang="en-US" prefix="og: http://ogp.me/ns#" data-useragent="MSIE" class=" js cssanimations js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths" style=""><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="theme-color" content="#16989D">
+<meta name="robots" content="index, follow">
+<meta name="msvalidate.01" content="5603D5C0F59BC10D45414FB914CA33DF">
+<link rel="profile" href="http://gmpg.org/xfn/11">
+<link rel="pingback" href="https://adamdehaven.com/xmlrpc.php">
+<link rel="shortcut icon" href="https://adamdehaven.com/wp-content/uploads/2015/09/adamdehaven-avatar-square.png">
+<link rel="apple-touch-icon" href="https://adamdehaven.com/wp-content/themes/stain/images/apple-touch-icon-precomposed.png">
+<title>How to sync Sublime Text packages and settings across multiple computers with Dropbox | Adam DeHaven | UX Designer and Developer</title>
+
+<!-- This site is optimized with the Yoast SEO plugin v5.3.2 - https://yoast.com/wordpress/plugins/seo/ -->
+<link rel="canonical" href="https://adamdehaven.com/blog/how-to-sync-sublime-text-packages-and-settings-across-multiple-computers-with-dropbox/">
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="How to sync Sublime Text packages and settings across multiple computers with Dropbox | Adam DeHaven | UX Designer and Developer">
+<meta property="og:description" content="After a couple weeks of trying other code editors, I’ve decided to primarily use the feature-packed Sublime Text 3. One of the biggest advantages in Sublime Text (to name one feature out of the hundreds included) is the ability to install custom Packages that allow for an intense level of customization and functionality. ...">
+<meta property="og:url" content="https://adamdehaven.com/blog/how-to-sync-sublime-text-packages-and-settings-across-multiple-computers-with-dropbox/">
+<meta property="og:site_name" content="Adam DeHaven | UX Designer and Developer">
+<meta property="article:publisher" content="https://www.facebook.com/abdehaven">
+<meta property="article:tag" content="code">
+<meta property="article:tag" content="Dropbox">
+<meta property="article:tag" content="guide">
+<meta property="article:tag" content="Mac">
+<meta property="article:tag" content="OS X">
+<meta property="article:tag" content="Package Control">
+<meta property="article:tag" content="PowerShell">
+<meta property="article:tag" content="Sublime Text">
+<meta property="article:tag" content="sync">
+<meta property="article:tag" content="Terminal">
+<meta property="article:tag" content="tutorial">
+<meta property="article:tag" content="Windows">
+<meta property="article:section" content="Development">
+<meta property="article:published_time" content="2015-07-13T17:00:21-04:00">
+<meta property="article:modified_time" content="2017-01-07T14:34:04-04:00">
+<meta property="og:updated_time" content="2017-01-07T14:34:04-04:00">
+<meta property="og:image" content="https://adamdehaven.com/wp-content/uploads/sync-sublime-text-on-multiple-computers-with-dropbox.jpg">
+<meta property="og:image:secure_url" content="https://adamdehaven.com/wp-content/uploads/sync-sublime-text-on-multiple-computers-with-dropbox.jpg">
+<meta property="og:image:width" content="1600">
+<meta property="og:image:height" content="1200">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:description" content="After a couple weeks of trying other code editors, I’ve decided to primarily use the feature-packed Sublime Text 3. One of the biggest advantages in Sublime Text (to name one feature out of the hundreds included) is the ability to install custom Packages that allow for an intense level of customization and functionality. ...">
+<meta name="twitter:title" content="How to sync Sublime Text packages and settings across multiple computers with Dropbox | Adam DeHaven | UX Designer and Developer">
+<meta name="twitter:site" content="@adamdehaven">
+<meta name="twitter:image" content="https://adamdehaven.com/wp-content/uploads/sync-sublime-text-on-multiple-computers-with-dropbox.jpg">
+<meta name="twitter:creator" content="@adamdehaven">
+<script type="text/javascript" async="" src="./sync_sublime_settings_across_machines_IMPORTANT_files/recaptcha__en.js"></script><script async="" src="./sync_sublime_settings_across_machines_IMPORTANT_files/analytics.js"></script><script type="application/ld+json">{"@context":"http:\/\/schema.org","@type":"WebSite","@id":"#website","url":"https:\/\/adamdehaven.com\/","name":"Adam DeHaven | UX Designer and Developer","alternateName":"Adam DeHaven | Developer and UX Designer","potentialAction":{"@type":"SearchAction","target":"https:\/\/adamdehaven.com\/?s={search_term_string}","query-input":"required name=search_term_string"}}</script>
+<script type="application/ld+json">{"@context":"http:\/\/schema.org","@type":"Person","url":"https:\/\/adamdehaven.com\/blog\/how-to-sync-sublime-text-packages-and-settings-across-multiple-computers-with-dropbox\/","sameAs":["https:\/\/www.facebook.com\/abdehaven","http:\/\/instagram.com\/adamdehaven","https:\/\/www.linkedin.com\/in\/adamdehaven","https:\/\/twitter.com\/adamdehaven"],"@id":"#person","name":"Adam DeHaven"}</script>
+<!-- / Yoast SEO plugin. -->
+
+<link rel="dns-prefetch" href="https://s0.wp.com/">
+<link rel="dns-prefetch" href="https://secure.gravatar.com/">
+<link rel="dns-prefetch" href="https://fonts.googleapis.com/">
+<link rel="dns-prefetch" href="https://s.w.org/">
+<link rel="alternate" type="application/rss+xml" title="Adam DeHaven | UX Designer and Developer » Feed" href="https://adamdehaven.com/feed/">
+<link rel="alternate" type="application/rss+xml" title="Adam DeHaven | UX Designer and Developer » Comments Feed" href="https://adamdehaven.com/comments/feed/">
+<link rel="alternate" type="application/rss+xml" title="Adam DeHaven | UX Designer and Developer » How to sync Sublime Text packages and settings across multiple computers with Dropbox Comments Feed" href="https://adamdehaven.com/blog/how-to-sync-sublime-text-packages-and-settings-across-multiple-computers-with-dropbox/feed/">
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.3\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.3\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/adamdehaven.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.8.2"}};
+			!function(a,b,c){function d(a){var b,c,d,e,f=String.fromCharCode;if(!k||!k.fillText)return!1;switch(k.clearRect(0,0,j.width,j.height),k.textBaseline="top",k.font="600 32px Arial",a){case"flag":return k.fillText(f(55356,56826,55356,56819),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,56826,8203,55356,56819),0,0),c=j.toDataURL(),b!==c&&(k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447),0,0),c=j.toDataURL(),b!==c);case"emoji4":return k.fillText(f(55358,56794,8205,9794,65039),0,0),d=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55358,56794,8203,9794,65039),0,0),e=j.toDataURL(),d!==e}return!1}function e(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i,j=b.createElement("canvas"),k=j.getContext&&j.getContext("2d");for(i=Array("flag","emoji4"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script><script src="./sync_sublime_settings_across_machines_IMPORTANT_files/wp-emoji-release.min.js" type="text/javascript" defer=""></script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel="stylesheet" id="simple-payments-css" href="./sync_sublime_settings_across_machines_IMPORTANT_files/simple-payments.css" type="text/css" media="all">
+<link rel="stylesheet" id="perfect-pullquotes-styles-css" href="./sync_sublime_settings_across_machines_IMPORTANT_files/perfect-pullquotes.css" type="text/css" media="all">
+<link rel="stylesheet" id="royal-preload-css-css" href="./sync_sublime_settings_across_machines_IMPORTANT_files/royal_preloader.css" type="text/css" media="all">
+<link rel="stylesheet" id="bootstrap-css-css" href="./sync_sublime_settings_across_machines_IMPORTANT_files/bootstrap.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="animate-css-css" href="./sync_sublime_settings_across_machines_IMPORTANT_files/animate.css" type="text/css" media="all">
+<link rel="stylesheet" id="fontawesome-css-css" href="./sync_sublime_settings_across_machines_IMPORTANT_files/font-awesome.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="line-css-css" href="./sync_sublime_settings_across_machines_IMPORTANT_files/line-icons.css" type="text/css" media="all">
+<link rel="stylesheet" id="iconic-font--css-css" href="./sync_sublime_settings_across_machines_IMPORTANT_files/iconics-font.css" type="text/css" media="all">
+<link rel="stylesheet" id="artref-css-css" href="./sync_sublime_settings_across_machines_IMPORTANT_files/arthref.css" type="text/css" media="all">
+<link rel="stylesheet" id="nav-css-css" href="./sync_sublime_settings_across_machines_IMPORTANT_files/nav.css" type="text/css" media="all">
+<link rel="stylesheet" id="slicknav-css-css" href="./sync_sublime_settings_across_machines_IMPORTANT_files/slicknav.css" type="text/css" media="all">
+<link rel="stylesheet" id="justified-css-css" href="./sync_sublime_settings_across_machines_IMPORTANT_files/justifiedgallery.css" type="text/css" media="all">
+<link rel="stylesheet" id="owl-carousel-css-css" href="./sync_sublime_settings_across_machines_IMPORTANT_files/owl.carousel.css" type="text/css" media="all">
+<link rel="stylesheet" id="owl-theme-css-css" href="./sync_sublime_settings_across_machines_IMPORTANT_files/owl.theme.css" type="text/css" media="all">
+<link rel="stylesheet" id="hover-css-css" href="./sync_sublime_settings_across_machines_IMPORTANT_files/hover.css" type="text/css" media="all">
+<link rel="stylesheet" id="stain-style-css" href="./sync_sublime_settings_across_machines_IMPORTANT_files/style.css" type="text/css" media="all">
+<link rel="stylesheet" id="styles-css-css" href="./sync_sublime_settings_across_machines_IMPORTANT_files/styles.css" type="text/css" media="all">
+<link rel="stylesheet" id="theme-color-css-css" href="./sync_sublime_settings_across_machines_IMPORTANT_files/theme-colors.css" type="text/css" media="all">
+<!--[if IE 9]>
+<link rel='stylesheet' id='ie9-css-css'  href='https://adamdehaven.com/wp-content/themes/stain/css/ie9.css' type='text/css' media='all' />
+<![endif]-->
+<link rel="stylesheet" id="roboto-font-css-css" href="./sync_sublime_settings_across_machines_IMPORTANT_files/css" type="text/css" media="all">
+<link rel="stylesheet" id="rslab-font-css-css" href="./sync_sublime_settings_across_machines_IMPORTANT_files/css(1)" type="text/css" media="all">
+<link rel="stylesheet" id="simple-social-icons-font-css" href="./sync_sublime_settings_across_machines_IMPORTANT_files/style(1).css" type="text/css" media="all">
+<link rel="stylesheet" id="redux-google-fonts-css" href="./sync_sublime_settings_across_machines_IMPORTANT_files/css(2)" type="text/css" media="all">
+<link rel="stylesheet" id="social-logos-css" href="./sync_sublime_settings_across_machines_IMPORTANT_files/social-logos.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="open-sans-css" href="./sync_sublime_settings_across_machines_IMPORTANT_files/css(3)" type="text/css" media="all">
+<link rel="stylesheet" id="jetpack_css-css" href="./sync_sublime_settings_across_machines_IMPORTANT_files/jetpack.css" type="text/css" media="all">
+<script type="text/javascript" src="./sync_sublime_settings_across_machines_IMPORTANT_files/jquery.js"></script>
+<script type="text/javascript" src="./sync_sublime_settings_across_machines_IMPORTANT_files/jquery-migrate.min.js"></script>
+<script type="text/javascript" src="./sync_sublime_settings_across_machines_IMPORTANT_files/modernizr.custom.js"></script>
+<script type="text/javascript" src="./sync_sublime_settings_across_machines_IMPORTANT_files/html5-polyfills.js"></script>
+<script type="text/javascript" src="./sync_sublime_settings_across_machines_IMPORTANT_files/svgxuse.js"></script>
+<link rel="https://api.w.org/" href="https://adamdehaven.com/wp-json/">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://adamdehaven.com/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://adamdehaven.com/wp-includes/wlwmanifest.xml"> 
+<meta name="generator" content="WordPress 4.8.2">
+<link rel="shortlink" href="https://wp.me/p6dUSV-Wl">
+<link rel="alternate" type="application/json+oembed" href="https://adamdehaven.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fadamdehaven.com%2Fblog%2Fhow-to-sync-sublime-text-packages-and-settings-across-multiple-computers-with-dropbox%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://adamdehaven.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fadamdehaven.com%2Fblog%2Fhow-to-sync-sublime-text-packages-and-settings-across-multiple-computers-with-dropbox%2F&amp;format=xml">
+
+<link rel="dns-prefetch" href="https://v0.wordpress.com/">
+<style type="text/css">img#wpstats{display:none}</style><style type="text/css">
+        a:hover:not(.menu-link):not(.btn-theme):not(.cbp-l-inline-view):not(.post-read-more):not(.post-view-comments):not(.widget-post-title-link):not(.top-logo-link):not(.mejs-horizontal-volume-slider):not(.btn-view-profile):not(.in-reply-to-link):not(#mba):not(#undergrad):not(.edu-institute li.current a):not(.edu-institute li a),
+        .blog-content a:not(.btn-theme):not(.mejs-horizontal-volume-slider),
+        .blog-content a:active:not(.btn-theme),
+        .cbp-l-project-desc-text a, .cbp-l-project-desc-text a:hover, .cbp-l-inline-desc a, .cbp-l-inline-desc a:hover,
+        .profile-title,
+        .feature-item li a:hover,
+        .testimonial-pagination a:hover,
+        .t-author-pos span,
+        .team-next:hover, .team-prev:hover,
+        .numeric-stats-wrap .icon-box span i,
+        .pricing-table-two .most-popular .plan-pricing,
+        .icon-hover .small-boxed-icon i,
+        .informative-row .info-component-icon i,
+        .timeline-style .info-component-icon i,
+        .share-this-site a:hover,
+        .latest-tweet a:hover,
+        .copyright-info a:hover,
+        .blog-post-meta li.post-author a,
+        .blog-post-meta li a:hover,
+        .blog-post-meta li i,
+        .resp-tab-active,
+        .resp-arrow:after,
+        h2.resp-tab-active span.resp-arrow:after,
+        h2.resp-tab-active,
+        .sf-menu li.sfHover > a,
+        .sf-menu ul li.sfHover > a,
+        .sf-menu li.current .sf-with-ul:after,
+        .sf-arrows > li > .sf-with-ul:focus:after,
+        .sf-arrows > li:hover > .sf-with-ul:after,
+        .sf-arrows > .sfHover > .sf-with-ul:after,
+        .sf-arrows ul li > .sf-with-ul:focus:after,
+        .sf-arrows ul li:hover > .sf-with-ul:after,
+        .sf-arrows ul .sfHover > .sf-with-ul:after,
+        .nav-active .nav-active .slicknav_row a,
+        .sf-arrows .sf-menu > li.nav-active > a.sf-with-ul:after,
+        .autofix_sb.fixed .top-logo a:hover, .autofix_sb.fixed .top-logo a:hover small,
+        .comment-meta cite a, .comment-meta cite a:hover, .comment-meta cite a:focus, .comment-meta cite a:active, .comment-meta cite a:visited,
+        .bs-callout-theme h4 {
+            color: #16989D !important;
+        }
+
+        .autofix_sb #menu-landing-page-menu li a:hover,
+        .autofix_sb #menu-landing-page-menu li a:active,
+        .autofix_sb #menu-landing-page-menu li a:focus,
+        .autofix_sb #menu-blog-menu li a:hover,
+        .autofix_sb #menu-blog-menu li a:active,
+        .autofix_sb #menu-blog-menu li a:focus {
+            background-color: #363636;
+            color:#ffffff !important;
+        }
+
+        .autofix_sb .top-logo a:hover,
+        .top-logo h2 a:focus {
+            color:#363636 !important;
+        }
+
+        .autofix_sb.fixed #menu-landing-page-menu li a:hover,
+        .autofix_sb.fixed #menu-landing-page-menu li a:active,
+        .autofix_sb.fixed #menu-landing-page-menu li a:focus,
+        .autofix_sb.fixed #menu-blog-menu li a:hover,
+        .autofix_sb.fixed #menu-blog-menu li a:active,
+        .autofix_sb.fixed #menu-blog-menu li a:focus,
+        .slicknav_nav a:hover,
+        .cbp-l-inline-view  {
+            background-color: #16989D !important;
+            color:#ffffff !important;
+        }
+
+        ::-webkit-selection {
+            color: #FFFFFF !important;
+            background: #16989D !important;
+            outline:none !important;
+        }
+
+        ::-moz-selection {
+            color: #FFFFFF !important;
+            background: #16989D !important;
+            outline:none !important;
+        }
+
+        ::selection {
+            color: #FFFFFF !important;
+            background: #16989D !important;
+            outline:none !important;
+        }
+
+        .post-action .post-read-more:not(.post-view-comments),
+        #btn-post-comment {
+        background-color: #16989D;
+        color:#ffffff;
+    }
+
+    .post-action .post-read-more:hover,
+     #btn-post-comment:hover,
+    .btn-theme:hover{
+        background-color: #363636;
+        color:#ffffff;
+    }
+
+    .cbp-l-inline-view:hover, .cbp-l-inline-view:focus {
+        background-color: #363636 !important;
+        color:#ffffff !important;
+    }
+
+    .autofix_sb.fixed .top-logo a:hover,
+    .autofix_sb.fixed .top-logo a:hover h2 small {
+        color:#16989D !important;
+    }
+
+    @media screen and (max-width: 768px) {
+        .autofix_sb.fixed {
+            background-color:#16989D;
+        }
+    }
+
+    .blog-content a:not(.su-button):not(.post-read-more):not(img):not(.su-divider-link):not(.btn-theme):not(.mejs-horizontal-volume-slider),
+    .blog-content a:active:not(.su-button):not(.post-read-more):not(.su-divider-link):not(.btn-theme):not(.mejs-horizontal-volume-slider),
+    .cbp-l-project-desc-text a, .cbp-l-inline-desc a,
+    .comment-meta cite a, .comment-meta cite a:visited,
+    .oldest-post a, .oldest-post a:active, .newest-post a, .newest-post a:active,
+    .widget-post-title-link:hover, .widget-post-title-link:focus, .widget-post-title-link:active,
+    #cancel-comment-reply-link, #cancel-comment-reply-link:active,
+    .comment-body a, comment-body a:active,
+    .commentlist a.in-reply-to-link, .commentlist a.in-reply-to-link:active {
+        color: #16989D !important;
+        border-bottom:1px dotted #16989D;
+    }
+
+    .blog-content a:hover:not(.su-button):not(.post-read-more):not(.su-divider-link):not(.btn-theme):not(.widget-post-title-link):not(.mejs-horizontal-volume-slider),
+    .blog-content a:focus:not(.su-button):not(.post-read-more):not(.su-divider-link):not(.btn-theme):not(.widget-post-title-link):not(.mejs-horizontal-volume-slider),
+    .widget-post-list li>div h5 a:hover,
+    .cbp-l-project-desc-text a:hover, .cbp-l-inline-desc a:hover,
+    .comment-meta cite a:hover, .comment-meta cite a:focus, .comment-meta cite a:active,
+    .oldest-post a:hover, .oldest-post a:focus,
+    .newest-post a:hover, .newest-post a:focus,
+    #cancel-comment-reply-link:focus, #cancel-comment-reply-link:hover,
+    .comment-body a:focus, comment-body a:hover,
+    .commentlist a.in-reply-to-link:focus, .commentlist a.in-reply-to-link:hover {
+        color: #363636 !important;
+        border-bottom:1px solid #363636;
+    }
+
+    a.su-divider-link, a.su-divider-link:visited {
+        color: #16989D !important;
+        border-bottom:none !important;
+    }
+
+    a.su-divider-link:hover, a.su-divider-link:focus, a.su-divider-link:active {
+        color: #363636 !important;
+        border-bottom:none !important;
+    }
+
+    .pullquote-align-left,
+    .pullquote-align-right,
+    .pullquote-align-full,
+    .su-pullquote-align-left,
+    .su-pullquote-align-right {
+        border-color:#16989D !important;
+    }
+
+    .commentlist .comment-block {
+        border-left:2px solid #16989D;
+    }
+
+    .st-btn,
+    .btn-view-profile,
+    .btn-theme,
+    .divider .divider-element.line,
+    .job-list-item .job-date:hover,
+    .job-ribbon,
+    .btn-view-all,
+    .pricing-table-two .most-popular .plan-pack,
+    .icon-hover:hover .small-boxed-icon i,
+    .timeline-style .boxed-icon:hover i,
+    .tweet-slide  .owl-page.active span,
+    .down-ribb:hover,
+    .sticky-ribbon:hover,
+    div.down-ribbon,
+    .post-blockquote:hover .post-quote,
+                                    #scrollTop:hover,
+    .nav-wrapper,
+    .sf-menu > li:hover > a:before,
+    .cbp-l-caption-buttonLeft:hover,.cbp-l-caption-buttonRight:hover,
+                                    #royal_preloader.royal_preloader_progress .royal_preloader_meter{
+    background-color: #16989D;
+}
+
+.btn-post-msg:hover,
+.btn-post-msg:active{
+    background-color: #16989D !important;
+}
+
+.job-list-item .job-date:hover,
+.pricing-table-two .plan.most-popular,
+.icon-hover:hover .small-boxed-icon i,
+.timeline-style .boxed-icon:hover i,
+.btn-post-msg:hover,
+.btn-post-msg:focus,
+.down-ribb:hover:before,.down-ribb:hover:after,
+.post-divider:after,
+.blog-pagination ul li a:hover,
+.blog-pagination ul li.active a,
+.post-blockquote:hover .post-quote,
+.sidebar .widget-col h4,
+.resp-tab-active,
+.resp-vtabs li.resp-tab-active,
+.h-frm-input:focus,
+.post-tags-list a:hover {
+    border-color: #16989D !important;
+}
+
+.comment-form .form-group:not(.has-error) .form-control:focus {
+    border-color: #16989D;
+}
+
+div.down-ribbon:before, div.down-ribbon:after {
+    border-color: transparent #16989D;
+}
+.job-ribbon:before, .job-ribbon:after {
+   border-color: #16989D transparent !important;
+}
+.autofix_sb.fixed .slicknav_btn.slicknav_open, .autofix_sb.fixed .slicknav_btn:hover, .autofix_sb.fixed .slicknav_btn:active {
+    background-color: #16989D;
+    -webkit-transition: background-color 300ms ease-in-out;
+    -moz-transition: background-color 300ms ease-in-out;
+    transition: background-color 300ms ease-in-out;
+}
+
+.su-custom-gallery a, .su-custom-carousel a, su-custom-slider a,
+.su-custom-gallery a:hover, .su-custom-carousel a:hover, su-custom-slider a:hover,
+.su-custom-gallery a:focus, .su-custom-carousel a:focus, su-custom-slider a:focus,
+.su-custom-gallery a:active, .su-custom-carousel a:active, su-custom-slider a:active {
+    border-bottom:none !important;
+}
+
+.blog-content .post-grid-wrap a, .blog-content .post-grid-wrap a:hover, .blog-content .post-grid-wrap a:focus, .blog-content .post-grid-wrap a:active {
+    border-color:transparent !important;
+    border-bottom:none !important;
+}
+
+.bs-callout-theme {
+    border-left-color:#16989D;
+}
+
+.sf-menu > li,
+.slicknav_nav ul,
+.slicknav_nav li,
+.navbar-search input, .mobile-navbar-search input,
+.slicknav_menu .menu-open, .slicknav_menu .menu-closed {
+    font-family: Oswald,'Helvetica Neue', Helvetica, Arial, sans-serif !important;
+}
+
+.edu-institute li.current a:hover,
+.edu-institute li a:hover,
+.edu-institute li.current a:focus,
+.edu-institute li a:focus,
+.edu-institute li.current a:active,
+.edu-institute li a:active {
+    color: #9A0002 !important;
+}
+
+</style><style type="text/css">                                            </style><style type="text/css" media="screen"> .simple-social-icons ul li a, .simple-social-icons ul li a:hover, .simple-social-icons ul li a:focus { background-color: #16989d !important; border-radius: 3px; color: #ffffff !important; border: 0px #ffffff solid !important; font-size: 18px; padding: 9px; }  .simple-social-icons ul li a:hover, .simple-social-icons ul li a:focus { background-color: #106d70 !important; border-color: #ffffff !important; color: #ffffff !important; }  .simple-social-icons ul li a:focus { outline: 1px dotted #106d70 !important; }</style>
+<!-- BEGIN recaptcha, injected by plugin wp-recaptcha-integration  -->
+
+<!-- END recaptcha -->
+<link rel="icon" href="https://adamdehaven.com/wp-content/uploads/cropped-adamdehaven-avatar-square-32x32.png" sizes="32x32">
+<link rel="icon" href="https://adamdehaven.com/wp-content/uploads/cropped-adamdehaven-avatar-square-192x192.png" sizes="192x192">
+<link rel="apple-touch-icon-precomposed" href="https://adamdehaven.com/wp-content/uploads/cropped-adamdehaven-avatar-square-180x180.png">
+<meta name="msapplication-TileImage" content="https://adamdehaven.com/wp-content/uploads/cropped-adamdehaven-avatar-square-270x270.png">
+<style type="text/css" title="dynamic-css" class="options-output">body, .h-frm-input, .light-section .h-frm-input, .related-blog-post .post-intro h3, h2.resp-accordion, .navbar-search input, .mobile-navbar-search input{font-family:Fauna One,'Helvetica Neue', Helvetica, Arial, sans-serif;}h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6, .image-block a, .st-btn,
+                                            .btn-view-profile, .btn-theme, .rw-sentence span, .feature-item-label,
+                                            .ex-hightlight ul li.yrs-ex, .edu-institute-label, .btn-view-all{font-family:Oswald,'Helvetica Neue', Helvetica, Arial, sans-serif;}</style><link rel="stylesheet" type="text/css" id="gravatar-card-css" href="./sync_sublime_settings_across_machines_IMPORTANT_files/hovercard.css"><link rel="stylesheet" type="text/css" id="gravatar-card-services-css" href="./sync_sublime_settings_across_machines_IMPORTANT_files/services.css"></head>
+
+<body class="post-template-default single single-post postid-3617 single-format-standard" style="visibility: visible;">
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-21479748-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<div class="page-wrapper ">
+<div class="nav-wrapper sticky-nav autofix_sb fixed" style="top: 0px; left: 0px; right: auto; bottom: auto;">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div class="top-logo">
+                                    <h2><a class="top-logo-link" href="https://adamdehaven.com/">Adam DeHaven<br><small>UX Designer &amp; Developer</small></a></h2>
+                              </div>
+          <!-- googleoff: snippet -->
+        <div class="nav-container">
+          <div id="mobile-menu"><div class="slicknav_menu"><a href="https://adamdehaven.com/blog/how-to-sync-sublime-text-packages-and-settings-across-multiple-computers-with-dropbox/#" aria-haspopup="true" tabindex="0" class="slicknav_btn slicknav_collapsed" style=""><span class="slicknav_menutxt"><span class="menu-closed">MENU</span><span class="menu-open">CLOSE <i class="fa fa-times-circle"></i> </span></span><span class="slicknav_icon"><span class="slicknav_icon-bar"></span><span class="slicknav_icon-bar"></span><span class="slicknav_icon-bar"></span></span></a><ul class="slicknav_nav slicknav_hidden" aria-hidden="true" role="menu" style="display: none;"><li><form class="mobile-navbar-search" role="search" action="https://adamdehaven.com/" method="get"><div class="form-group"><input type="search" class="form-control" placeholder="Search..." name="s"></div></form></li><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-3614"><a href="https://adamdehaven.com/" class="external-link" role="menuitem" tabindex="-1">Home</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-2925"><a href="https://adamdehaven.com/#about-me" class="external-link" role="menuitem" tabindex="-1">About Me</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-2926"><a href="https://adamdehaven.com/#experience" class="external-link" role="menuitem" tabindex="-1">Experience</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-3610"><a href="https://adamdehaven.com/#education" class="external-link" role="menuitem" tabindex="-1">Education</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-3826"><a href="https://adamdehaven.com/blog/" class="external-link" role="menuitem" tabindex="-1">All Posts</a></li>
+</ul></div></div>
+          <nav class="main-nav sf-js-enabled sf-arrows"><ul id="menu-blog-menu" class="sf-menu one-page-nav"><li id="menu-item-3614" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-3614"><a href="https://adamdehaven.com/" class="external-link">Home</a></li>
+<li id="menu-item-2925" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-2925"><a href="https://adamdehaven.com/#about-me" class="external-link">About Me</a></li>
+<li id="menu-item-2926" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-2926"><a href="https://adamdehaven.com/#experience" class="external-link">Experience</a></li>
+<li id="menu-item-3610" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-3610"><a href="https://adamdehaven.com/#education" class="external-link">Education</a></li>
+<li id="menu-item-3826" class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-3826"><a href="https://adamdehaven.com/blog/" class="external-link">All Posts</a></li>
+<form class="navbar-form navbar-right navbar-search" role="search" action="https://adamdehaven.com/" method="get"><div class="form-group has-feedback"><input type="search" class="form-control" placeholder="SEARCH..." name="s"><button type="submit" class="fa fa-search form-control-feedback"></button></div></form></ul></nav>        </div>
+        <!-- googleon: snippet -->
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--div id="mobile-menu"></div-->
+
+<div class="blog-page-wrapper">
+  <div class="container clearfix">     <div class="row">
+            <div class="col-lg-12 col-lg-offset-0 col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-12 col-xs-offset-0">
+        <div class="blog-container single-post-container">
+                              
+<div id="post-3617" class="blog-post h-entry hentry post-3617 post type-post status-publish format-standard has-post-thumbnail category-development tag-code tag-dropbox tag-guide tag-mac tag-os-x tag-package-control tag-powershell tag-sublime-text tag-sync tag-terminal tag-tutorial tag-windows">
+  <div class="post-details row">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <div class="post-meta-container">
+          <ul class="blog-post-meta clearfix">
+                        <li class="post-author vcard hidden">
+              by              <span class="fn"><a href="https://adamdehaven.com/blog/author/adamdehaven/" title="Posts by Adam DeHaven" rel="author">Adam DeHaven</a></span>
+            </li>
+          </ul>
+          </div>
+      <h1 class="post-heading p-name entry-title">How to sync Sublime Text packages and settings across multiple computers with Dropbox</h1>          <div class="post-categories">
+        <a href="https://adamdehaven.com/blog/category/development/" rel="category tag">Development</a>        <div class="hidden vcard author p-author h-card"><a class="url fn" href="https://adamdehaven.com/">Adam DeHaven</a></div><a href="https://adamdehaven.com/blog/how-to-sync-sublime-text-packages-and-settings-across-multiple-computers-with-dropbox/#comments" class="scroll-link"><i class="fa fa-comment"></i> Comments ( 8 )</a>
+      </div>
+    </div>
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 post-image-container">
+      <div class="post-image">
+        <img class="img-responsive" src="./sync_sublime_settings_across_machines_IMPORTANT_files/sync-sublime-text-on-multiple-computers-with-dropbox.jpg" alt="Sync Sublime Text Across Multiple Computers with Dropbox">
+      </div>
+    </div>
+  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+    <div class="blog-content">
+            <div class="post-content e-content">
+        <p>After a couple weeks of trying other code editors,&nbsp;I’ve decided to primarily use the feature-packed&nbsp;<a class="external-link" href="http://www.sublimetext.com/" target="_blank" rel="external nofollow">Sublime Text 3</a>. One of the biggest advantages in Sublime Text&nbsp;(to name one feature out of the hundreds included) is the ability to install custom Packages that allow for an intense level of customization and functionality.</p>
+<p>If you’re like me and use multiple computers throughout the week&nbsp;– I&nbsp;use a MacBook and PC at work&nbsp;and&nbsp;an iMac and MacBook at home&nbsp;–&nbsp;it becomes increasingly important to have your standard development setup available on all computers. I have always used <a class="external-link" href="http://dropbox.com/" target="_blank" rel="external nofollow">Dropbox</a> to sync files, photos, and basically everything else between all of my devices, but being able to sync <em>settings and configurations</em> with Dropbox is an added bonus! In this post I’ll explain how to set up Dropbox to sync your Sublime Text settings and packages across all of your computers.</p>
+<p><span id="more-3617"></span></p>
+<div class="perfect-pullquote vcard pullquote-align-full"><blockquote cite="./sync_sublime_settings_across_machines_IMPORTANT_files/saved_resource"><p>Sublime Text is a sophisticated text editor for code, markup and prose.&nbsp;You’ll love the slick user interface, extraordinary features and amazing performance.</p><footer itemscope="" itemtype="http://schema.org/Person"><cite><a href="./sync_sublime_settings_across_machines_IMPORTANT_files/saved_resource" class="url" target="_blank" itemprop="url"><span itemprop="name">SublimeText.com</span></a></cite></footer></blockquote></div>
+<p>The best solution for syncing Sublime Text along with your installed packages, regardless of whether you choose to sync with Dropbox or by another method, is to only sync the <code>Packages/User/</code> directory. This folder contains the <code>Package Control.sublime-settings</code> file, which among other things, contains your list of installed packages. Once this file is synced with your other machines via the process outlined below, your other computers will automatically install the correct version of any missing/updated package the next time you start up Sublime Text.</p>
+<p>There are other ways to sync your installed packages and settings across different machines without utilizing Dropbox, for example by using Git, however I have found that using other methods leads to added steps of constantly syncing files, updating repositories, and the list goes on. Dropbox sync allows for the cleanest, most “hands-off” approach.</p>
+<h3>Getting Started</h3>
+<p>I recommend designating one of your computers as your “initial computer.” Once you configure your Sublime Text settings on this initial machine to your liking, we will be syncing these files with Dropbox.</p>
+<p>Before proceeding, you should also have your Dropbox account syncing between all of your computers. I won’t go into the details of installing and enabling Dropbox here, but <a class="external-link" href="http://www.dropbox.com/" target="_blank" rel="external nofollow">the Dropbox website</a> should provide plenty of instruction. As to which folders to sync to your computers via Dropbox, we will be creating a new folder in <a class="scroll-link" href="https://adamdehaven.com/blog/how-to-sync-sublime-text-packages-and-settings-across-multiple-computers-with-dropbox/#initial-setup">Step Four</a>, so hang tight and read on. <sup><a class="scroll-link" href="https://adamdehaven.com/blog/how-to-sync-sublime-text-packages-and-settings-across-multiple-computers-with-dropbox/#footnote-1">1</a></sup><br>
+</p><div class="su-divider su-divider-style-default" style="margin:12px 0;border-width:2px;border-color:#eeeeee"></div>
+<h3>Download Sublime Text</h3>
+<p>If not already installed,&nbsp;<a href="http://www.sublimetext.com/3" target="_blank">Download</a> a fresh copy&nbsp;of Sublime Text 3 to get up and running. Instructions may vary depending on your operating system.<br>
+</p><div class="su-divider su-divider-style-default" style="margin:12px 0;border-width:2px;border-color:#eeeeee"></div>
+<h3 id="install-package-control">Install Package Control</h3>
+<p>If you have not yet installed Package Control, go ahead and open up Sublime Text. Once you have Sublime Text up-and-running, from its menu select&nbsp;<code>View &gt; Show Console</code>. Alternatively, utilize the keyboard shortcut <kbd>ctrl+`</kbd> to show the console.</p>
+<p>Once the console is open, simply paste the code found&nbsp;on the&nbsp;<a href="https://packagecontrol.io/installation" target="_blank" rel="nofollow">Package Control installation page</a>&nbsp;and press return. This code creates the Installed Packages folder for you, then downloads the <code>Package Control.sublime-package</code>. After Package Control installation has completed, quit/exit Sublime Text.</p>
+<div class="alert alert-info"><i class="fa fa-info-circle fa-4x pull-left"></i> <b>IMPORTANT</b><br>
+The method outlined in this post assumes that you install Package Control on all machines prior to setting up&nbsp;the sync workflow. The install code for Package Control changes with every release. Be sure to use the code found at the link included above that corresponds to your version of Sublime Text.</div>
+<div class="su-divider su-divider-style-default" style="margin:12px 0;border-width:2px;border-color:#eeeeee"></div>
+<h3 id="initial-setup">Setup Initial Machine</h3>
+<p>These instructions assume your Dropbox folder is installed in the default location <code>~/Dropbox</code>. If your Dropbox folder is located elsewhere, you should replace all mentions&nbsp;of <code>~/Dropbox</code> below with the correct path, such as <code>~/Path/to/Dropbox</code>. The initial setup instructions vary depending on whether your main (initial) computer is a Mac or a PC running Windows</p>
+<div class="bs-callout bs-callout-theme">
+<h4><i class="fa fa-apple fa-lg pull-right hidden-xs"></i> If initial machine is a Mac</h4>
+<p>If your initial machine is a Mac, first follow the instructions below</p>
+<ol>
+<li>Close down Sublime Text</li>
+<li>Open Terminal and input the following commands
+<pre class="lang:sh"># Navigate to the Sublime Text 3 Package directory
+cd ~/Library/Application Support/Sublime Text 3/Packages/
+
+# Create a Sync Folder within your Dropbox, and then within the Sync folder, create a Sublime Text folder.
+# You may reuse the Sync folder for other purposes/applications
+mkdir ~/Dropbox/Sync/Sublime Text
+
+# Move the User folder from the Sublime Text 3 Package directory to your new Dropbox folder.
+mv User ~/Dropbox/Sync/Sublime Text/
+
+# Create a symlink within the Sublime Text 3 Package directory pointing to the User folder within Dropbox/Sync/Sublime Text/ directory.
+ln -s ~/Dropbox/Sync/Sublime Text/User
+</pre>
+</li>
+</ol>
+</div>
+<div class="clearfix"></div>
+<div class="bs-callout bs-callout-theme">
+<h4>If initial machine is running Windows <i class="fa fa-windows fa-lg pull-right hidden-xs"></i></h4>
+<p>If your initial machine is running Windows, first follow the instructions below</p>
+<ol>
+<li>Close down Sublime Text</li>
+<li>Open PowerShell by right-clicking and selecting “Run as administrator” and then enter the following commands
+<pre class="lang:sh"># Navigate to the Sublime Text 3 Package directory
+cd "$env:appdata\Sublime Text 3\Packages"
+
+# Create a Sync Folder within your Dropbox, and then within the Sync folder, create a Sublime Text folder.
+# You may reuse the Sync folder for other purposes/applications
+mkdir $env:userprofile\Dropbox\Sync\Sublime Text
+
+# Move the User folder from the Sublime Text 3 Package directory to your new Dropbox folder.
+mv User "$env:userprofile\Dropbox\Sync\Sublime Text"
+
+# Create a symlink within the Sublime Text 3 Package directory pointing to the User folder within Dropbox/Sync/Sublime Text/ directory.
+cmd /c mklink /D User "$env:userprofile\Dropbox\Sync\Sublime Text\User"
+</pre>
+</li>
+</ol>
+</div>
+<div class="clearfix"></div>
+<div class="su-divider su-divider-style-default" style="margin:12px 0;border-width:2px;border-color:#eeeeee"></div>
+<h3>Configure Other Computers for Sync</h3>
+<p>After completing the instructions outlined above based on your <u>initial</u> machine’s OS, next follow the instructions below for <strong>ALL OTHER</strong> machines, depending on their operating system.</p>
+<div class="bs-callout bs-callout-theme">
+<h4>If a secondary computer is a Mac <i class="fa fa-apple fa-lg pull-right hidden-xs"></i></h4>
+<ol>
+<li>Close down Sublime Text</li>
+<li>Open Terminal and input the following commands
+<pre class="lang:sh"># Navigate to the Sublime Text 3 Package directory.
+cd ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/
+
+# Delete the User folder within this directory.
+rm -r User
+
+# Create a symlink within the Sublime Text 3 Package directory pointing to the User folder within <code>Dropbox/Sync/Sublime Text/</code> directory.
+ln -s ~/Dropbox/Sync/Sublime\ Text/User
+</pre>
+</li>
+</ol>
+</div>
+<div class="clearfix"></div>
+<div class="bs-callout bs-callout-theme">
+<h4>If a secondary computer is running Windows <i class="fa fa-windows fa-lg pull-right hidden-xs"></i></h4>
+<ol>
+<li>Close down Sublime Text</li>
+<li>Open PowerShell by right-clicking and selecting “Run as administrator” and then enter the following commands
+<pre class="lang:sh"># Navigate to the Sublime Text 3 Package directory.
+cd "$env:appdata\Sublime Text 3\Packages"
+
+# Delete the User folder within this directory.
+rmdir -recurse User
+
+# Create a symlink within the Sublime Text 3 Package directory pointing to the User folder within <code>Dropbox/Sync/Sublime Text/</code> directory.
+cmd /c mklink /D User "$env:userprofile\Dropbox\Sync\Sublime Text\User"
+</pre>
+</li>
+</ol>
+</div>
+<div class="clearfix"></div>
+<p>Once you complete the secondary computer changes above, your instances of Sublime Text on each computer should automatically update whenever you make a change to your installed packages. Additionally, any changes made to your User Settings in the <code>Preferences.sublime-settings</code> file will also be updated. This method should allow for the perfect developer space regardless of which of your computers you’re working from.<br>
+</p><div class="su-divider su-divider-style-default" style="margin:12px 0;border-width:2px;border-color:#eeeeee"></div>
+<small id="footnote-1">1. Instructions are republished&nbsp;from <a class="external-link" href="https://packagecontrol.io/docs/syncing" target="_blank" rel="external">PackageControl.io</a>.</small><p></p>
+<div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon-text sd-sharing"><div class="sd-content"><ul><li class="share-twitter"><a rel="nofollow" data-shared="sharing-twitter-3617" class="share-twitter sd-button share-icon" href="https://adamdehaven.com/blog/how-to-sync-sublime-text-packages-and-settings-across-multiple-computers-with-dropbox/?share=twitter&amp;nb=1" target="_blank" title="Click to share on Twitter"><span>Twitter</span></a></li><li class="share-facebook"><a rel="nofollow" data-shared="sharing-facebook-3617" class="share-facebook sd-button share-icon" href="https://adamdehaven.com/blog/how-to-sync-sublime-text-packages-and-settings-across-multiple-computers-with-dropbox/?share=facebook&amp;nb=1" target="_blank" title="Click to share on Facebook"><span>Facebook</span></a></li><li class="share-linkedin"><a rel="nofollow" data-shared="sharing-linkedin-3617" class="share-linkedin sd-button share-icon" href="https://adamdehaven.com/blog/how-to-sync-sublime-text-packages-and-settings-across-multiple-computers-with-dropbox/?share=linkedin&amp;nb=1" target="_blank" title="Click to share on LinkedIn"><span>LinkedIn</span></a></li><li class="share-pinterest"><a rel="nofollow" data-shared="sharing-pinterest-3617" class="share-pinterest sd-button share-icon" href="https://adamdehaven.com/blog/how-to-sync-sublime-text-packages-and-settings-across-multiple-computers-with-dropbox/?share=pinterest&amp;nb=1" target="_blank" title="Click to share on Pinterest"><span>Pinterest</span></a></li><li class="share-email share-service-visible"><a rel="nofollow" data-shared="" class="share-email sd-button share-icon" href="https://adamdehaven.com/blog/how-to-sync-sublime-text-packages-and-settings-across-multiple-computers-with-dropbox/?share=email&amp;nb=1" target="_blank" title="Click to email this to a friend"><span>Email</span></a></li><li class="share-end"></li></ul></div></div></div>          </div>
+                  </div>
+      </div>
+                  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                  <span class="tags-title">
+            Tags:          </span>
+          <div class="post-tags-list"> <a href="https://adamdehaven.com/blog/tag/code/" rel="tag">code</a><a href="https://adamdehaven.com/blog/tag/dropbox/" rel="tag">Dropbox</a><a href="https://adamdehaven.com/blog/tag/guide/" rel="tag">guide</a><a href="https://adamdehaven.com/blog/tag/mac/" rel="tag">Mac</a><a href="https://adamdehaven.com/blog/tag/os-x/" rel="tag">OS X</a><a href="https://adamdehaven.com/blog/tag/package-control/" rel="tag">Package Control</a><a href="https://adamdehaven.com/blog/tag/powershell/" rel="tag">PowerShell</a><a href="https://adamdehaven.com/blog/tag/sublime-text/" rel="tag">Sublime Text</a><a href="https://adamdehaven.com/blog/tag/sync/" rel="tag">sync</a><a href="https://adamdehaven.com/blog/tag/terminal/" rel="tag">Terminal</a><a href="https://adamdehaven.com/blog/tag/tutorial/" rel="tag">tutorial</a><a href="https://adamdehaven.com/blog/tag/windows/" rel="tag">Windows</a> </div>
+                </div>
+          </div>
+            <div class="post-share">
+      <div class="post-pagination clearfix">
+        <div class="row">
+          <div class="col-lg-5 col-md-4 col-sm-3 col-xs-3">
+            <div class="oldest-post">
+              <a href="https://adamdehaven.com/blog/track-and-log-your-websites-traffic-with-my-traffictracker-php-class-and-google-analytics/" rel="prev"><span class="oldest-post-label"><i class="fa fa-long-arrow-left"></i> Prev<span class="hidden-xs">ious</span><span class="oldest-post-title hidden-sm hidden-xs">Track and log your website’s traffic with my TrafficTracker PHP class and Google Analytics</span></span></a>            </div>
+          </div>
+                    <div class="col-lg-5 col-md-4 col-sm-3 col-xs-3">
+            <div class="newest-post">
+              <a href="https://adamdehaven.com/blog/the-cicadas-are-everywhere/" rel="next"><span class="newest-post-label">Next<i class="fa fa-long-arrow-right"></i><span class="newest-post-title hidden-sm hidden-xs">The cicada (shells) are everywhere</span></span></a>            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+        <div class="related-blog-section section-wrap">
+      
+
+        <h3 class="inner-h">
+          Related Posts        </h3>
+        <div class="row">
+          <ul class="widget-post-list col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                          <li class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                <a href="https://adamdehaven.com/blog/my-obsession-with-back-to-the-future-and-the-code-it-generates/">
+                  <div class="widget-post-item row">
+                                        <div class="widget-post-thumb col-lg-3 col-md-12 col-sm-12 col-xs-4"><img src="./sync_sublime_settings_across_machines_IMPORTANT_files/delorean-400x400.jpg" class="img-responsive" alt="My obsession with “Back to the Future” and the code it generates"></div>
+                    <div class="col-lg-9 col-md-12 col-sm-12 col-xs-8">
+                      <h5>My obsession with “Back to the Future” and the code it generates</h5>
+                      <span class="widget-post-date">
+                        April 6, 2017                      </span> </div>
+                    </div>
+                  </a>
+                </li>
+                            <li class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                <a href="https://adamdehaven.com/blog/wallpapers-from-unsplash-terminal-commands-and-alfred-workflow/">
+                  <div class="widget-post-item row">
+                                        <div class="widget-post-thumb col-lg-3 col-md-12 col-sm-12 col-xs-4"><img src="./sync_sublime_settings_across_machines_IMPORTANT_files/wallpapers-from-unsplash-featured-example-400x400.png" class="img-responsive" alt="Wallpapers from Unsplash: Terminal commands and Alfred workflow"></div>
+                    <div class="col-lg-9 col-md-12 col-sm-12 col-xs-8">
+                      <h5>Wallpapers from Unsplash: Terminal commands and Alfred workflow</h5>
+                      <span class="widget-post-date">
+                        April 8, 2016                      </span> </div>
+                    </div>
+                  </a>
+                </li>
+                            <li class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                <a href="https://adamdehaven.com/blog/git-log-widget-for-ubersicht/">
+                  <div class="widget-post-item row">
+                                        <div class="widget-post-thumb col-lg-3 col-md-12 col-sm-12 col-xs-4"><img src="./sync_sublime_settings_across_machines_IMPORTANT_files/adamdehaven-ubersicht-git-log-400x400.png" class="img-responsive" alt="Git Log Widget for Übersicht"></div>
+                    <div class="col-lg-9 col-md-12 col-sm-12 col-xs-8">
+                      <h5>Git Log Widget for Übersicht</h5>
+                      <span class="widget-post-date">
+                        January 18, 2016                      </span> </div>
+                    </div>
+                  </a>
+                </li>
+                          </ul>
+          </div>
+                </div>
+          <!-- googleoff: snippet -->
+<div class="row">
+  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+    <div id="comments" class="comments-area">
+          	<div id="respond" class="comment-respond">
+		<h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="https://adamdehaven.com/blog/how-to-sync-sublime-text-packages-and-settings-across-multiple-computers-with-dropbox/#respond" style="display:none;"><i class="fa fa-remove"></i> Cancel reply</a></small></h3>			<form action="https://adamdehaven.com/wp-comments-post.php" method="post" id="commentform" class="comment-form" novalidate="true">
+				<p class="comment-notes">Your email address is only used to prevent spam and will not be published.</p><div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 no-left-padding"><div class="form-group comment-form-author"><label for="author">Name <span class="required">*</span></label> <span class="help-block with-errors pull-right"></span><input id="author" class="form-control" name="author" type="text" value="" size="30" aria-required="true" data-error="Please enter your full name" data-minlength="4" required=""></div><div class="form-group comment-form-email"><label for="email">Email <span class="required">*</span></label> <span class="help-block with-errors pull-right"></span><input id="email" class="form-control" name="email" type="email" value="" size="30" aria-required="true" data-error="Please enter your email address" required=""></div><div class="form-group comment-form-url"><label for="url">Website</label> <span class="help-block with-errors pull-right"></span><input id="url" class="form-control" name="url" type="url" value="" size="30" data-minlength="4" data-error="Please enter a valid URL"></div></div>
+
+
+<div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 no-left-padding"><div class="form-group comment-form-comment"><label for="comment">Comment <span class="required">*</span></label><a id="allowable-tags-popover-link" class="pull-right" role="button" tabindex="-1" data-toggle="popover" data-trigger="focus" data-placement="top" data-container=".comment-form" data-html="true" title="" data-content="You may use these &lt;abbr title=&#39;HyperText Markup Language&#39;&gt;HTML&lt;/abbr&gt; tags and attributes:  &lt;code&gt;&amp;lt;a href=&amp;quot;&amp;quot; title=&amp;quot;&amp;quot;&amp;gt; &amp;lt;abbr title=&amp;quot;&amp;quot;&amp;gt; &amp;lt;acronym title=&amp;quot;&amp;quot;&amp;gt; &amp;lt;b&amp;gt; &amp;lt;blockquote cite=&amp;quot;&amp;quot;&amp;gt; &amp;lt;cite&amp;gt; &amp;lt;code&amp;gt; &amp;lt;del datetime=&amp;quot;&amp;quot;&amp;gt; &amp;lt;em&amp;gt; &amp;lt;i&amp;gt; &amp;lt;q cite=&amp;quot;&amp;quot;&amp;gt; &amp;lt;s&amp;gt; &amp;lt;strike&amp;gt; &amp;lt;strong&amp;gt; &lt;/code&gt;" data-original-title="Supported HTML tags">Formatting <i class="fa fa-question-circle fa-lg"></i> </a> <span class="help-block with-errors pull-right"></span><textarea id="comment" class="form-control" name="comment" cols="45" rows="8" aria-required="true" data-error="Please enter your comments" data-minlength="10" data-minlength-error="Please enter at least 10 characters" required=""></textarea></div><div class="clearfix"></div></div><div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 no-left-padding no-right-padding"><div class="form-group"><span id="reCaptcha-help-block" class="help-block with-errors text-error"></span><div class="form-submit"><div id="g-recaptcha-0" class="g-recaptcha" data-sitekey="6LfxqwITAAAAAB2_DOrWUyABTs3zWohQoigqejTp" data-theme="light" data-widget-id="0"><div style="width: 304px; height: 78px;"><div><iframe src="./sync_sublime_settings_across_machines_IMPORTANT_files/anchor.html" title="recaptcha widget" width="304" height="78" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe></div><textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid #c1c1c1; margin: 10px 25px; padding: 0px; resize: none;  display: none; "></textarea></div></div><noscript>Please enable JavaScript to submit this form.&lt;br&gt;</noscript><button name="submit" type="submit" id="btn-post-comment" class="submit" data-processing-text="&lt;i class=&#39;fa fa-circle-o-notch fa-spin fa-lg fa-fw&#39;&gt;&lt;/i&gt; Please wait..."><i class="fa fa-comment fa-lg fa-fw"></i> Post Comment</button> <input type="hidden" name="comment_post_ID" value="3617" id="comment_post_ID">
+<input type="hidden" name="comment_parent" id="comment_parent" value="0">
+</div></div></div><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="43208dee6c"></p><p class="comment-subscription-form"><input type="checkbox" name="subscribe_comments" id="subscribe_comments" value="subscribe" style="width: auto; -moz-appearance: checkbox; -webkit-appearance: checkbox;"> <label class="subscribe-label" id="subscribe-label" for="subscribe_comments">Notify me of follow-up comments by email.</label></p><p class="comment-subscription-form"><input type="checkbox" name="subscribe_blog" id="subscribe_blog" value="subscribe" style="width: auto; -moz-appearance: checkbox; -webkit-appearance: checkbox;"> <label class="subscribe-label" id="subscribe-blog-label" for="subscribe_blog">Notify me of new posts by email.</label></p><p style="display: none;"></p>			<input type="hidden" id="ak_js" name="ak_js" value="1505988472285"></form>
+			</div><!-- #respond -->
+	     <div class="clearfix"></div>
+           <h3 id="comments-title">
+       8 Comments     </h3>
+         
+    <ol class="commentlist collapse in" id="comments-collapse" aria-expanded="true" style="">
+     
+    
+      <li class="comment even thread-even depth-1 parent" id="comment-104">
+        <div id="comment-body-104" class="post-comment ">
+         <div class="comment-author">
+           <div class="author-thumb">
+             <img alt="" src="./sync_sublime_settings_across_machines_IMPORTANT_files/8372776222ac59d029260996e9690514" srcset="https://secure.gravatar.com/avatar/8372776222ac59d029260996e9690514?s=100&amp;d=mm&amp;r=g 2x" class="avatar avatar-50 photo grav-hashed grav-hijack" height="50" width="50" id="grav-8372776222ac59d029260996e9690514-0">           </div>
+           <div class="comment-block">
+            <div class="comment-meta">
+                            <cite class="fn">Carlos Vergara</cite>               <div class="comment-timestamp">August 11, 2016 at 10:29 AM</div>
+            </div><!-- /.comment-author -->
+
+            <div id="comment-content-104" class="comment-body">
+                            <p>Hey, I finally dit it, the main problem was that before sync  the folders I had to  have installed Package Control in all machines. Sorry for that  and thanks.</p>
+            </div><!-- /.comment-content -->
+          </div>
+        </div>
+        <div class="reply">
+          <a rel="nofollow" class="comment-reply-link" href="https://adamdehaven.com/blog/how-to-sync-sublime-text-packages-and-settings-across-multiple-computers-with-dropbox/?replytocom=104#respond" onclick="return addComment.moveForm( &quot;comment-content-104&quot;, &quot;104&quot;, &quot;respond&quot;, &quot;3617&quot; )" aria-label="Reply to Carlos Vergara"><i class="fa fa-reply"></i> Reply</a>
+          </div><!-- /.reply -->
+        </div><!-- /.comment-body -->
+
+              <ul class="children">
+        
+      <li class="comment byuser comment-author-adamdehaven bypostauthor odd alt depth-2" id="comment-105">
+        <div id="comment-body-105" class="post-comment ">
+         <div class="comment-author">
+           <div class="author-thumb">
+             <img alt="" src="./sync_sublime_settings_across_machines_IMPORTANT_files/3bbeaedee1f8c2a3c8bcf45937b83dfc" srcset="https://secure.gravatar.com/avatar/3bbeaedee1f8c2a3c8bcf45937b83dfc?s=100&amp;d=mm&amp;r=g 2x" class="avatar avatar-50 photo grav-hashed grav-hijack" height="50" width="50" id="grav-3bbeaedee1f8c2a3c8bcf45937b83dfc-0">           </div>
+           <div class="comment-block">
+            <div class="comment-meta">
+                            <cite class="fn"><mark>Adam DeHaven</mark></cite>  <p class="in-reply-to">in reply to <a href="https://adamdehaven.com/blog/how-to-sync-sublime-text-packages-and-settings-across-multiple-computers-with-dropbox/#comment-104" class="in-reply-to-link scroll-link">Carlos Vergara <i class="fa fa-level-up"></i></a>              </p><div class="comment-timestamp">August 11, 2016 at 10:43 AM</div>
+            </div><!-- /.comment-author -->
+
+            <div id="comment-content-105" class="comment-body">
+                            <p>No problem. Yes, the instructions outline that Package Control needs to be installed beforehand. Glad you got it working!</p>
+            </div><!-- /.comment-content -->
+          </div>
+        </div>
+        <div class="reply">
+          <a rel="nofollow" class="comment-reply-link" href="https://adamdehaven.com/blog/how-to-sync-sublime-text-packages-and-settings-across-multiple-computers-with-dropbox/?replytocom=105#respond" onclick="return addComment.moveForm( &quot;comment-content-105&quot;, &quot;105&quot;, &quot;respond&quot;, &quot;3617&quot; )" aria-label="Reply to Adam DeHaven"><i class="fa fa-reply"></i> Reply</a>
+          </div><!-- /.reply -->
+        </div><!-- /.comment-body -->
+
+        
+      </li><!-- /#comment-' . get_comment_ID() . ' -->
+
+      
+    </ul><!-- /.children -->
+
+    
+      </li><!-- /#comment-' . get_comment_ID() . ' -->
+
+      
+      <li class="comment even thread-odd thread-alt depth-1 parent" id="comment-98">
+        <div id="comment-body-98" class="post-comment ">
+         <div class="comment-author">
+           <div class="author-thumb">
+             <img alt="" src="./sync_sublime_settings_across_machines_IMPORTANT_files/8372776222ac59d029260996e9690514" srcset="https://secure.gravatar.com/avatar/8372776222ac59d029260996e9690514?s=100&amp;d=mm&amp;r=g 2x" class="avatar avatar-50 photo grav-hashed grav-hijack" height="50" width="50" id="grav-8372776222ac59d029260996e9690514-1">           </div>
+           <div class="comment-block">
+            <div class="comment-meta">
+                            <cite class="fn">Blueminded</cite>               <div class="comment-timestamp">August 6, 2016 at 7:05 PM</div>
+            </div><!-- /.comment-author -->
+
+            <div id="comment-content-98" class="comment-body">
+                            <p>unfortunately this method doesn’t work because de the packages are installed in another folder, so? Am i missing something?</p>
+            </div><!-- /.comment-content -->
+          </div>
+        </div>
+        <div class="reply">
+          <a rel="nofollow" class="comment-reply-link" href="https://adamdehaven.com/blog/how-to-sync-sublime-text-packages-and-settings-across-multiple-computers-with-dropbox/?replytocom=98#respond" onclick="return addComment.moveForm( &quot;comment-content-98&quot;, &quot;98&quot;, &quot;respond&quot;, &quot;3617&quot; )" aria-label="Reply to Blueminded"><i class="fa fa-reply"></i> Reply</a>
+          </div><!-- /.reply -->
+        </div><!-- /.comment-body -->
+
+              <ul class="children">
+        
+      <li class="comment byuser comment-author-adamdehaven bypostauthor odd alt depth-2 parent" id="comment-99">
+        <div id="comment-body-99" class="post-comment ">
+         <div class="comment-author">
+           <div class="author-thumb">
+             <img alt="" src="./sync_sublime_settings_across_machines_IMPORTANT_files/3bbeaedee1f8c2a3c8bcf45937b83dfc" srcset="https://secure.gravatar.com/avatar/3bbeaedee1f8c2a3c8bcf45937b83dfc?s=100&amp;d=mm&amp;r=g 2x" class="avatar avatar-50 photo grav-hashed grav-hijack" height="50" width="50" id="grav-3bbeaedee1f8c2a3c8bcf45937b83dfc-1">           </div>
+           <div class="comment-block">
+            <div class="comment-meta">
+                            <cite class="fn"><mark>Adam DeHaven</mark></cite>  <p class="in-reply-to">in reply to <a href="https://adamdehaven.com/blog/how-to-sync-sublime-text-packages-and-settings-across-multiple-computers-with-dropbox/#comment-98" class="in-reply-to-link scroll-link">Blueminded <i class="fa fa-level-up"></i></a>              </p><div class="comment-timestamp">August 6, 2016 at 7:54 PM</div>
+            </div><!-- /.comment-author -->
+
+            <div id="comment-content-99" class="comment-body">
+                            <p>I think you’re missing something. This method works fine with Sublime Text 3. Maybe try again by starting over.</p>
+            </div><!-- /.comment-content -->
+          </div>
+        </div>
+        <div class="reply">
+          <a rel="nofollow" class="comment-reply-link" href="https://adamdehaven.com/blog/how-to-sync-sublime-text-packages-and-settings-across-multiple-computers-with-dropbox/?replytocom=99#respond" onclick="return addComment.moveForm( &quot;comment-content-99&quot;, &quot;99&quot;, &quot;respond&quot;, &quot;3617&quot; )" aria-label="Reply to Adam DeHaven"><i class="fa fa-reply"></i> Reply</a>
+          </div><!-- /.reply -->
+        </div><!-- /.comment-body -->
+
+        
+      </li><!-- /#comment-' . get_comment_ID() . ' -->
+
+      
+      <li class="comment even depth-2 parent" id="comment-100">
+        <div id="comment-body-100" class="post-comment ">
+         <div class="comment-author">
+           <div class="author-thumb">
+             <img alt="" src="./sync_sublime_settings_across_machines_IMPORTANT_files/8372776222ac59d029260996e9690514" srcset="https://secure.gravatar.com/avatar/8372776222ac59d029260996e9690514?s=100&amp;d=mm&amp;r=g 2x" class="avatar avatar-50 photo grav-hashed grav-hijack" height="50" width="50" id="grav-8372776222ac59d029260996e9690514-2">           </div>
+           <div class="comment-block">
+            <div class="comment-meta">
+                            <cite class="fn">Blueminded</cite>  <p class="in-reply-to">in reply to <a href="https://adamdehaven.com/blog/how-to-sync-sublime-text-packages-and-settings-across-multiple-computers-with-dropbox/#comment-99" class="in-reply-to-link scroll-link">Adam DeHaven <i class="fa fa-level-up"></i></a>              </p><div class="comment-timestamp">August 9, 2016 at 10:40 AM</div>
+            </div><!-- /.comment-author -->
+
+            <div id="comment-content-100" class="comment-body">
+                            <p>you have the portable version or installed version? I have the portable one.</p>
+            </div><!-- /.comment-content -->
+          </div>
+        </div>
+        <div class="reply">
+          <a rel="nofollow" class="comment-reply-link" href="https://adamdehaven.com/blog/how-to-sync-sublime-text-packages-and-settings-across-multiple-computers-with-dropbox/?replytocom=100#respond" onclick="return addComment.moveForm( &quot;comment-content-100&quot;, &quot;100&quot;, &quot;respond&quot;, &quot;3617&quot; )" aria-label="Reply to Blueminded"><i class="fa fa-reply"></i> Reply</a>
+          </div><!-- /.reply -->
+        </div><!-- /.comment-body -->
+
+        
+      </li><!-- /#comment-' . get_comment_ID() . ' -->
+
+      
+      <li class="comment byuser comment-author-adamdehaven bypostauthor odd alt depth-2 parent" id="comment-101">
+        <div id="comment-body-101" class="post-comment ">
+         <div class="comment-author">
+           <div class="author-thumb">
+             <img alt="" src="./sync_sublime_settings_across_machines_IMPORTANT_files/3bbeaedee1f8c2a3c8bcf45937b83dfc" srcset="https://secure.gravatar.com/avatar/3bbeaedee1f8c2a3c8bcf45937b83dfc?s=100&amp;d=mm&amp;r=g 2x" class="avatar avatar-50 photo grav-hashed grav-hijack" height="50" width="50" id="grav-3bbeaedee1f8c2a3c8bcf45937b83dfc-2">           </div>
+           <div class="comment-block">
+            <div class="comment-meta">
+                            <cite class="fn"><mark>Adam DeHaven</mark></cite>  <p class="in-reply-to">in reply to <a href="https://adamdehaven.com/blog/how-to-sync-sublime-text-packages-and-settings-across-multiple-computers-with-dropbox/#comment-100" class="in-reply-to-link scroll-link">Blueminded <i class="fa fa-level-up"></i></a>              </p><div class="comment-timestamp">August 9, 2016 at 10:45 AM</div>
+            </div><!-- /.comment-author -->
+
+            <div id="comment-content-101" class="comment-body">
+                            <p>This should work with Creative Suite or Creative Cloud (if that’s what you mean?)</p>
+            </div><!-- /.comment-content -->
+          </div>
+        </div>
+        <div class="reply">
+          <a rel="nofollow" class="comment-reply-link" href="https://adamdehaven.com/blog/how-to-sync-sublime-text-packages-and-settings-across-multiple-computers-with-dropbox/?replytocom=101#respond" onclick="return addComment.moveForm( &quot;comment-content-101&quot;, &quot;101&quot;, &quot;respond&quot;, &quot;3617&quot; )" aria-label="Reply to Adam DeHaven"><i class="fa fa-reply"></i> Reply</a>
+          </div><!-- /.reply -->
+        </div><!-- /.comment-body -->
+
+        
+      </li><!-- /#comment-' . get_comment_ID() . ' -->
+
+      
+      <li class="comment even depth-2 parent" id="comment-102">
+        <div id="comment-body-102" class="post-comment ">
+         <div class="comment-author">
+           <div class="author-thumb">
+             <img alt="" src="./sync_sublime_settings_across_machines_IMPORTANT_files/8372776222ac59d029260996e9690514" srcset="https://secure.gravatar.com/avatar/8372776222ac59d029260996e9690514?s=100&amp;d=mm&amp;r=g 2x" class="avatar avatar-50 photo grav-hashed grav-hijack" height="50" width="50" id="grav-8372776222ac59d029260996e9690514-3">           </div>
+           <div class="comment-block">
+            <div class="comment-meta">
+                            <cite class="fn">Blueminded</cite>  <p class="in-reply-to">in reply to <a href="https://adamdehaven.com/blog/how-to-sync-sublime-text-packages-and-settings-across-multiple-computers-with-dropbox/#comment-101" class="in-reply-to-link scroll-link">Adam DeHaven <i class="fa fa-level-up"></i></a>              </p><div class="comment-timestamp">August 10, 2016 at 10:09 AM</div>
+            </div><!-- /.comment-author -->
+
+            <div id="comment-content-102" class="comment-body">
+                            <p>Ok, let me explain you.</p>
+<p>I have SublimeText 3(portable version) installed on Windows(initial machine), I follow the steps and I noticed that the only folder saved on Dropbox is User which only contains user configuration, however the packages installes are in another folder, so I says whatever. Then I installed Sublime Text 3 on my Mac (secondary machine) and syncronized the folder as you suggested so the User folder is now syncronized in both, the problem I have now is that I will have to install packages in both machines so what is the point?</p>
+            </div><!-- /.comment-content -->
+          </div>
+        </div>
+        <div class="reply">
+          <a rel="nofollow" class="comment-reply-link" href="https://adamdehaven.com/blog/how-to-sync-sublime-text-packages-and-settings-across-multiple-computers-with-dropbox/?replytocom=102#respond" onclick="return addComment.moveForm( &quot;comment-content-102&quot;, &quot;102&quot;, &quot;respond&quot;, &quot;3617&quot; )" aria-label="Reply to Blueminded"><i class="fa fa-reply"></i> Reply</a>
+          </div><!-- /.reply -->
+        </div><!-- /.comment-body -->
+
+        
+      </li><!-- /#comment-' . get_comment_ID() . ' -->
+
+      
+      <li class="comment byuser comment-author-adamdehaven bypostauthor odd alt depth-2" id="comment-103">
+        <div id="comment-body-103" class="post-comment ">
+         <div class="comment-author">
+           <div class="author-thumb">
+             <img alt="" src="./sync_sublime_settings_across_machines_IMPORTANT_files/3bbeaedee1f8c2a3c8bcf45937b83dfc" srcset="https://secure.gravatar.com/avatar/3bbeaedee1f8c2a3c8bcf45937b83dfc?s=100&amp;d=mm&amp;r=g 2x" class="avatar avatar-50 photo grav-hashed grav-hijack" height="50" width="50" id="grav-3bbeaedee1f8c2a3c8bcf45937b83dfc-3">           </div>
+           <div class="comment-block">
+            <div class="comment-meta">
+                            <cite class="fn"><mark>Adam DeHaven</mark></cite>  <p class="in-reply-to">in reply to <a href="https://adamdehaven.com/blog/how-to-sync-sublime-text-packages-and-settings-across-multiple-computers-with-dropbox/#comment-102" class="in-reply-to-link scroll-link">Blueminded <i class="fa fa-level-up"></i></a>              </p><div class="comment-timestamp">August 10, 2016 at 11:24 AM</div>
+            </div><!-- /.comment-author -->
+
+            <div id="comment-content-103" class="comment-body">
+                            <p>Syncing does not prevent you from having to download packages on both machines. Syncing the User folder keeps all installed packages synced (in other words both computers know which packages they should download) and syncs your user file preferences.</p>
+            </div><!-- /.comment-content -->
+          </div>
+        </div>
+        <div class="reply">
+          <a rel="nofollow" class="comment-reply-link" href="https://adamdehaven.com/blog/how-to-sync-sublime-text-packages-and-settings-across-multiple-computers-with-dropbox/?replytocom=103#respond" onclick="return addComment.moveForm( &quot;comment-content-103&quot;, &quot;103&quot;, &quot;respond&quot;, &quot;3617&quot; )" aria-label="Reply to Adam DeHaven"><i class="fa fa-reply"></i> Reply</a>
+          </div><!-- /.reply -->
+        </div><!-- /.comment-body -->
+
+        
+      </li><!-- /#comment-' . get_comment_ID() . ' -->
+
+      
+    </ul><!-- /.children -->
+
+    
+      </li><!-- /#comment-' . get_comment_ID() . ' -->
+
+      
+  <!-- /#comment-list -->
+
+       </ol><!-- .comment-list -->
+
+     
+  
+  
+
+
+</div><!-- #comments -->
+</div>
+</div>
+<div class="clearfix"></div>
+<!-- googleon: snippet -->
+          </div>
+                                      </div>
+      </div>
+            <div class="hidden">
+        
+<div class="sidebar" role="complementary">
+			<p>You don't have any Widgets here (sidebar-Post-Sidebar.php) right now. Drag and drop widget from 
+            <a href="https://adamdehaven.com/blog/how-to-sync-sublime-text-packages-and-settings-across-multiple-computers-with-dropbox/wp-admin/widgets.php">here</a>
+        </p>
+        
+</div>
+      </div>
+          </div>
+  </div>
+</div>
+    <div class="footer">
+	          <div class="container">
+	        <div class="row">
+	            <div class="col-md-4">
+	            <div id="text-6" class="widget-col widget_text">			<div class="textwidget"></div>
+		</div>	            </div>
+	            <div class="col-md-4">
+	            <div id="text-5" class="widget-col widget_text">			<div class="textwidget"><p class="text-center" style="color:#ccc;font-style:italic">"My interest is in the future because I am going to spend the rest of my life there."</p></div>
+		</div><div id="simple-social-icons-2" class="widget-col simple-social-icons"><ul class="aligncenter"><li class="ssi-dribbble"><a href="http://dribbble.com/adamdehaven" target="_blank"><svg role="img" class="social-dribbble" aria-labelledby="social-dribbble"><title id="social-dribbble">Dribbble</title><use xlink:href="https://adamdehaven.com/wp-content/plugins/simple-social-icons/symbol-defs.svg#social-dribbble"></use></svg></a></li><li class="ssi-github"><a href="https://github.com/adamdehaven" target="_blank"><svg role="img" class="social-github" aria-labelledby="social-github"><title id="social-github">Github</title><use xlink:href="https://adamdehaven.com/wp-content/plugins/simple-social-icons/symbol-defs.svg#social-github"></use></svg></a></li><li class="ssi-instagram"><a href="http://instagram.com/adamdehaven" target="_blank"><svg role="img" class="social-instagram" aria-labelledby="social-instagram"><title id="social-instagram">Instagram</title><use xlink:href="https://adamdehaven.com/wp-content/plugins/simple-social-icons/symbol-defs.svg#social-instagram"></use></svg></a></li><li class="ssi-linkedin"><a href="http://linkedin.com/in/adamdehaven" target="_blank"><svg role="img" class="social-linkedin" aria-labelledby="social-linkedin"><title id="social-linkedin">Linkedin</title><use xlink:href="https://adamdehaven.com/wp-content/plugins/simple-social-icons/symbol-defs.svg#social-linkedin"></use></svg></a></li><li class="ssi-medium"><a href="https://medium.com/@adamdehaven" target="_blank"><svg role="img" class="social-medium" aria-labelledby="social-medium"><title id="social-medium">Medium</title><use xlink:href="https://adamdehaven.com/wp-content/plugins/simple-social-icons/symbol-defs.svg#social-medium"></use></svg></a></li><li class="ssi-twitter"><a href="https://twitter.com/adamdehaven" target="_blank"><svg role="img" class="social-twitter" aria-labelledby="social-twitter"><title id="social-twitter">Twitter</title><use xlink:href="https://adamdehaven.com/wp-content/plugins/simple-social-icons/symbol-defs.svg#social-twitter"></use></svg></a></li></ul></div><div id="stn_footer_socket-2" class="widget-col widget_stn_footer_socket"><div class="copyright-info">© 2016 Adam DeHaven</div></div>    
+	            </div>
+	            <div class="col-md-4">
+	            <div id="text-7" class="widget-col widget_text">			<div class="textwidget"></div>
+		</div>	            </div>
+	        </div>
+	    </div>
+	</div>  
+</div> <!-- Page Wrapper Div Ends -->
+	<div style="display:none">
+	<div class="grofile-hash-map-8372776222ac59d029260996e9690514">
+	</div>
+	<div class="grofile-hash-map-3bbeaedee1f8c2a3c8bcf45937b83dfc">
+	</div>
+	</div>
+<script type="text/javascript">                        // Redirect direct links to portfolio pages to landing page version
+portfolioRegEx = /^http:\/\/adamdehaven\.com\/blog\/cubeportfolio\/(.*)\/$/;
+if( portfolioRegEx.test(window.location) ) {
+  window.location = "http://adamdehaven.com/#cbp=" + window.location;
+}                    </script>    <script type="text/javascript">
+    "use strict";
+    var jq = jQuery.noConflict();
+    (function(jq) {
+        "use strict";
+        jq(document).ready(function() {
+        
+        // Add .nav-active to navbar if on a blog page
+        
+        });
+    })(jq);
+    </script>
+
+
+<!-- BEGIN recaptcha, injected by plugin wp-recaptcha-integration  -->
+<script type="text/javascript">
+		var recaptcha_widgets={};
+		function wp_recaptchaLoadCallback(){ 
+			try {
+				grecaptcha;
+			} catch(err){
+				return;
+			}
+			var e = document.querySelectorAll ? document.querySelectorAll('.g-recaptcha:not(.wpcf7-form-control)') : document.getElementsByClassName('g-recaptcha'),
+				form_submits;
+
+			for (var i=0;i<e.length;i++) {
+				(function(el){
+					var wid;
+					// check if captcha element is unrendered
+					if ( ! el.childNodes.length) {
+						wid = grecaptcha.render(el,{
+							'sitekey':'6LfxqwITAAAAAB2_DOrWUyABTs3zWohQoigqejTp',
+							'theme':el.getAttribute('data-theme') || 'light'
+						});
+						el.setAttribute('data-widget-id',wid);
+					} else {
+						wid = el.getAttribute('data-widget-id');
+						grecaptcha.reset(wid);
+					}
+				})(e[i]);
+			}
+		}
+		
+		// if jquery present re-render jquery/ajax loaded captcha elements 
+		if ( typeof jQuery !== 'undefined' )
+			jQuery(document).ajaxComplete( function(evt,xhr,set){
+				if( xhr.responseText && xhr.responseText.indexOf('6LfxqwITAAAAAB2_DOrWUyABTs3zWohQoigqejTp') !== -1)
+					wp_recaptchaLoadCallback();
+			} );
+		
+		</script><script src="./sync_sublime_settings_across_machines_IMPORTANT_files/api.js" async="" defer=""></script>
+<!-- END recaptcha -->
+
+	<script type="text/javascript">
+		window.WPCOM_sharing_counts = {"https:\/\/adamdehaven.com\/blog\/how-to-sync-sublime-text-packages-and-settings-across-multiple-computers-with-dropbox\/":3617};
+	</script>
+			
+<link rel="stylesheet" id="su-content-shortcodes-css" href="./sync_sublime_settings_across_machines_IMPORTANT_files/content-shortcodes.css" type="text/css" media="all">
+<script type="text/javascript" src="./sync_sublime_settings_across_machines_IMPORTANT_files/devicepx-jetpack.js"></script>
+<script type="text/javascript" src="./sync_sublime_settings_across_machines_IMPORTANT_files/gprofiles.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var WPGroHo = {"my_hash":""};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./sync_sublime_settings_across_machines_IMPORTANT_files/wpgroho.js"></script>
+<script type="text/javascript" src="./sync_sublime_settings_across_machines_IMPORTANT_files/royal_preloader.min.js"></script>
+<script type="text/javascript" src="./sync_sublime_settings_across_machines_IMPORTANT_files/royal_preload_config.js"></script>
+<script type="text/javascript" src="./sync_sublime_settings_across_machines_IMPORTANT_files/retina.js"></script>
+<script type="text/javascript" src="./sync_sublime_settings_across_machines_IMPORTANT_files/bootstrap.min.js"></script>
+<script type="text/javascript" src="./sync_sublime_settings_across_machines_IMPORTANT_files/skip-link-focus-fix.js"></script>
+<script type="text/javascript" src="./sync_sublime_settings_across_machines_IMPORTANT_files/comment-reply.min.js"></script>
+<script type="text/javascript" src="./sync_sublime_settings_across_machines_IMPORTANT_files/layout-plugins.js"></script>
+<script type="text/javascript" src="./sync_sublime_settings_across_machines_IMPORTANT_files/essential-plugins.js"></script>
+<script type="text/javascript" src="./sync_sublime_settings_across_machines_IMPORTANT_files/owl.carousel.min.js"></script>
+<script type="text/javascript" src="./sync_sublime_settings_across_machines_IMPORTANT_files/st-options.js"></script>
+<script type="text/javascript" src="./sync_sublime_settings_across_machines_IMPORTANT_files/validator.min.js"></script>
+<script type="text/javascript" src="./sync_sublime_settings_across_machines_IMPORTANT_files/comment-scripts.js"></script>
+<script type="text/javascript" src="./sync_sublime_settings_across_machines_IMPORTANT_files/init.js"></script>
+<script type="text/javascript" src="./sync_sublime_settings_across_machines_IMPORTANT_files/wp-embed.min.js"></script>
+<script type="text/javascript" src="./sync_sublime_settings_across_machines_IMPORTANT_files/form.js"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var sharing_js_options = {"lang":"en","counts":"1"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="./sync_sublime_settings_across_machines_IMPORTANT_files/sharing.js"></script>
+<script type="text/javascript">
+var windowOpen;
+			jQuery( document.body ).on( 'click', 'a.share-twitter', function() {
+				// If there's another sharing window open, close it.
+				if ( 'undefined' !== typeof windowOpen ) {
+					windowOpen.close();
+				}
+				windowOpen = window.open( jQuery( this ).attr( 'href' ), 'wpcomtwitter', 'menubar=1,resizable=1,width=600,height=350' );
+				return false;
+			});
+var windowOpen;
+			jQuery( document.body ).on( 'click', 'a.share-facebook', function() {
+				// If there's another sharing window open, close it.
+				if ( 'undefined' !== typeof windowOpen ) {
+					windowOpen.close();
+				}
+				windowOpen = window.open( jQuery( this ).attr( 'href' ), 'wpcomfacebook', 'menubar=1,resizable=1,width=600,height=400' );
+				return false;
+			});
+var windowOpen;
+			jQuery( document.body ).on( 'click', 'a.share-linkedin', function() {
+				// If there's another sharing window open, close it.
+				if ( 'undefined' !== typeof windowOpen ) {
+					windowOpen.close();
+				}
+				windowOpen = window.open( jQuery( this ).attr( 'href' ), 'wpcomlinkedin', 'menubar=1,resizable=1,width=580,height=450' );
+				return false;
+			});
+</script>
+<script type="text/javascript" src="./sync_sublime_settings_across_machines_IMPORTANT_files/e-201738.js" async="" defer=""></script>
+<script type="text/javascript">
+	_stq = window._stq || [];
+	_stq.push([ 'view', {v:'ext',j:'1:5.2.1',blog:'91974949',post:'3617',tz:'-4',srv:'adamdehaven.com'} ]);
+	_stq.push([ 'clickTrackerInit', '91974949', '3617' ]);
+</script>
+
+<a id="scrollTop" href="https://adamdehaven.com/blog/how-to-sync-sublime-text-packages-and-settings-across-multiple-computers-with-dropbox/#top" title="&lt;i class=&quot;fa fa-angle-up pulse&quot;&gt;&lt;/i&gt;" style="position: fixed; z-index: 2147483647;"><i class="fa fa-angle-up pulse"></i></a><div id="sharing_email" style="display: none;">
+		<form action="https://adamdehaven.com/blog/how-to-sync-sublime-text-packages-and-settings-across-multiple-computers-with-dropbox/" method="post">
+			<label for="target_email">Send to Email Address</label>
+			<input type="email" name="target_email" id="target_email" value="">
+
+			
+				<label for="source_name">Your Name</label>
+				<input type="text" name="source_name" id="source_name" value="">
+
+				<label for="source_email">Your Email Address</label>
+				<input type="email" name="source_email" id="source_email" value="">
+
+						<input type="text" id="jetpack-source_f_name" name="source_f_name" class="input" value="" size="25" autocomplete="off" title="This field is for validation and should not be changed">
+			<script>jQuery( document ).ready( function(){ document.getElementById('jetpack-source_f_name').value = '' });</script>
+			
+			<img style="float: right; display: none" class="loading" src="./sync_sublime_settings_across_machines_IMPORTANT_files/loading.gif" alt="loading" width="16" height="16">
+			<input type="submit" value="Send Email" class="sharing_send">
+			<a rel="nofollow" href="https://adamdehaven.com/blog/how-to-sync-sublime-text-packages-and-settings-across-multiple-computers-with-dropbox/#cancel" class="sharing_cancel">Cancel</a>
+
+			<div class="errors errors-1" style="display: none;">
+				Post was not sent - check your email addresses!			</div>
+
+			<div class="errors errors-2" style="display: none;">
+				Email check failed, please try again			</div>
+
+			<div class="errors errors-3" style="display: none;">
+				Sorry, your blog cannot share posts by email.			</div>
+		</form>
+	</div><div style="background-color: #fff; border: 1px solid #ccc; box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2); position: absolute; left: 0px; top: -10000px; transition: visibility 0s linear 0.3s, opacity 0.3s linear; opacity: 0; visibility: hidden; z-index: 2000000000;"><div style="width: 100%; height: 100%; position: fixed; top: 0px; left: 0px; z-index: 2000000000; background-color: #fff; opacity: 0.05;  filter: alpha(opacity=5)"></div><div class="g-recaptcha-bubble-arrow" style="border: 11px solid transparent; width: 0; height: 0; position: absolute; pointer-events: none; margin-top: -11px; z-index: 2000000000;"></div><div class="g-recaptcha-bubble-arrow" style="border: 10px solid transparent; width: 0; height: 0; position: absolute; pointer-events: none; margin-top: -10px; z-index: 2000000000;"></div><div style="z-index: 2000000000; position: relative;"><iframe src="./sync_sublime_settings_across_machines_IMPORTANT_files/bframe.html" title="recaptcha challenge" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox" name="4nc9nqwwg6u0" style="width: 100%; height: 100%;"></iframe></div></div><img src="./sync_sublime_settings_across_machines_IMPORTANT_files/g.gif" alt=":)" width="6" height="5" id="wpstats"></body></html>

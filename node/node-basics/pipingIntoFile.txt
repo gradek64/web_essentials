@@ -1,0 +1,1 @@
+this is a a way of creating and piping into file just by few commads 

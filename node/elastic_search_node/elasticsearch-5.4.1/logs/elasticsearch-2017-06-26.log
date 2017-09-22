@@ -1,0 +1,32 @@
+[2017-06-26T09:43:11,838][INFO ][o.e.n.Node               ] [] initializing ...
+[2017-06-26T09:43:12,014][INFO ][o.e.e.NodeEnvironment    ] [_h1h-U9] using [1] data paths, mounts [[/ (/dev/disk1)]], net usable_space [66.9gb], net total_space [232.6gb], spins? [unknown], types [hfs]
+[2017-06-26T09:43:12,015][INFO ][o.e.e.NodeEnvironment    ] [_h1h-U9] heap size [1.9gb], compressed ordinary object pointers [true]
+[2017-06-26T09:43:12,156][INFO ][o.e.n.Node               ] node name [_h1h-U9] derived from node ID [_h1h-U9BTimL7eEx1BH6mA]; set [node.name] to override
+[2017-06-26T09:43:12,157][INFO ][o.e.n.Node               ] version[5.4.1], pid[6050], build[2cfe0df/2017-05-29T16:05:51.443Z], OS[Mac OS X/10.12.5/x86_64], JVM[Oracle Corporation/Java HotSpot(TM) 64-Bit Server VM/1.8.0_131/25.131-b11]
+[2017-06-26T09:43:12,158][INFO ][o.e.n.Node               ] JVM arguments [-Xms2g, -Xmx2g, -XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -XX:+DisableExplicitGC, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -Djdk.io.permissionsUseCanonicalPath=true, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Dlog4j.skipJansi=true, -XX:+HeapDumpOnOutOfMemoryError, -Des.path.home=/Users/ggil01/my_tutorials_and_short/node/elastic_search_node/elasticsearch-5.4.1]
+[2017-06-26T09:43:14,600][INFO ][o.e.p.PluginsService     ] [_h1h-U9] loaded module [aggs-matrix-stats]
+[2017-06-26T09:43:14,601][INFO ][o.e.p.PluginsService     ] [_h1h-U9] loaded module [ingest-common]
+[2017-06-26T09:43:14,601][INFO ][o.e.p.PluginsService     ] [_h1h-U9] loaded module [lang-expression]
+[2017-06-26T09:43:14,601][INFO ][o.e.p.PluginsService     ] [_h1h-U9] loaded module [lang-groovy]
+[2017-06-26T09:43:14,601][INFO ][o.e.p.PluginsService     ] [_h1h-U9] loaded module [lang-mustache]
+[2017-06-26T09:43:14,601][INFO ][o.e.p.PluginsService     ] [_h1h-U9] loaded module [lang-painless]
+[2017-06-26T09:43:14,601][INFO ][o.e.p.PluginsService     ] [_h1h-U9] loaded module [percolator]
+[2017-06-26T09:43:14,602][INFO ][o.e.p.PluginsService     ] [_h1h-U9] loaded module [reindex]
+[2017-06-26T09:43:14,602][INFO ][o.e.p.PluginsService     ] [_h1h-U9] loaded module [transport-netty3]
+[2017-06-26T09:43:14,602][INFO ][o.e.p.PluginsService     ] [_h1h-U9] loaded module [transport-netty4]
+[2017-06-26T09:43:14,603][INFO ][o.e.p.PluginsService     ] [_h1h-U9] no plugins loaded
+[2017-06-26T09:43:18,380][INFO ][o.e.d.DiscoveryModule    ] [_h1h-U9] using discovery type [zen]
+[2017-06-26T09:43:19,615][INFO ][o.e.n.Node               ] initialized
+[2017-06-26T09:43:19,616][INFO ][o.e.n.Node               ] [_h1h-U9] starting ...
+[2017-06-26T09:43:20,039][INFO ][o.e.t.TransportService   ] [_h1h-U9] publish_address {127.0.0.1:9300}, bound_addresses {[fe80::1]:9300}, {[::1]:9300}, {127.0.0.1:9300}
+[2017-06-26T09:43:23,287][INFO ][o.e.c.s.ClusterService   ] [_h1h-U9] new_master {_h1h-U9}{_h1h-U9BTimL7eEx1BH6mA}{aRnGPcALRfCgs4eRE0Gt-w}{127.0.0.1}{127.0.0.1:9300}, reason: zen-disco-elected-as-master ([0] nodes joined)
+[2017-06-26T09:43:23,325][INFO ][o.e.h.n.Netty4HttpServerTransport] [_h1h-U9] publish_address {127.0.0.1:9200}, bound_addresses {[fe80::1]:9200}, {[::1]:9200}, {127.0.0.1:9200}
+[2017-06-26T09:43:23,334][INFO ][o.e.n.Node               ] [_h1h-U9] started
+[2017-06-26T09:43:23,750][INFO ][o.e.g.GatewayService     ] [_h1h-U9] recovered [10] indices into cluster_state
+[2017-06-26T09:43:26,890][INFO ][o.e.c.r.a.AllocationService] [_h1h-U9] Cluster health status changed from [RED] to [YELLOW] (reason: [shards started [[recipes][4]] ...]).
+[2017-06-26T09:48:06,491][INFO ][o.e.m.j.JvmGcMonitorService] [_h1h-U9] [gc][286] overhead, spent [427ms] collecting in the last [1s]
+[2017-06-26T10:13:40,256][INFO ][o.e.m.j.JvmGcMonitorService] [_h1h-U9] [gc][1815] overhead, spent [315ms] collecting in the last [1s]
+[2017-06-26T18:47:15,598][INFO ][o.e.n.Node               ] [_h1h-U9] stopping ...
+[2017-06-26T18:47:15,921][INFO ][o.e.n.Node               ] [_h1h-U9] stopped
+[2017-06-26T18:47:15,923][INFO ][o.e.n.Node               ] [_h1h-U9] closing ...
+[2017-06-26T18:47:15,961][INFO ][o.e.n.Node               ] [_h1h-U9] closed

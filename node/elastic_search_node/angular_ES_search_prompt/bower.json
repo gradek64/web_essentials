@@ -1,0 +1,30 @@
+{
+  "name": "angular_ES_search_prompt",
+  "authors": [
+    "greg <gradek64@yahoo.com>"
+  ],
+  "description": "Elasstich search Angular suggestions",
+  "main": "index.html",
+  "keywords": [
+    "angular",
+    "elasticsearch",
+    "search",
+    "search",
+    "engine"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "angular": "^1.6.4",
+    "angular-elastic": "^2.5.1",
+    "angular-sanitize": "^1.6.4"
+  }
+}

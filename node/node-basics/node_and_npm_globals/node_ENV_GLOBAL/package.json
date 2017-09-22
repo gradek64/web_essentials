@@ -1,0 +1,15 @@
+{
+  "name": "node_ENV_GLOBAL",
+  "version": "1.0.0",
+  "description": "",
+  "main": "access_node_ENV.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^4.0.0"
+  }
+}

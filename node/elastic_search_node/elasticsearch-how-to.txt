@@ -1,0 +1,40 @@
+		
+		
+		1) download elastich search library using website link or  terminal by:
+			
+			curl https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-5.4.1.tar.gz 
+
+		2) check your veriosn of Java - you need at least version 8
+
+			Java -verion 
+
+		3) update Java from Oracle website if you need to 
+
+		4) Elasticsearch doenst require INSTALATION all you need to do i		s to unzip your dowlaoded file and run this command to unzip 
+			tar -v elasticsearch.tar.gz 
+		(-v flag) is the verbose mode that shows the progress in termina		
+		5) no go to folder and simple run :
+
+			bin/elastichsearch or (win) bin/elasticsearch.bat 
+
+		6) to start up the Elastich serach engine run either:
+
+			curl http://localhost:9200/
+
+		or go to browser and do the same: http://localhost:9200
+		
+			you should see this:
+
+			{
+			  "name" : "_h1h-U9",
+			  "cluster_name" : "elasticsearch",
+			  "cluster_uuid" : "v4Ytn89bQ2ORxH_wFYqOMA",
+			  "version" : {
+			    "number" : "5.4.1",
+			    "build_hash" : "2cfe0df",
+			    "build_date" : "2017-05-29T16:05:51.443Z",
+			    "build_snapshot" : false,
+			    "lucene_version" : "6.5.1"
+			  },
+			  "tagline" : "You Know, for Search"
+			}

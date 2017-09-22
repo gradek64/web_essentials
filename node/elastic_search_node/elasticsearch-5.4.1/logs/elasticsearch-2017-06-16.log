@@ -1,0 +1,734 @@
+[2017-06-16T09:27:24,889][INFO ][o.e.n.Node               ] [] initializing ...
+[2017-06-16T09:27:25,036][INFO ][o.e.e.NodeEnvironment    ] [_h1h-U9] using [1] data paths, mounts [[/ (/dev/disk1)]], net usable_space [66.8gb], net total_space [232.6gb], spins? [unknown], types [hfs]
+[2017-06-16T09:27:25,037][INFO ][o.e.e.NodeEnvironment    ] [_h1h-U9] heap size [1.9gb], compressed ordinary object pointers [true]
+[2017-06-16T09:27:25,100][INFO ][o.e.n.Node               ] node name [_h1h-U9] derived from node ID [_h1h-U9BTimL7eEx1BH6mA]; set [node.name] to override
+[2017-06-16T09:27:25,101][INFO ][o.e.n.Node               ] version[5.4.1], pid[3630], build[2cfe0df/2017-05-29T16:05:51.443Z], OS[Mac OS X/10.12.5/x86_64], JVM[Oracle Corporation/Java HotSpot(TM) 64-Bit Server VM/1.8.0_131/25.131-b11]
+[2017-06-16T09:27:25,101][INFO ][o.e.n.Node               ] JVM arguments [-Xms2g, -Xmx2g, -XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -XX:+DisableExplicitGC, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -Djdk.io.permissionsUseCanonicalPath=true, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Dlog4j.skipJansi=true, -XX:+HeapDumpOnOutOfMemoryError, -Des.path.home=/Users/ggil01/my_tutorials_and_short/node/elastic_search_node/elasticsearch-5.4.1]
+[2017-06-16T09:27:27,227][INFO ][o.e.p.PluginsService     ] [_h1h-U9] loaded module [aggs-matrix-stats]
+[2017-06-16T09:27:27,227][INFO ][o.e.p.PluginsService     ] [_h1h-U9] loaded module [ingest-common]
+[2017-06-16T09:27:27,228][INFO ][o.e.p.PluginsService     ] [_h1h-U9] loaded module [lang-expression]
+[2017-06-16T09:27:27,228][INFO ][o.e.p.PluginsService     ] [_h1h-U9] loaded module [lang-groovy]
+[2017-06-16T09:27:27,228][INFO ][o.e.p.PluginsService     ] [_h1h-U9] loaded module [lang-mustache]
+[2017-06-16T09:27:27,228][INFO ][o.e.p.PluginsService     ] [_h1h-U9] loaded module [lang-painless]
+[2017-06-16T09:27:27,229][INFO ][o.e.p.PluginsService     ] [_h1h-U9] loaded module [percolator]
+[2017-06-16T09:27:27,229][INFO ][o.e.p.PluginsService     ] [_h1h-U9] loaded module [reindex]
+[2017-06-16T09:27:27,229][INFO ][o.e.p.PluginsService     ] [_h1h-U9] loaded module [transport-netty3]
+[2017-06-16T09:27:27,229][INFO ][o.e.p.PluginsService     ] [_h1h-U9] loaded module [transport-netty4]
+[2017-06-16T09:27:27,230][INFO ][o.e.p.PluginsService     ] [_h1h-U9] no plugins loaded
+[2017-06-16T09:27:31,441][INFO ][o.e.d.DiscoveryModule    ] [_h1h-U9] using discovery type [zen]
+[2017-06-16T09:27:32,261][INFO ][o.e.n.Node               ] initialized
+[2017-06-16T09:27:32,261][INFO ][o.e.n.Node               ] [_h1h-U9] starting ...
+[2017-06-16T09:27:32,533][INFO ][o.e.t.TransportService   ] [_h1h-U9] publish_address {127.0.0.1:9300}, bound_addresses {[fe80::1]:9300}, {[::1]:9300}, {127.0.0.1:9300}
+[2017-06-16T09:27:35,608][INFO ][o.e.c.s.ClusterService   ] [_h1h-U9] new_master {_h1h-U9}{_h1h-U9BTimL7eEx1BH6mA}{M9cwOMuDSu-lWi35d8uaoA}{127.0.0.1}{127.0.0.1:9300}, reason: zen-disco-elected-as-master ([0] nodes joined)
+[2017-06-16T09:27:35,657][INFO ][o.e.h.n.Netty4HttpServerTransport] [_h1h-U9] publish_address {127.0.0.1:9200}, bound_addresses {[fe80::1]:9200}, {[::1]:9200}, {127.0.0.1:9200}
+[2017-06-16T09:27:35,662][INFO ][o.e.n.Node               ] [_h1h-U9] started
+[2017-06-16T09:27:36,021][INFO ][o.e.g.GatewayService     ] [_h1h-U9] recovered [4] indices into cluster_state
+[2017-06-16T09:27:36,019][WARN ][o.e.g.GatewayAllocator$InternalPrimaryShardAllocator] [_h1h-U9] [products][1]: failed to list shard for shard_started on node [_h1h-U9BTimL7eEx1BH6mA]
+org.elasticsearch.action.FailedNodeException: Failed node [_h1h-U9BTimL7eEx1BH6mA]
+	at org.elasticsearch.action.support.nodes.TransportNodesAction$AsyncAction.onFailure(TransportNodesAction.java:246) [elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.action.support.nodes.TransportNodesAction$AsyncAction.access$200(TransportNodesAction.java:160) [elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.action.support.nodes.TransportNodesAction$AsyncAction$1.handleException(TransportNodesAction.java:218) [elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.transport.TransportService$ContextRestoreResponseHandler.handleException(TransportService.java:1050) [elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.transport.TransportService$DirectResponseChannel.processException(TransportService.java:1154) [elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.transport.TransportService$DirectResponseChannel.sendResponse(TransportService.java:1132) [elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.transport.TransportService$7.onFailure(TransportService.java:638) [elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.onFailure(ThreadContext.java:623) [elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:39) [elasticsearch-5.4.1.jar:5.4.1]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [?:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [?:1.8.0_131]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_131]
+Caused by: org.elasticsearch.transport.RemoteTransportException: [_h1h-U9][127.0.0.1:9300][internal:gateway/local/started_shards[n]]
+Caused by: org.elasticsearch.ElasticsearchException: failed to load started shards
+	at org.elasticsearch.gateway.TransportNodesListGatewayStartedShards.nodeOperation(TransportNodesListGatewayStartedShards.java:171) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.gateway.TransportNodesListGatewayStartedShards.nodeOperation(TransportNodesListGatewayStartedShards.java:61) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.action.support.nodes.TransportNodesAction.nodeOperation(TransportNodesAction.java:145) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.action.support.nodes.TransportNodesAction$NodeTransportHandler.messageReceived(TransportNodesAction.java:269) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.action.support.nodes.TransportNodesAction$NodeTransportHandler.messageReceived(TransportNodesAction.java:265) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:69) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.transport.TransportService$7.doRun(TransportService.java:627) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:638) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) ~[elasticsearch-5.4.1.jar:5.4.1]
+	... 3 more
+Caused by: org.elasticsearch.ElasticsearchException: java.io.IOException: failed to read [id:25, legacy:false, file:/Users/ggil01/my_tutorials_and_short/node/elastic_search_node/elasticsearch-5.4.1/data/nodes/0/indices/-zqj3upVQAKXNZawlbhVwg/_state/state-25.st]
+	at org.elasticsearch.ExceptionsHelper.maybeThrowRuntimeAndSuppress(ExceptionsHelper.java:150) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.gateway.MetaDataStateFormat.loadLatestState(MetaDataStateFormat.java:334) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.gateway.TransportNodesListGatewayStartedShards.nodeOperation(TransportNodesListGatewayStartedShards.java:127) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.gateway.TransportNodesListGatewayStartedShards.nodeOperation(TransportNodesListGatewayStartedShards.java:61) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.action.support.nodes.TransportNodesAction.nodeOperation(TransportNodesAction.java:145) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.action.support.nodes.TransportNodesAction$NodeTransportHandler.messageReceived(TransportNodesAction.java:269) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.action.support.nodes.TransportNodesAction$NodeTransportHandler.messageReceived(TransportNodesAction.java:265) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:69) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.transport.TransportService$7.doRun(TransportService.java:627) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:638) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) ~[elasticsearch-5.4.1.jar:5.4.1]
+	... 3 more
+Caused by: java.io.IOException: failed to read [id:25, legacy:false, file:/Users/ggil01/my_tutorials_and_short/node/elastic_search_node/elasticsearch-5.4.1/data/nodes/0/indices/-zqj3upVQAKXNZawlbhVwg/_state/state-25.st]
+	at org.elasticsearch.gateway.MetaDataStateFormat.loadLatestState(MetaDataStateFormat.java:327) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.gateway.TransportNodesListGatewayStartedShards.nodeOperation(TransportNodesListGatewayStartedShards.java:127) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.gateway.TransportNodesListGatewayStartedShards.nodeOperation(TransportNodesListGatewayStartedShards.java:61) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.action.support.nodes.TransportNodesAction.nodeOperation(TransportNodesAction.java:145) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.action.support.nodes.TransportNodesAction$NodeTransportHandler.messageReceived(TransportNodesAction.java:269) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.action.support.nodes.TransportNodesAction$NodeTransportHandler.messageReceived(TransportNodesAction.java:265) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:69) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.transport.TransportService$7.doRun(TransportService.java:627) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:638) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) ~[elasticsearch-5.4.1.jar:5.4.1]
+	... 3 more
+Caused by: java.nio.file.NoSuchFileException: /Users/ggil01/my_tutorials_and_short/node/elastic_search_node/elasticsearch-5.4.1/data/nodes/0/indices/-zqj3upVQAKXNZawlbhVwg/_state/state-25.st
+	at sun.nio.fs.UnixException.translateToIOException(UnixException.java:86) ~[?:?]
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:102) ~[?:?]
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:107) ~[?:?]
+	at sun.nio.fs.UnixFileSystemProvider.newByteChannel(UnixFileSystemProvider.java:214) ~[?:?]
+	at java.nio.file.Files.newByteChannel(Files.java:361) ~[?:1.8.0_131]
+	at java.nio.file.Files.newByteChannel(Files.java:407) ~[?:1.8.0_131]
+	at org.apache.lucene.store.SimpleFSDirectory.openInput(SimpleFSDirectory.java:77) ~[lucene-core-6.5.1.jar:6.5.1 cd1f23c63abe03ae650c75ec8ccb37762806cc75 - jimczi - 2017-04-21 12:17:15]
+	at org.elasticsearch.gateway.MetaDataStateFormat.read(MetaDataStateFormat.java:187) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.gateway.MetaDataStateFormat.loadLatestState(MetaDataStateFormat.java:322) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.gateway.TransportNodesListGatewayStartedShards.nodeOperation(TransportNodesListGatewayStartedShards.java:127) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.gateway.TransportNodesListGatewayStartedShards.nodeOperation(TransportNodesListGatewayStartedShards.java:61) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.action.support.nodes.TransportNodesAction.nodeOperation(TransportNodesAction.java:145) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.action.support.nodes.TransportNodesAction$NodeTransportHandler.messageReceived(TransportNodesAction.java:269) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.action.support.nodes.TransportNodesAction$NodeTransportHandler.messageReceived(TransportNodesAction.java:265) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:69) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.transport.TransportService$7.doRun(TransportService.java:627) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:638) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) ~[elasticsearch-5.4.1.jar:5.4.1]
+	... 3 more
+[2017-06-16T09:27:36,836][INFO ][o.e.c.r.a.AllocationService] [_h1h-U9] Cluster health status changed from [RED] to [YELLOW] (reason: [shards started [[recipes][0], [recipes][4]] ...]).
+[2017-06-16T11:45:43,685][DEBUG][o.e.a.a.i.m.p.TransportPutMappingAction] [_h1h-U9] failed to put mappings on indices [[[shop/EfZacSZhR4qPWkEa--upXw]]], type [movies]
+org.elasticsearch.index.mapper.MapperParsingException: analyzer on field [_all] must be set when search_analyzer is set
+	at org.elasticsearch.index.mapper.TypeParsers.parseAnalyzersAndTermVectors(TypeParsers.java:142) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.index.mapper.TypeParsers.parseTextField(TypeParsers.java:209) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.index.mapper.AllFieldMapper$TypeParser.parse(AllFieldMapper.java:132) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.index.mapper.DocumentMapperParser.parse(DocumentMapperParser.java:126) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.index.mapper.DocumentMapperParser.parse(DocumentMapperParser.java:91) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.index.mapper.MapperService.parse(MapperService.java:633) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.cluster.metadata.MetaDataMappingService$PutMappingExecutor.applyRequest(MetaDataMappingService.java:264) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.cluster.metadata.MetaDataMappingService$PutMappingExecutor.execute(MetaDataMappingService.java:230) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.cluster.service.ClusterService.executeTasks(ClusterService.java:633) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.cluster.service.ClusterService.calculateTaskOutputs(ClusterService.java:611) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.cluster.service.ClusterService.runTasks(ClusterService.java:570) [elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.cluster.service.ClusterService$ClusterServiceTaskBatcher.run(ClusterService.java:262) [elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.cluster.service.TaskBatcher.runIfNotProcessed(TaskBatcher.java:150) [elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.cluster.service.TaskBatcher$BatchedTask.run(TaskBatcher.java:188) [elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingRunnable.run(ThreadContext.java:569) [elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.common.util.concurrent.PrioritizedEsThreadPoolExecutor$TieBreakingPrioritizedRunnable.runAndClean(PrioritizedEsThreadPoolExecutor.java:247) [elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.common.util.concurrent.PrioritizedEsThreadPoolExecutor$TieBreakingPrioritizedRunnable.run(PrioritizedEsThreadPoolExecutor.java:210) [elasticsearch-5.4.1.jar:5.4.1]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [?:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [?:1.8.0_131]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_131]
+[2017-06-16T11:49:40,896][DEBUG][o.e.a.a.i.m.p.TransportPutMappingAction] [_h1h-U9] failed to put mappings on indices [[[shop/EfZacSZhR4qPWkEa--upXw]]], type [movies]
+org.elasticsearch.index.mapper.MapperParsingException: analyzer on field [_all] must be set when search_analyzer is set
+	at org.elasticsearch.index.mapper.TypeParsers.parseAnalyzersAndTermVectors(TypeParsers.java:142) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.index.mapper.TypeParsers.parseTextField(TypeParsers.java:209) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.index.mapper.AllFieldMapper$TypeParser.parse(AllFieldMapper.java:132) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.index.mapper.DocumentMapperParser.parse(DocumentMapperParser.java:126) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.index.mapper.DocumentMapperParser.parse(DocumentMapperParser.java:91) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.index.mapper.MapperService.parse(MapperService.java:633) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.cluster.metadata.MetaDataMappingService$PutMappingExecutor.applyRequest(MetaDataMappingService.java:264) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.cluster.metadata.MetaDataMappingService$PutMappingExecutor.execute(MetaDataMappingService.java:230) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.cluster.service.ClusterService.executeTasks(ClusterService.java:633) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.cluster.service.ClusterService.calculateTaskOutputs(ClusterService.java:611) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.cluster.service.ClusterService.runTasks(ClusterService.java:570) [elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.cluster.service.ClusterService$ClusterServiceTaskBatcher.run(ClusterService.java:262) [elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.cluster.service.TaskBatcher.runIfNotProcessed(TaskBatcher.java:150) [elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.cluster.service.TaskBatcher$BatchedTask.run(TaskBatcher.java:188) [elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingRunnable.run(ThreadContext.java:569) [elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.common.util.concurrent.PrioritizedEsThreadPoolExecutor$TieBreakingPrioritizedRunnable.runAndClean(PrioritizedEsThreadPoolExecutor.java:247) [elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.common.util.concurrent.PrioritizedEsThreadPoolExecutor$TieBreakingPrioritizedRunnable.run(PrioritizedEsThreadPoolExecutor.java:210) [elasticsearch-5.4.1.jar:5.4.1]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [?:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [?:1.8.0_131]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_131]
+[2017-06-16T11:50:55,388][DEBUG][o.e.a.a.i.m.p.TransportPutMappingAction] [_h1h-U9] failed to put mappings on indices [[[shop/EfZacSZhR4qPWkEa--upXw]]], type [movies]
+org.elasticsearch.index.mapper.MapperParsingException: analyzer on field [_all] must be set when search_analyzer is set
+	at org.elasticsearch.index.mapper.TypeParsers.parseAnalyzersAndTermVectors(TypeParsers.java:142) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.index.mapper.TypeParsers.parseTextField(TypeParsers.java:209) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.index.mapper.AllFieldMapper$TypeParser.parse(AllFieldMapper.java:132) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.index.mapper.DocumentMapperParser.parse(DocumentMapperParser.java:126) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.index.mapper.DocumentMapperParser.parse(DocumentMapperParser.java:91) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.index.mapper.MapperService.parse(MapperService.java:633) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.cluster.metadata.MetaDataMappingService$PutMappingExecutor.applyRequest(MetaDataMappingService.java:264) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.cluster.metadata.MetaDataMappingService$PutMappingExecutor.execute(MetaDataMappingService.java:230) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.cluster.service.ClusterService.executeTasks(ClusterService.java:633) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.cluster.service.ClusterService.calculateTaskOutputs(ClusterService.java:611) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.cluster.service.ClusterService.runTasks(ClusterService.java:570) [elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.cluster.service.ClusterService$ClusterServiceTaskBatcher.run(ClusterService.java:262) [elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.cluster.service.TaskBatcher.runIfNotProcessed(TaskBatcher.java:150) [elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.cluster.service.TaskBatcher$BatchedTask.run(TaskBatcher.java:188) [elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingRunnable.run(ThreadContext.java:569) [elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.common.util.concurrent.PrioritizedEsThreadPoolExecutor$TieBreakingPrioritizedRunnable.runAndClean(PrioritizedEsThreadPoolExecutor.java:247) [elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.common.util.concurrent.PrioritizedEsThreadPoolExecutor$TieBreakingPrioritizedRunnable.run(PrioritizedEsThreadPoolExecutor.java:210) [elasticsearch-5.4.1.jar:5.4.1]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [?:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [?:1.8.0_131]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_131]
+[2017-06-16T11:54:51,435][DEBUG][o.e.a.a.i.m.p.TransportPutMappingAction] [_h1h-U9] failed to put mappings on indices [[[shop/EfZacSZhR4qPWkEa--upXw]]], type [movies]
+org.elasticsearch.index.mapper.MapperParsingException: analyzer on field [_all] must be set when search_analyzer is set
+	at org.elasticsearch.index.mapper.TypeParsers.parseAnalyzersAndTermVectors(TypeParsers.java:142) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.index.mapper.TypeParsers.parseTextField(TypeParsers.java:209) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.index.mapper.AllFieldMapper$TypeParser.parse(AllFieldMapper.java:132) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.index.mapper.DocumentMapperParser.parse(DocumentMapperParser.java:126) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.index.mapper.DocumentMapperParser.parse(DocumentMapperParser.java:91) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.index.mapper.MapperService.parse(MapperService.java:633) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.cluster.metadata.MetaDataMappingService$PutMappingExecutor.applyRequest(MetaDataMappingService.java:264) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.cluster.metadata.MetaDataMappingService$PutMappingExecutor.execute(MetaDataMappingService.java:230) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.cluster.service.ClusterService.executeTasks(ClusterService.java:633) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.cluster.service.ClusterService.calculateTaskOutputs(ClusterService.java:611) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.cluster.service.ClusterService.runTasks(ClusterService.java:570) [elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.cluster.service.ClusterService$ClusterServiceTaskBatcher.run(ClusterService.java:262) [elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.cluster.service.TaskBatcher.runIfNotProcessed(TaskBatcher.java:150) [elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.cluster.service.TaskBatcher$BatchedTask.run(TaskBatcher.java:188) [elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingRunnable.run(ThreadContext.java:569) [elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.common.util.concurrent.PrioritizedEsThreadPoolExecutor$TieBreakingPrioritizedRunnable.runAndClean(PrioritizedEsThreadPoolExecutor.java:247) [elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.common.util.concurrent.PrioritizedEsThreadPoolExecutor$TieBreakingPrioritizedRunnable.run(PrioritizedEsThreadPoolExecutor.java:210) [elasticsearch-5.4.1.jar:5.4.1]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [?:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [?:1.8.0_131]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_131]
+[2017-06-16T11:55:07,933][INFO ][o.e.c.m.MetaDataMappingService] [_h1h-U9] [shop/EfZacSZhR4qPWkEa--upXw] create_mapping [movies]
+[2017-06-16T11:56:03,529][WARN ][o.e.m.j.JvmGcMonitorService] [_h1h-U9] [gc][8885] overhead, spent [577ms] collecting in the last [1s]
+[2017-06-16T11:56:37,915][DEBUG][o.e.a.a.i.m.p.TransportPutMappingAction] [_h1h-U9] failed to put mappings on indices [[[shop/EfZacSZhR4qPWkEa--upXw]]], type [movies]
+java.lang.IllegalArgumentException: Mapper for [name] conflicts with existing mapping in other types:
+[mapper [name] has different [index] values]
+	at org.elasticsearch.index.mapper.FieldTypeLookup.checkCompatibility(FieldTypeLookup.java:130) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.index.mapper.FieldTypeLookup.copyAndAddAll(FieldTypeLookup.java:94) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.index.mapper.MapperService.internalMerge(MapperService.java:398) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.index.mapper.MapperService.internalMerge(MapperService.java:334) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.index.mapper.MapperService.merge(MapperService.java:266) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.cluster.metadata.MetaDataMappingService$PutMappingExecutor.applyRequest(MetaDataMappingService.java:311) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.cluster.metadata.MetaDataMappingService$PutMappingExecutor.execute(MetaDataMappingService.java:230) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.cluster.service.ClusterService.executeTasks(ClusterService.java:633) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.cluster.service.ClusterService.calculateTaskOutputs(ClusterService.java:611) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.cluster.service.ClusterService.runTasks(ClusterService.java:570) [elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.cluster.service.ClusterService$ClusterServiceTaskBatcher.run(ClusterService.java:262) [elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.cluster.service.TaskBatcher.runIfNotProcessed(TaskBatcher.java:150) [elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.cluster.service.TaskBatcher$BatchedTask.run(TaskBatcher.java:188) [elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingRunnable.run(ThreadContext.java:569) [elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.common.util.concurrent.PrioritizedEsThreadPoolExecutor$TieBreakingPrioritizedRunnable.runAndClean(PrioritizedEsThreadPoolExecutor.java:247) [elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.common.util.concurrent.PrioritizedEsThreadPoolExecutor$TieBreakingPrioritizedRunnable.run(PrioritizedEsThreadPoolExecutor.java:210) [elasticsearch-5.4.1.jar:5.4.1]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [?:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [?:1.8.0_131]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_131]
+[2017-06-16T12:35:06,813][DEBUG][o.e.a.s.TransportSearchAction] [_h1h-U9] [shop][2], node[_h1h-U9BTimL7eEx1BH6mA], [P], s[STARTED], a[id=uR07LFdySCebTyiaQxl6og]: Failed to execute [SearchRequest{searchType=QUERY_THEN_FETCH, indices=[shop], indicesOptions=IndicesOptions[id=38, ignore_unavailable=false, allow_no_indices=true, expand_wildcards_open=true, expand_wildcards_closed=false, allow_alisases_to_multiple_indices=true, forbid_closed_indices=true], types=[movies], routing='null', preference='null', requestCache=false, scroll=null, source={
+  "suggest" : {
+    "my-suggest-1" : {
+      "text" : "this",
+      "term" : {
+        "field" : "field",
+        "suggest_mode" : "MISSING",
+        "accuracy" : 0.5,
+        "sort" : "SCORE",
+        "string_distance" : "INTERNAL",
+        "max_edits" : 2,
+        "max_inspections" : 5,
+        "max_term_freq" : 0.01,
+        "prefix_length" : 1,
+        "min_word_length" : 4,
+        "min_doc_freq" : 0.0
+      }
+    }
+  }
+}}] lastShard [true]
+org.elasticsearch.transport.RemoteTransportException: [_h1h-U9][127.0.0.1:9300][indices:data/read/search[phase/query]]
+Caused by: java.lang.IllegalArgumentException: no mapping found for field [field]
+	at org.elasticsearch.search.suggest.SuggestionBuilder.populateCommonFields(SuggestionBuilder.java:308) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.search.suggest.term.TermSuggestionBuilder.build(TermSuggestionBuilder.java:447) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.search.suggest.SuggestBuilder.build(SuggestBuilder.java:174) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:651) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:472) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:448) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:252) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:339) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:336) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:69) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.transport.TransportService$7.doRun(TransportService.java:627) [elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:638) [elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) [elasticsearch-5.4.1.jar:5.4.1]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [?:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [?:1.8.0_131]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_131]
+[2017-06-16T12:35:06,815][DEBUG][o.e.a.s.TransportSearchAction] [_h1h-U9] [shop][4], node[_h1h-U9BTimL7eEx1BH6mA], [P], s[STARTED], a[id=Nyl3AqrzQi-oCxPTt_NmJA]: Failed to execute [SearchRequest{searchType=QUERY_THEN_FETCH, indices=[shop], indicesOptions=IndicesOptions[id=38, ignore_unavailable=false, allow_no_indices=true, expand_wildcards_open=true, expand_wildcards_closed=false, allow_alisases_to_multiple_indices=true, forbid_closed_indices=true], types=[movies], routing='null', preference='null', requestCache=false, scroll=null, source={
+  "suggest" : {
+    "my-suggest-1" : {
+      "text" : "this",
+      "term" : {
+        "field" : "field",
+        "suggest_mode" : "MISSING",
+        "accuracy" : 0.5,
+        "sort" : "SCORE",
+        "string_distance" : "INTERNAL",
+        "max_edits" : 2,
+        "max_inspections" : 5,
+        "max_term_freq" : 0.01,
+        "prefix_length" : 1,
+        "min_word_length" : 4,
+        "min_doc_freq" : 0.0
+      }
+    }
+  }
+}}] lastShard [true]
+org.elasticsearch.transport.RemoteTransportException: [_h1h-U9][127.0.0.1:9300][indices:data/read/search[phase/query]]
+Caused by: java.lang.IllegalArgumentException: no mapping found for field [field]
+	at org.elasticsearch.search.suggest.SuggestionBuilder.populateCommonFields(SuggestionBuilder.java:308) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.search.suggest.term.TermSuggestionBuilder.build(TermSuggestionBuilder.java:447) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.search.suggest.SuggestBuilder.build(SuggestBuilder.java:174) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:651) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:472) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:448) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:252) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:339) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:336) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:69) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.transport.TransportService$7.doRun(TransportService.java:627) [elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:638) [elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) [elasticsearch-5.4.1.jar:5.4.1]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [?:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [?:1.8.0_131]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_131]
+[2017-06-16T12:35:06,819][DEBUG][o.e.a.s.TransportSearchAction] [_h1h-U9] [shop][3], node[_h1h-U9BTimL7eEx1BH6mA], [P], s[STARTED], a[id=7x8-_WA0QlmVJ2v4uHq_uQ]: Failed to execute [SearchRequest{searchType=QUERY_THEN_FETCH, indices=[shop], indicesOptions=IndicesOptions[id=38, ignore_unavailable=false, allow_no_indices=true, expand_wildcards_open=true, expand_wildcards_closed=false, allow_alisases_to_multiple_indices=true, forbid_closed_indices=true], types=[movies], routing='null', preference='null', requestCache=false, scroll=null, source={
+  "suggest" : {
+    "my-suggest-1" : {
+      "text" : "this",
+      "term" : {
+        "field" : "field",
+        "suggest_mode" : "MISSING",
+        "accuracy" : 0.5,
+        "sort" : "SCORE",
+        "string_distance" : "INTERNAL",
+        "max_edits" : 2,
+        "max_inspections" : 5,
+        "max_term_freq" : 0.01,
+        "prefix_length" : 1,
+        "min_word_length" : 4,
+        "min_doc_freq" : 0.0
+      }
+    }
+  }
+}}]
+org.elasticsearch.transport.RemoteTransportException: [_h1h-U9][127.0.0.1:9300][indices:data/read/search[phase/query]]
+Caused by: java.lang.IllegalArgumentException: no mapping found for field [field]
+	at org.elasticsearch.search.suggest.SuggestionBuilder.populateCommonFields(SuggestionBuilder.java:308) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.search.suggest.term.TermSuggestionBuilder.build(TermSuggestionBuilder.java:447) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.search.suggest.SuggestBuilder.build(SuggestBuilder.java:174) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:651) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:472) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:448) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:252) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:339) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:336) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:69) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.transport.TransportService$7.doRun(TransportService.java:627) [elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:638) [elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) [elasticsearch-5.4.1.jar:5.4.1]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [?:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [?:1.8.0_131]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_131]
+[2017-06-16T12:35:06,813][DEBUG][o.e.a.s.TransportSearchAction] [_h1h-U9] [shop][0], node[_h1h-U9BTimL7eEx1BH6mA], [P], s[STARTED], a[id=QWZ9wd68S2OpFT_eXkHL7w]: Failed to execute [SearchRequest{searchType=QUERY_THEN_FETCH, indices=[shop], indicesOptions=IndicesOptions[id=38, ignore_unavailable=false, allow_no_indices=true, expand_wildcards_open=true, expand_wildcards_closed=false, allow_alisases_to_multiple_indices=true, forbid_closed_indices=true], types=[movies], routing='null', preference='null', requestCache=false, scroll=null, source={
+  "suggest" : {
+    "my-suggest-1" : {
+      "text" : "this",
+      "term" : {
+        "field" : "field",
+        "suggest_mode" : "MISSING",
+        "accuracy" : 0.5,
+        "sort" : "SCORE",
+        "string_distance" : "INTERNAL",
+        "max_edits" : 2,
+        "max_inspections" : 5,
+        "max_term_freq" : 0.01,
+        "prefix_length" : 1,
+        "min_word_length" : 4,
+        "min_doc_freq" : 0.0
+      }
+    }
+  }
+}}] lastShard [true]
+org.elasticsearch.transport.RemoteTransportException: [_h1h-U9][127.0.0.1:9300][indices:data/read/search[phase/query]]
+Caused by: java.lang.IllegalArgumentException: no mapping found for field [field]
+	at org.elasticsearch.search.suggest.SuggestionBuilder.populateCommonFields(SuggestionBuilder.java:308) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.search.suggest.term.TermSuggestionBuilder.build(TermSuggestionBuilder.java:447) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.search.suggest.SuggestBuilder.build(SuggestBuilder.java:174) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:651) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:472) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:448) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:252) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:339) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:336) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:69) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.transport.TransportService$7.doRun(TransportService.java:627) [elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:638) [elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) [elasticsearch-5.4.1.jar:5.4.1]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [?:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [?:1.8.0_131]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_131]
+[2017-06-16T12:35:06,819][DEBUG][o.e.a.s.TransportSearchAction] [_h1h-U9] [shop][1], node[_h1h-U9BTimL7eEx1BH6mA], [P], s[STARTED], a[id=v7gkHOuaQV--5Ezh2IRVPg]: Failed to execute [SearchRequest{searchType=QUERY_THEN_FETCH, indices=[shop], indicesOptions=IndicesOptions[id=38, ignore_unavailable=false, allow_no_indices=true, expand_wildcards_open=true, expand_wildcards_closed=false, allow_alisases_to_multiple_indices=true, forbid_closed_indices=true], types=[movies], routing='null', preference='null', requestCache=false, scroll=null, source={
+  "suggest" : {
+    "my-suggest-1" : {
+      "text" : "this",
+      "term" : {
+        "field" : "field",
+        "suggest_mode" : "MISSING",
+        "accuracy" : 0.5,
+        "sort" : "SCORE",
+        "string_distance" : "INTERNAL",
+        "max_edits" : 2,
+        "max_inspections" : 5,
+        "max_term_freq" : 0.01,
+        "prefix_length" : 1,
+        "min_word_length" : 4,
+        "min_doc_freq" : 0.0
+      }
+    }
+  }
+}}] lastShard [true]
+org.elasticsearch.transport.RemoteTransportException: [_h1h-U9][127.0.0.1:9300][indices:data/read/search[phase/query]]
+Caused by: java.lang.IllegalArgumentException: no mapping found for field [field]
+	at org.elasticsearch.search.suggest.SuggestionBuilder.populateCommonFields(SuggestionBuilder.java:308) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.search.suggest.term.TermSuggestionBuilder.build(TermSuggestionBuilder.java:447) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.search.suggest.SuggestBuilder.build(SuggestBuilder.java:174) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:651) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:472) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:448) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:252) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:339) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:336) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:69) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.transport.TransportService$7.doRun(TransportService.java:627) [elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:638) [elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) [elasticsearch-5.4.1.jar:5.4.1]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [?:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [?:1.8.0_131]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_131]
+[2017-06-16T12:35:06,956][DEBUG][o.e.a.s.TransportSearchAction] [_h1h-U9] All shards failed for phase: [query]
+org.elasticsearch.ElasticsearchException$1: no mapping found for field [field]
+	at org.elasticsearch.ElasticsearchException.guessRootCauses(ElasticsearchException.java:618) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.action.search.AbstractSearchAsyncAction.executeNextPhase(AbstractSearchAsyncAction.java:126) [elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.action.search.AbstractSearchAsyncAction.onPhaseDone(AbstractSearchAsyncAction.java:241) [elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.action.search.InitialSearchPhase.onShardFailure(InitialSearchPhase.java:87) [elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.action.search.InitialSearchPhase.access$100(InitialSearchPhase.java:47) [elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.action.search.InitialSearchPhase$1.onFailure(InitialSearchPhase.java:155) [elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.action.ActionListenerResponseHandler.handleException(ActionListenerResponseHandler.java:51) [elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.transport.TransportService$ContextRestoreResponseHandler.handleException(TransportService.java:1050) [elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.transport.TransportService$DirectResponseChannel.processException(TransportService.java:1154) [elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.transport.TransportService$DirectResponseChannel.sendResponse(TransportService.java:1132) [elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.transport.TransportService$7.onFailure(TransportService.java:638) [elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.onFailure(ThreadContext.java:623) [elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:39) [elasticsearch-5.4.1.jar:5.4.1]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [?:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [?:1.8.0_131]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_131]
+Caused by: java.lang.IllegalArgumentException: no mapping found for field [field]
+	at org.elasticsearch.search.suggest.SuggestionBuilder.populateCommonFields(SuggestionBuilder.java:308) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.search.suggest.term.TermSuggestionBuilder.build(TermSuggestionBuilder.java:447) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.search.suggest.SuggestBuilder.build(SuggestBuilder.java:174) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:651) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:472) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:448) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:252) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:339) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:336) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:69) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.transport.TransportService$7.doRun(TransportService.java:627) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:638) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) ~[elasticsearch-5.4.1.jar:5.4.1]
+	... 3 more
+[2017-06-16T12:38:40,080][DEBUG][o.e.a.s.TransportSearchAction] [_h1h-U9] [shop][3], node[_h1h-U9BTimL7eEx1BH6mA], [P], s[STARTED], a[id=7x8-_WA0QlmVJ2v4uHq_uQ]: Failed to execute [SearchRequest{searchType=QUERY_THEN_FETCH, indices=[shop], indicesOptions=IndicesOptions[id=38, ignore_unavailable=false, allow_no_indices=true, expand_wildcards_open=true, expand_wildcards_closed=false, allow_alisases_to_multiple_indices=true, forbid_closed_indices=true], types=[movies], routing='null', preference='null', requestCache=null, scroll=null, source={
+  "query" : {
+    "match" : {
+      "message" : {
+        "query" : "movi",
+        "operator" : "OR",
+        "prefix_length" : 0,
+        "max_expansions" : 50,
+        "fuzzy_transpositions" : true,
+        "lenient" : false,
+        "zero_terms_query" : "NONE",
+        "boost" : 1.0
+      }
+    }
+  },
+  "suggest" : {
+    "my-suggestion" : {
+      "text" : "movi",
+      "term" : {
+        "field" : "message",
+        "suggest_mode" : "MISSING",
+        "accuracy" : 0.5,
+        "sort" : "SCORE",
+        "string_distance" : "INTERNAL",
+        "max_edits" : 2,
+        "max_inspections" : 5,
+        "max_term_freq" : 0.01,
+        "prefix_length" : 1,
+        "min_word_length" : 4,
+        "min_doc_freq" : 0.0
+      }
+    }
+  }
+}}] lastShard [true]
+org.elasticsearch.transport.RemoteTransportException: [_h1h-U9][127.0.0.1:9300][indices:data/read/search[phase/query]]
+Caused by: java.lang.IllegalArgumentException: no mapping found for field [message]
+	at org.elasticsearch.search.suggest.SuggestionBuilder.populateCommonFields(SuggestionBuilder.java:308) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.search.suggest.term.TermSuggestionBuilder.build(TermSuggestionBuilder.java:447) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.search.suggest.SuggestBuilder.build(SuggestBuilder.java:174) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:651) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:472) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:448) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:252) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:339) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:336) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:69) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.transport.TransportService$7.doRun(TransportService.java:627) [elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:638) [elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) [elasticsearch-5.4.1.jar:5.4.1]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [?:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [?:1.8.0_131]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_131]
+[2017-06-16T12:38:40,080][DEBUG][o.e.a.s.TransportSearchAction] [_h1h-U9] [shop][4], node[_h1h-U9BTimL7eEx1BH6mA], [P], s[STARTED], a[id=Nyl3AqrzQi-oCxPTt_NmJA]: Failed to execute [SearchRequest{searchType=QUERY_THEN_FETCH, indices=[shop], indicesOptions=IndicesOptions[id=38, ignore_unavailable=false, allow_no_indices=true, expand_wildcards_open=true, expand_wildcards_closed=false, allow_alisases_to_multiple_indices=true, forbid_closed_indices=true], types=[movies], routing='null', preference='null', requestCache=null, scroll=null, source={
+  "query" : {
+    "match" : {
+      "message" : {
+        "query" : "movi",
+        "operator" : "OR",
+        "prefix_length" : 0,
+        "max_expansions" : 50,
+        "fuzzy_transpositions" : true,
+        "lenient" : false,
+        "zero_terms_query" : "NONE",
+        "boost" : 1.0
+      }
+    }
+  },
+  "suggest" : {
+    "my-suggestion" : {
+      "text" : "movi",
+      "term" : {
+        "field" : "message",
+        "suggest_mode" : "MISSING",
+        "accuracy" : 0.5,
+        "sort" : "SCORE",
+        "string_distance" : "INTERNAL",
+        "max_edits" : 2,
+        "max_inspections" : 5,
+        "max_term_freq" : 0.01,
+        "prefix_length" : 1,
+        "min_word_length" : 4,
+        "min_doc_freq" : 0.0
+      }
+    }
+  }
+}}] lastShard [true]
+org.elasticsearch.transport.RemoteTransportException: [_h1h-U9][127.0.0.1:9300][indices:data/read/search[phase/query]]
+Caused by: java.lang.IllegalArgumentException: no mapping found for field [message]
+	at org.elasticsearch.search.suggest.SuggestionBuilder.populateCommonFields(SuggestionBuilder.java:308) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.search.suggest.term.TermSuggestionBuilder.build(TermSuggestionBuilder.java:447) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.search.suggest.SuggestBuilder.build(SuggestBuilder.java:174) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:651) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:472) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:448) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:252) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:339) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:336) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:69) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.transport.TransportService$7.doRun(TransportService.java:627) [elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:638) [elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) [elasticsearch-5.4.1.jar:5.4.1]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [?:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [?:1.8.0_131]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_131]
+[2017-06-16T12:38:40,079][DEBUG][o.e.a.s.TransportSearchAction] [_h1h-U9] [shop][0], node[_h1h-U9BTimL7eEx1BH6mA], [P], s[STARTED], a[id=QWZ9wd68S2OpFT_eXkHL7w]: Failed to execute [SearchRequest{searchType=QUERY_THEN_FETCH, indices=[shop], indicesOptions=IndicesOptions[id=38, ignore_unavailable=false, allow_no_indices=true, expand_wildcards_open=true, expand_wildcards_closed=false, allow_alisases_to_multiple_indices=true, forbid_closed_indices=true], types=[movies], routing='null', preference='null', requestCache=null, scroll=null, source={
+  "query" : {
+    "match" : {
+      "message" : {
+        "query" : "movi",
+        "operator" : "OR",
+        "prefix_length" : 0,
+        "max_expansions" : 50,
+        "fuzzy_transpositions" : true,
+        "lenient" : false,
+        "zero_terms_query" : "NONE",
+        "boost" : 1.0
+      }
+    }
+  },
+  "suggest" : {
+    "my-suggestion" : {
+      "text" : "movi",
+      "term" : {
+        "field" : "message",
+        "suggest_mode" : "MISSING",
+        "accuracy" : 0.5,
+        "sort" : "SCORE",
+        "string_distance" : "INTERNAL",
+        "max_edits" : 2,
+        "max_inspections" : 5,
+        "max_term_freq" : 0.01,
+        "prefix_length" : 1,
+        "min_word_length" : 4,
+        "min_doc_freq" : 0.0
+      }
+    }
+  }
+}}] lastShard [true]
+org.elasticsearch.transport.RemoteTransportException: [_h1h-U9][127.0.0.1:9300][indices:data/read/search[phase/query]]
+Caused by: java.lang.IllegalArgumentException: no mapping found for field [message]
+	at org.elasticsearch.search.suggest.SuggestionBuilder.populateCommonFields(SuggestionBuilder.java:308) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.search.suggest.term.TermSuggestionBuilder.build(TermSuggestionBuilder.java:447) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.search.suggest.SuggestBuilder.build(SuggestBuilder.java:174) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:651) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:472) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:448) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:252) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:339) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:336) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:69) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.transport.TransportService$7.doRun(TransportService.java:627) [elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:638) [elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) [elasticsearch-5.4.1.jar:5.4.1]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [?:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [?:1.8.0_131]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_131]
+[2017-06-16T12:38:40,079][DEBUG][o.e.a.s.TransportSearchAction] [_h1h-U9] [shop][2], node[_h1h-U9BTimL7eEx1BH6mA], [P], s[STARTED], a[id=uR07LFdySCebTyiaQxl6og]: Failed to execute [SearchRequest{searchType=QUERY_THEN_FETCH, indices=[shop], indicesOptions=IndicesOptions[id=38, ignore_unavailable=false, allow_no_indices=true, expand_wildcards_open=true, expand_wildcards_closed=false, allow_alisases_to_multiple_indices=true, forbid_closed_indices=true], types=[movies], routing='null', preference='null', requestCache=null, scroll=null, source={
+  "query" : {
+    "match" : {
+      "message" : {
+        "query" : "movi",
+        "operator" : "OR",
+        "prefix_length" : 0,
+        "max_expansions" : 50,
+        "fuzzy_transpositions" : true,
+        "lenient" : false,
+        "zero_terms_query" : "NONE",
+        "boost" : 1.0
+      }
+    }
+  },
+  "suggest" : {
+    "my-suggestion" : {
+      "text" : "movi",
+      "term" : {
+        "field" : "message",
+        "suggest_mode" : "MISSING",
+        "accuracy" : 0.5,
+        "sort" : "SCORE",
+        "string_distance" : "INTERNAL",
+        "max_edits" : 2,
+        "max_inspections" : 5,
+        "max_term_freq" : 0.01,
+        "prefix_length" : 1,
+        "min_word_length" : 4,
+        "min_doc_freq" : 0.0
+      }
+    }
+  }
+}}] lastShard [true]
+org.elasticsearch.transport.RemoteTransportException: [_h1h-U9][127.0.0.1:9300][indices:data/read/search[phase/query]]
+Caused by: java.lang.IllegalArgumentException: no mapping found for field [message]
+	at org.elasticsearch.search.suggest.SuggestionBuilder.populateCommonFields(SuggestionBuilder.java:308) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.search.suggest.term.TermSuggestionBuilder.build(TermSuggestionBuilder.java:447) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.search.suggest.SuggestBuilder.build(SuggestBuilder.java:174) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:651) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:472) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:448) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:252) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:339) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:336) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:69) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.transport.TransportService$7.doRun(TransportService.java:627) [elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:638) [elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) [elasticsearch-5.4.1.jar:5.4.1]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [?:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [?:1.8.0_131]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_131]
+[2017-06-16T12:38:40,080][DEBUG][o.e.a.s.TransportSearchAction] [_h1h-U9] [shop][1], node[_h1h-U9BTimL7eEx1BH6mA], [P], s[STARTED], a[id=v7gkHOuaQV--5Ezh2IRVPg]: Failed to execute [SearchRequest{searchType=QUERY_THEN_FETCH, indices=[shop], indicesOptions=IndicesOptions[id=38, ignore_unavailable=false, allow_no_indices=true, expand_wildcards_open=true, expand_wildcards_closed=false, allow_alisases_to_multiple_indices=true, forbid_closed_indices=true], types=[movies], routing='null', preference='null', requestCache=null, scroll=null, source={
+  "query" : {
+    "match" : {
+      "message" : {
+        "query" : "movi",
+        "operator" : "OR",
+        "prefix_length" : 0,
+        "max_expansions" : 50,
+        "fuzzy_transpositions" : true,
+        "lenient" : false,
+        "zero_terms_query" : "NONE",
+        "boost" : 1.0
+      }
+    }
+  },
+  "suggest" : {
+    "my-suggestion" : {
+      "text" : "movi",
+      "term" : {
+        "field" : "message",
+        "suggest_mode" : "MISSING",
+        "accuracy" : 0.5,
+        "sort" : "SCORE",
+        "string_distance" : "INTERNAL",
+        "max_edits" : 2,
+        "max_inspections" : 5,
+        "max_term_freq" : 0.01,
+        "prefix_length" : 1,
+        "min_word_length" : 4,
+        "min_doc_freq" : 0.0
+      }
+    }
+  }
+}}]
+org.elasticsearch.transport.RemoteTransportException: [_h1h-U9][127.0.0.1:9300][indices:data/read/search[phase/query]]
+Caused by: java.lang.IllegalArgumentException: no mapping found for field [message]
+	at org.elasticsearch.search.suggest.SuggestionBuilder.populateCommonFields(SuggestionBuilder.java:308) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.search.suggest.term.TermSuggestionBuilder.build(TermSuggestionBuilder.java:447) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.search.suggest.SuggestBuilder.build(SuggestBuilder.java:174) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:651) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:472) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:448) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:252) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:339) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:336) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:69) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.transport.TransportService$7.doRun(TransportService.java:627) [elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:638) [elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) [elasticsearch-5.4.1.jar:5.4.1]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [?:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [?:1.8.0_131]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_131]
+[2017-06-16T12:38:40,109][DEBUG][o.e.a.s.TransportSearchAction] [_h1h-U9] All shards failed for phase: [query]
+org.elasticsearch.ElasticsearchException$1: no mapping found for field [message]
+	at org.elasticsearch.ElasticsearchException.guessRootCauses(ElasticsearchException.java:618) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.action.search.AbstractSearchAsyncAction.executeNextPhase(AbstractSearchAsyncAction.java:126) [elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.action.search.AbstractSearchAsyncAction.onPhaseDone(AbstractSearchAsyncAction.java:241) [elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.action.search.InitialSearchPhase.onShardFailure(InitialSearchPhase.java:87) [elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.action.search.InitialSearchPhase.access$100(InitialSearchPhase.java:47) [elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.action.search.InitialSearchPhase$1.onFailure(InitialSearchPhase.java:155) [elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.action.ActionListenerResponseHandler.handleException(ActionListenerResponseHandler.java:51) [elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.transport.TransportService$ContextRestoreResponseHandler.handleException(TransportService.java:1050) [elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.transport.TransportService$DirectResponseChannel.processException(TransportService.java:1154) [elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.transport.TransportService$DirectResponseChannel.sendResponse(TransportService.java:1132) [elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.transport.TransportService$7.onFailure(TransportService.java:638) [elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.onFailure(ThreadContext.java:623) [elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:39) [elasticsearch-5.4.1.jar:5.4.1]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142) [?:1.8.0_131]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617) [?:1.8.0_131]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_131]
+Caused by: java.lang.IllegalArgumentException: no mapping found for field [message]
+	at org.elasticsearch.search.suggest.SuggestionBuilder.populateCommonFields(SuggestionBuilder.java:308) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.search.suggest.term.TermSuggestionBuilder.build(TermSuggestionBuilder.java:447) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.search.suggest.SuggestBuilder.build(SuggestBuilder.java:174) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.search.SearchService.parseSource(SearchService.java:651) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.search.SearchService.createContext(SearchService.java:472) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.search.SearchService.createAndPutContext(SearchService.java:448) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.search.SearchService.executeQueryPhase(SearchService.java:252) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:339) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.action.search.SearchTransportService$6.messageReceived(SearchTransportService.java:336) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.transport.RequestHandlerRegistry.processMessageReceived(RequestHandlerRegistry.java:69) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.transport.TransportService$7.doRun(TransportService.java:627) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.common.util.concurrent.ThreadContext$ContextPreservingAbstractRunnable.doRun(ThreadContext.java:638) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.common.util.concurrent.AbstractRunnable.run(AbstractRunnable.java:37) ~[elasticsearch-5.4.1.jar:5.4.1]
+	... 3 more
+[2017-06-16T15:47:58,376][INFO ][o.e.c.m.MetaDataCreateIndexService] [_h1h-U9] [test] creating index, cause [api], templates [], shards [1]/[1], mappings []
+[2017-06-16T15:49:04,013][INFO ][o.e.c.m.MetaDataMappingService] [_h1h-U9] [test/BAmsaBwjSX-VF0WMPgWzfg] create_mapping [slot]
+[2017-06-16T15:49:11,831][INFO ][o.e.c.m.MetaDataMappingService] [_h1h-U9] [test/BAmsaBwjSX-VF0WMPgWzfg] create_mapping [test]
+[2017-06-16T15:53:11,848][INFO ][o.e.c.m.MetaDataDeleteIndexService] [_h1h-U9] [test/BAmsaBwjSX-VF0WMPgWzfg] deleting index
+[2017-06-16T18:46:00,893][INFO ][o.e.m.j.JvmGcMonitorService] [_h1h-U9] [gc][33404] overhead, spent [303ms] collecting in the last [1s]
+[2017-06-16T19:02:34,679][INFO ][o.e.n.Node               ] [_h1h-U9] stopping ...
+[2017-06-16T19:02:34,934][INFO ][o.e.n.Node               ] [_h1h-U9] stopped
+[2017-06-16T19:02:34,935][INFO ][o.e.n.Node               ] [_h1h-U9] closing ...
+[2017-06-16T19:02:35,013][INFO ][o.e.n.Node               ] [_h1h-U9] closed

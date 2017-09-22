@@ -1,0 +1,8 @@
+
+<div class="items" ng-show='showlist'> <!--ng-show="{{showSugguestions}}"  ng-init="showSugguestions=false"-->
+	<div id="{{$index}}" class="item" alllist="items.length" ng-repeat="item in items  track by $index" ng-click="handleSelection(item)" style="cursor:pointer" ng-class="			{active:isCurrent($index)}" ng-mouseenter="setCurrent(event=$event,$index)">
+		<p pID="{{$index}}" class="title">{{item}}</p>
+		<!-- <p pID="{{$index}}" class="subtitle">{{item.abbreviation}}</p> -->
+	</div>
+</div>
+

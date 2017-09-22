@@ -1,0 +1,118 @@
+[2017-06-14T09:27:25,193][INFO ][o.e.n.Node               ] [] initializing ...
+[2017-06-14T09:27:25,354][INFO ][o.e.e.NodeEnvironment    ] [_h1h-U9] using [1] data paths, mounts [[/ (/dev/disk1)]], net usable_space [67.2gb], net total_space [232.6gb], spins? [unknown], types [hfs]
+[2017-06-14T09:27:25,354][INFO ][o.e.e.NodeEnvironment    ] [_h1h-U9] heap size [1.9gb], compressed ordinary object pointers [true]
+[2017-06-14T09:27:25,512][INFO ][o.e.n.Node               ] node name [_h1h-U9] derived from node ID [_h1h-U9BTimL7eEx1BH6mA]; set [node.name] to override
+[2017-06-14T09:27:25,513][INFO ][o.e.n.Node               ] version[5.4.1], pid[1866], build[2cfe0df/2017-05-29T16:05:51.443Z], OS[Mac OS X/10.12.5/x86_64], JVM[Oracle Corporation/Java HotSpot(TM) 64-Bit Server VM/1.8.0_131/25.131-b11]
+[2017-06-14T09:27:25,513][INFO ][o.e.n.Node               ] JVM arguments [-Xms2g, -Xmx2g, -XX:+UseConcMarkSweepGC, -XX:CMSInitiatingOccupancyFraction=75, -XX:+UseCMSInitiatingOccupancyOnly, -XX:+DisableExplicitGC, -XX:+AlwaysPreTouch, -Xss1m, -Djava.awt.headless=true, -Dfile.encoding=UTF-8, -Djna.nosys=true, -Djdk.io.permissionsUseCanonicalPath=true, -Dio.netty.noUnsafe=true, -Dio.netty.noKeySetOptimization=true, -Dio.netty.recycler.maxCapacityPerThread=0, -Dlog4j.shutdownHookEnabled=false, -Dlog4j2.disable.jmx=true, -Dlog4j.skipJansi=true, -XX:+HeapDumpOnOutOfMemoryError, -Des.path.home=/Users/ggil01/my_tutorials_and_short/node/elastic_search_node/elasticsearch-5.4.1]
+[2017-06-14T09:27:27,685][INFO ][o.e.p.PluginsService     ] [_h1h-U9] loaded module [aggs-matrix-stats]
+[2017-06-14T09:27:27,686][INFO ][o.e.p.PluginsService     ] [_h1h-U9] loaded module [ingest-common]
+[2017-06-14T09:27:27,686][INFO ][o.e.p.PluginsService     ] [_h1h-U9] loaded module [lang-expression]
+[2017-06-14T09:27:27,686][INFO ][o.e.p.PluginsService     ] [_h1h-U9] loaded module [lang-groovy]
+[2017-06-14T09:27:27,686][INFO ][o.e.p.PluginsService     ] [_h1h-U9] loaded module [lang-mustache]
+[2017-06-14T09:27:27,686][INFO ][o.e.p.PluginsService     ] [_h1h-U9] loaded module [lang-painless]
+[2017-06-14T09:27:27,687][INFO ][o.e.p.PluginsService     ] [_h1h-U9] loaded module [percolator]
+[2017-06-14T09:27:27,687][INFO ][o.e.p.PluginsService     ] [_h1h-U9] loaded module [reindex]
+[2017-06-14T09:27:27,687][INFO ][o.e.p.PluginsService     ] [_h1h-U9] loaded module [transport-netty3]
+[2017-06-14T09:27:27,687][INFO ][o.e.p.PluginsService     ] [_h1h-U9] loaded module [transport-netty4]
+[2017-06-14T09:27:27,688][INFO ][o.e.p.PluginsService     ] [_h1h-U9] no plugins loaded
+[2017-06-14T09:27:30,914][INFO ][o.e.d.DiscoveryModule    ] [_h1h-U9] using discovery type [zen]
+[2017-06-14T09:27:31,880][INFO ][o.e.n.Node               ] initialized
+[2017-06-14T09:27:31,881][INFO ][o.e.n.Node               ] [_h1h-U9] starting ...
+[2017-06-14T09:27:32,178][INFO ][o.e.t.TransportService   ] [_h1h-U9] publish_address {127.0.0.1:9300}, bound_addresses {[fe80::1]:9300}, {[::1]:9300}, {127.0.0.1:9300}
+[2017-06-14T09:27:35,265][INFO ][o.e.c.s.ClusterService   ] [_h1h-U9] new_master {_h1h-U9}{_h1h-U9BTimL7eEx1BH6mA}{cAboxjgFRMmvqbCe_jG6ew}{127.0.0.1}{127.0.0.1:9300}, reason: zen-disco-elected-as-master ([0] nodes joined)
+[2017-06-14T09:27:35,303][INFO ][o.e.h.n.Netty4HttpServerTransport] [_h1h-U9] publish_address {127.0.0.1:9200}, bound_addresses {[fe80::1]:9200}, {[::1]:9200}, {127.0.0.1:9200}
+[2017-06-14T09:27:35,311][INFO ][o.e.n.Node               ] [_h1h-U9] started
+[2017-06-14T09:27:35,712][INFO ][o.e.g.GatewayService     ] [_h1h-U9] recovered [10] indices into cluster_state
+[2017-06-14T09:27:38,439][INFO ][o.e.c.r.a.AllocationService] [_h1h-U9] Cluster health status changed from [RED] to [YELLOW] (reason: [shards started [[library][2]] ...]).
+[2017-06-14T14:11:14,798][INFO ][o.e.c.m.MetaDataCreateIndexService] [_h1h-U9] [spanish_docs] creating index, cause [api], templates [], shards [5]/[1], mappings []
+[2017-06-14T14:15:37,586][INFO ][o.e.c.m.MetaDataDeleteIndexService] [_h1h-U9] [hotels/x1UEl9icSA-HzzhCojbZkA] deleting index
+[2017-06-14T14:15:47,987][INFO ][o.e.c.m.MetaDataDeleteIndexService] [_h1h-U9] [test/o9tBfXbiQomKrnjulZWZbg] deleting index
+[2017-06-14T14:16:02,551][INFO ][o.e.c.m.MetaDataDeleteIndexService] [_h1h-U9] [spanish_docs/rwANzDNnS86mLZekOKTzbg] deleting index
+[2017-06-14T14:16:27,697][INFO ][o.e.c.m.MetaDataDeleteIndexService] [_h1h-U9] [products2/q2lS6LpvQ3eF7f-AeFNbuQ] deleting index
+[2017-06-14T14:16:38,835][INFO ][o.e.c.m.MetaDataDeleteIndexService] [_h1h-U9] [shakespeare/8C-iYFhkSPahu55kz4oZzQ] deleting index
+[2017-06-14T14:16:47,296][INFO ][o.e.c.m.MetaDataDeleteIndexService] [_h1h-U9] [recipescompletes/cd6JzVK1Qg2atssuvaTLXQ] deleting index
+[2017-06-14T14:17:09,041][INFO ][o.e.c.m.MetaDataDeleteIndexService] [_h1h-U9] [fruits/vS_wY1YQRtCfB9HJHpXNKg] deleting index
+[2017-06-14T14:17:28,389][INFO ][o.e.c.m.MetaDataDeleteIndexService] [_h1h-U9] [library/cKgjkXxFSz-yv9Mi99HGZw] deleting index
+[2017-06-14T14:18:06,304][INFO ][o.e.c.m.MetaDataCreateIndexService] [_h1h-U9] [my_index] creating index, cause [api], templates [], shards [5]/[1], mappings []
+[2017-06-14T14:19:55,090][INFO ][o.e.c.m.MetaDataCreateIndexService] [_h1h-U9] [my_index2] creating index, cause [api], templates [], shards [5]/[1], mappings []
+[2017-06-14T15:25:55,181][INFO ][o.e.c.m.MetaDataDeleteIndexService] [_h1h-U9] [my_index/iU1NfZmLTeqxrGN43aNDeg] deleting index
+[2017-06-14T15:25:58,084][INFO ][o.e.c.m.MetaDataDeleteIndexService] [_h1h-U9] [my_index2/1-3ABTHaSHuF3EXFVsKMpQ] deleting index
+[2017-06-14T15:27:53,686][INFO ][o.e.c.m.MetaDataCreateIndexService] [_h1h-U9] [my_index] creating index, cause [api], templates [], shards [5]/[1], mappings []
+[2017-06-14T15:27:56,789][INFO ][o.e.c.m.MetaDataCreateIndexService] [_h1h-U9] [my_index2] creating index, cause [api], templates [], shards [5]/[1], mappings []
+[2017-06-14T15:33:36,200][INFO ][o.e.c.m.MetaDataDeleteIndexService] [_h1h-U9] [my_index2/tPfKLQ23RiKmAVbGVGqEpQ] deleting index
+[2017-06-14T15:33:39,841][INFO ][o.e.c.m.MetaDataDeleteIndexService] [_h1h-U9] [my_index/IbJl7VZjQvSYjmeQ4hEHQA] deleting index
+[2017-06-14T15:34:35,361][INFO ][o.e.c.m.MetaDataCreateIndexService] [_h1h-U9] [my_index] creating index, cause [api], templates [], shards [5]/[1], mappings []
+[2017-06-14T15:34:38,034][INFO ][o.e.c.m.MetaDataCreateIndexService] [_h1h-U9] [my_index2] creating index, cause [api], templates [], shards [5]/[1], mappings []
+[2017-06-14T15:34:54,460][INFO ][o.e.c.m.MetaDataDeleteIndexService] [_h1h-U9] [my_index2/TJ-U71HBQ16kXEGmDYtLAg] deleting index
+[2017-06-14T15:35:00,160][INFO ][o.e.c.m.MetaDataCreateIndexService] [_h1h-U9] [my_index2] creating index, cause [api], templates [], shards [5]/[1], mappings []
+[2017-06-14T16:56:14,755][INFO ][o.e.c.m.MetaDataDeleteIndexService] [_h1h-U9] [my_index2/QHWOy-KERFuMYNWohagk6A] deleting index
+[2017-06-14T16:56:18,612][INFO ][o.e.c.m.MetaDataDeleteIndexService] [_h1h-U9] [my_index/2hM8gyMoTOWHd2J9rGMtuA] deleting index
+[2017-06-14T17:10:41,081][INFO ][o.e.c.m.MetaDataCreateIndexService] [_h1h-U9] [my_index] creating index, cause [api], templates [], shards [1]/[1], mappings []
+[2017-06-14T17:10:45,808][INFO ][o.e.c.m.MetaDataCreateIndexService] [_h1h-U9] [my_index2] creating index, cause [api], templates [], shards [1]/[1], mappings []
+[2017-06-14T17:53:45,210][INFO ][o.e.c.m.MetaDataMappingService] [_h1h-U9] [my_index/NamlLG6WRfmF5Nx8ObI1sw] create_mapping [my_type]
+[2017-06-14T18:11:00,768][WARN ][r.suppressed             ] path: /my_index/_search, params: {index=my_index}
+com.fasterxml.jackson.core.JsonParseException: Unexpected character ('}' (code 125)): was expecting double-quote to start field name
+ at [Source: org.elasticsearch.transport.netty4.ByteBufStreamInput@2b1ae8bb; line: 5, column: 4]
+	at com.fasterxml.jackson.core.JsonParser._constructError(JsonParser.java:1702) ~[jackson-core-2.8.6.jar:2.8.6]
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportError(ParserMinimalBase.java:558) ~[jackson-core-2.8.6.jar:2.8.6]
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportUnexpectedChar(ParserMinimalBase.java:456) ~[jackson-core-2.8.6.jar:2.8.6]
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser._handleOddName(UTF8StreamJsonParser.java:2054) ~[jackson-core-2.8.6.jar:2.8.6]
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser._parseName(UTF8StreamJsonParser.java:1701) ~[jackson-core-2.8.6.jar:2.8.6]
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser.nextToken(UTF8StreamJsonParser.java:776) ~[jackson-core-2.8.6.jar:2.8.6]
+	at org.elasticsearch.common.xcontent.json.JsonXContentParser.nextToken(JsonXContentParser.java:55) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.search.suggest.SuggestBuilder.fromXContent(SuggestBuilder.java:149) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.search.builder.SearchSourceBuilder.parseXContent(SearchSourceBuilder.java:1014) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.rest.action.search.RestSearchAction.parseSearchRequest(RestSearchAction.java:96) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.rest.action.search.RestSearchAction.lambda$prepareRequest$0(RestSearchAction.java:76) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.rest.RestRequest.withContentOrSourceParamParserOrNull(RestRequest.java:392) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.rest.action.search.RestSearchAction.prepareRequest(RestSearchAction.java:75) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.rest.BaseRestHandler.handleRequest(BaseRestHandler.java:64) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.rest.RestController.dispatchRequest(RestController.java:260) ~[elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.rest.RestController.dispatchRequest(RestController.java:199) [elasticsearch-5.4.1.jar:5.4.1]
+	at org.elasticsearch.http.netty4.Netty4HttpServerTransport.dispatchRequest(Netty4HttpServerTransport.java:505) [transport-netty4-5.4.1.jar:5.4.1]
+	at org.elasticsearch.http.netty4.Netty4HttpRequestHandler.channelRead0(Netty4HttpRequestHandler.java:72) [transport-netty4-5.4.1.jar:5.4.1]
+	at io.netty.channel.SimpleChannelInboundHandler.channelRead(SimpleChannelInboundHandler.java:105) [netty-transport-4.1.11.Final.jar:4.1.11.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362) [netty-transport-4.1.11.Final.jar:4.1.11.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348) [netty-transport-4.1.11.Final.jar:4.1.11.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:340) [netty-transport-4.1.11.Final.jar:4.1.11.Final]
+	at org.elasticsearch.http.netty4.pipelining.HttpPipeliningHandler.channelRead(HttpPipeliningHandler.java:63) [transport-netty4-5.4.1.jar:5.4.1]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362) [netty-transport-4.1.11.Final.jar:4.1.11.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348) [netty-transport-4.1.11.Final.jar:4.1.11.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:340) [netty-transport-4.1.11.Final.jar:4.1.11.Final]
+	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:102) [netty-codec-4.1.11.Final.jar:4.1.11.Final]
+	at io.netty.handler.codec.MessageToMessageCodec.channelRead(MessageToMessageCodec.java:111) [netty-codec-4.1.11.Final.jar:4.1.11.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362) [netty-transport-4.1.11.Final.jar:4.1.11.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348) [netty-transport-4.1.11.Final.jar:4.1.11.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:340) [netty-transport-4.1.11.Final.jar:4.1.11.Final]
+	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:102) [netty-codec-4.1.11.Final.jar:4.1.11.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362) [netty-transport-4.1.11.Final.jar:4.1.11.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348) [netty-transport-4.1.11.Final.jar:4.1.11.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:340) [netty-transport-4.1.11.Final.jar:4.1.11.Final]
+	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:102) [netty-codec-4.1.11.Final.jar:4.1.11.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362) [netty-transport-4.1.11.Final.jar:4.1.11.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348) [netty-transport-4.1.11.Final.jar:4.1.11.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:340) [netty-transport-4.1.11.Final.jar:4.1.11.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:310) [netty-codec-4.1.11.Final.jar:4.1.11.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:284) [netty-codec-4.1.11.Final.jar:4.1.11.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362) [netty-transport-4.1.11.Final.jar:4.1.11.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348) [netty-transport-4.1.11.Final.jar:4.1.11.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:340) [netty-transport-4.1.11.Final.jar:4.1.11.Final]
+	at io.netty.channel.ChannelInboundHandlerAdapter.channelRead(ChannelInboundHandlerAdapter.java:86) [netty-transport-4.1.11.Final.jar:4.1.11.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362) [netty-transport-4.1.11.Final.jar:4.1.11.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348) [netty-transport-4.1.11.Final.jar:4.1.11.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:340) [netty-transport-4.1.11.Final.jar:4.1.11.Final]
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1334) [netty-transport-4.1.11.Final.jar:4.1.11.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:362) [netty-transport-4.1.11.Final.jar:4.1.11.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:348) [netty-transport-4.1.11.Final.jar:4.1.11.Final]
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:926) [netty-transport-4.1.11.Final.jar:4.1.11.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:134) [netty-transport-4.1.11.Final.jar:4.1.11.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:644) [netty-transport-4.1.11.Final.jar:4.1.11.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysPlain(NioEventLoop.java:544) [netty-transport-4.1.11.Final.jar:4.1.11.Final]
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:498) [netty-transport-4.1.11.Final.jar:4.1.11.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:458) [netty-transport-4.1.11.Final.jar:4.1.11.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:858) [netty-common-4.1.11.Final.jar:4.1.11.Final]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_131]
+[2017-06-14T18:32:44,014][INFO ][o.e.n.Node               ] [_h1h-U9] stopping ...
+[2017-06-14T18:32:44,436][INFO ][o.e.n.Node               ] [_h1h-U9] stopped
+[2017-06-14T18:32:44,437][INFO ][o.e.n.Node               ] [_h1h-U9] closing ...
+[2017-06-14T18:32:44,620][INFO ][o.e.n.Node               ] [_h1h-U9] closed

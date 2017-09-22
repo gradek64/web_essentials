@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html><head><meta name="GCD" content="YTk3ODQ3ZWZhN2I4NzZmMzBkNTEwYjJlf252b69e8967ba9ebf451886f973ecf9"/>
+  <meta charset="utf-8">
+  <title>undefined</title>
+  <meta name="generator" content="Google Web Designer 1.9.0.0619">
+  <style type="text/css" id="gwd-text-style">p{margin:0px}h1{margin:0px}h2{margin:0px}h3{margin:0px}</style>
+  <style type="text/css">html,body{width:100%;height:100%;margin:0px}body{transform:matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);-webkit-transform:matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);-moz-transform:matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);perspective:1400px;-webkit-perspective:1400px;-moz-perspective:1400px;transform-style:preserve-3d;-webkit-transform-style:preserve-3d;-moz-transform-style:preserve-3d;background-color:transparent}.gwd-div-i3bd{position:absolute;background-image:none;height:8%;background-color:transparent;width:4.43%;transform-origin:15.3363px 15.8182px 0px;-webkit-transform-origin:15.3363px 15.8182px 0px;-moz-transform-origin:15.3363px 15.8182px 0px;top:33%;left:88.85%;cursor:pointer}.gwd-div-hd6w{position:absolute;background-image:none;left:94%;top:33.25%;height:8%;width:4.57%;transform-origin:16.077px 16.2188px 0px;-webkit-transform-origin:16.077px 16.2188px 0px;-moz-transform-origin:16.077px 16.2188px 0px;background-color:transparent;cursor:pointer}.gwd-img-mpfl{display:block;height:310px;left:451px;position:absolute;top:0px;width:225px}.gwd-img-y1ho{display:block;height:310px;left:225px;position:absolute;top:0px;width:225px}.gwd-img-150i{display:block;position:absolute;left:2.9%;width:94.2%;height:94%;top:5.85%}.gwd-img-1jyj{height:93.9%;left:2.9%;width:94.2%;top:5.96%}.gwd-div-1noj{position:absolute;width:78.86%;left:31.29%;overflow:hidden;top:41.5%;height:53%}.gwd-img-18my{width:25%;left:75%;top:0.32%;height:99.68%}.gwd-div-1bgx{position:absolute;left:0%;width:125%;top:-0.32%;height:100.32%}.gwd-img-18fu{height:93.9%;width:94.2%;left:2.9%;top:5.96%}.gwd-img-1wt9{height:310.98px;width:224.98px;top:1px;left:900px}.gwd-img-y1c2{width:94.2%;left:2.9%;height:93.9%;top:5.96%}.gwd-img-srjp{height:94.21%;left:2.9%;width:94.2%;top:5.96%}.gwd-img-duvi{left:2.9%;width:94.2%;height:94%;top:5.96%}.gwd-img-1tkq{left:2.9%;width:94.2%;height:94%;top:5.96%}.gwd-img-nzl3{width:94.2%;left:2.9%;height:94%;top:5.96%}.gwd-img-1984{position:absolute;left:0%;top:0%;width:100%;height:100%}.gwd-div-14vq{position:absolute;background-image:none;width:20%;height:99.99%;background-color:transparent;left:0%;top:0.5%}.gwd-div-14md{position:absolute;width:20%;height:100%;top:0%;left:20%}.gwd-div-13g0{position:absolute;height:100%;top:0%;width:20%;left:40%}.gwd-div-1op1{position:absolute;width:20%;left:60%;height:100%;top:0%}.gwd-div-1vri{position:absolute;background-image:none;background-color:transparent;height:100%;top:0%;width:20%;left:80%}.gwd-div-5a4k{position:absolute;height:100%;top:0%;width:20%;left:80%}.gwd-div-1x8m{position:absolute;height:100%;top:0%;width:20%;left:80%}.gwd-div-1i6s{position:absolute;width:20%;left:80%;height:100%;top:0%}.gwd-div-15p6{position:absolute;height:35.5%;top:62%;width:27.57%;left:2.57%}.gwd-img-i8ms{position:absolute;top:-0.5%;left:9.41%;height:13.64%;width:21.74%}.gwd-img-1ayr{position:absolute;height:13.17%;width:20.29%;left:10.86%;top:1px}</style>
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+  <script type="text/javascript" gwd-events="support" src="gwd-events-support.1.0.js"></script>
+  <script type="text/javascript" gwd-events="handlers">
+    window.gwd = window.gwd || {};
+    $(document).ready(function() {
+      slideAccesser = {
+        setTimer: true,
+        timerDelay: 2000
+      }
+      var productList = ["karmsund","fagerginst","gjora","dunang", "spoka","malm","gillhov","ljusoga"];
+      //Custom 
+      SlidejQueryAnimater = {
+          slideShow: '#slideShow',
+          timer: function() {
+            if (slideAccesser.setTimer) {
+              this.timerObject = setInterval(function() {
+                SlidejQueryAnimater.slide(1, 'left');
+              }, slideAccesser.timerDelay);
+            }
+          },
+          numberOfImages: 8,
+          speed: 550,
+          numberOfFrontImages: 4, //100/4 means 25% if 4 images;
+          firstRound: true,
+          next: 5,
+          directional: 1,
+          clickactive: true,
+          imageID: '#con',
+          nextImageAfterFront: function() {
+            //you need to grab 4th child from css so it number 4 and then once reaches the top start from 1 
+            this.next < this.numberOfImages ? this.next++ : this.next = 1;
+            return this.next;
+          },
+          movement: function() {
+            return 100 / this.numberOfImages;
+          },
+          slideShowContainer: '#slideShowContainer',
+          attachClick: function() {
+            jQuery.each($(this.slideShowContainer).children(), function(key, element) {
+                element.onclick = function(event) {
+                  event.preventDefault();
+                  var title = this.getAttribute('data-title');
+                  var slide = $(this);
+                  slide.data('title', title);
+                  slide.data('link', eval(productList[key]));
+                  slide.addClass('campaign-link');
+                  edgeClick(event, slide, 'click');
+                };
+              })
+              //children.map(function(index,element){
+              //})
+          },
+          slide: function(currentSlide, direction) {
+            SlidejQueryAnimater.clickactive = false;
+            if (direction == 'right') {
+              // var lastSlide = $(this.slideShowContainer).children('img:first');
+              var lastSlide = $(this.slideShowContainer).children(':first');
+              var elementWidth = 100 / (SlidejQueryAnimater.numberOfFrontImages + 1);
+              lastSlide.css('left', -(elementWidth) + '%').show().appendTo(this.slideShowContainer);
+              this.directional = 1;
+            }
+            if (direction == 'left' && this.firstRound) {
+              //hide images above the number of this.numberOfFrontImages + 2 and this.numberOfImages;
+              for (set = this.numberOfFrontImages + 2; set <= this.numberOfImages; set ++) {
+                $(this.imageID + set).hide();
+              }
+              this.directional = -1;
+            }
+            if (direction == 'left' && !this.firstRound) {
+              //make next visible
+              var next = $(this.imageID + this.nextImageAfterFront()).show();
+              //dont console.log(this.nextImageAfterFront()) it will call the function;
+              //change direction;
+              this.directional = -1;
+            }
+            $(this.slideShowContainer).animate({
+              left: this.directional * 100 / this.numberOfFrontImages + '%'
+            }, {
+              duration: SlidejQueryAnimater.speed,
+              complete: function() {
+                SlidejQueryAnimater.firstRound = false;
+                //take first image  (which is last in jquery) to the end of stack with append and hide;
+                var slideOrder = (direction == 'right') ? 'first' : 'last'
+                  //SlidejQueryAnimater.firstSlide = $(SlidejQueryAnimater.slideShowContainer).children('img:' + slideOrder);
+                SlidejQueryAnimater.firstSlide = $(SlidejQueryAnimater.slideShowContainer).children(':' + slideOrder);
+                (direction == 'right') ? SlidejQueryAnimater.firstSlide.css('left', '0'): SlidejQueryAnimater.firstSlide.css('left', '100%');
+                SlidejQueryAnimater.firstSlide.hide().prependTo(SlidejQueryAnimater.slideShowContainer); //.hide();
+                for (reposition = 1; reposition <= (SlidejQueryAnimater.numberOfFrontImages + 1); reposition++) {
+                  /*console.log('reposition');
+                  console.log(reposition);
+                  console.log('all');
+                  console.log(SlidejQueryAnimater.numberOfFrontImages + 1);*/
+                  //use eq(-index) //for counting from the end;
+                  var element = $(SlidejQueryAnimater.slideShowContainer).children().eq(-reposition);
+                  //move by percentage;
+                  var elementWidth = 100 / (SlidejQueryAnimater.numberOfFrontImages + 1); // - 0.2;
+                  $(element).css('left', (reposition - 1) * elementWidth + '%');
+                }
+                $(SlidejQueryAnimater.slideShowContainer).css('left', '0');
+                SlidejQueryAnimater.clickactive = true;
+              }
+            });
+          }
+        }
+        //start timer 
+      SlidejQueryAnimater.timer();
+      SlidejQueryAnimater.attachClick();
+    }); //ready 
+    /*************************/
+     //end of Custom
+    gwd.bttn = function(event) {
+      slide = $(this);
+      slide.data('title', this.id);
+      slide.data('link', clickTag);
+      slide.addClass('campaign-link');
+      edgeClick(event, slide, 'click');
+    };
+    gwd.scollLeft = function(event) {
+      //remove timer 
+      if (typeof SlidejQueryAnimater.timerObject != 'undefined') {
+        clearInterval(SlidejQueryAnimater.timerObject);
+        SlidejQueryAnimater.timerObject = 'undefined';
+      }
+      if (SlidejQueryAnimater.clickactive) {
+        SlidejQueryAnimater.slide(1, 'left');
+      }
+    };
+    gwd.scrollRight = function(event) {
+      //remove timer 
+      if (typeof SlidejQueryAnimater.timerObject != 'undefined') {
+        clearInterval(SlidejQueryAnimater.timerObject);
+        SlidejQueryAnimater.timerObject = 'undefined';
+      }
+      if (SlidejQueryAnimater.clickactive) {
+        SlidejQueryAnimater.slide(1, 'right');
+      }
+    };
+  </script>
+  <script type="text/javascript" gwd-events="registration">gwd.actions.events.registerEventHandlers=function(event){gwd.actions.events.addHandler("bttn_left","click",gwd.scollLeft,false);gwd.actions.events.addHandler("bttn_right","click",gwd.scrollRight,false);gwd.actions.events.addHandler("view_full_catalogue","click",gwd.bttn,false);gwd.actions.events.addHandler("view_full_catalogue","click",gwd.bttn,false);gwd.actions.events.addHandler("bg","click",gwd.bttn,false)};gwd.actions.events.deregisterEventHandlers=function(event){gwd.actions.events.removeHandler("bttn_left","click",gwd.scollLeft,false);gwd.actions.events.removeHandler("bttn_right","click",gwd.scrollRight,false);gwd.actions.events.removeHandler("view_full_catalogue","click",gwd.bttn,false);gwd.actions.events.removeHandler("view_full_catalogue","click",gwd.bttn,false);gwd.actions.events.removeHandler("bg","click",gwd.bttn,false)};document.addEventListener("DOMContentLoaded",gwd.actions.events.registerEventHandlers);document.addEventListener("unload",gwd.actions.events.deregisterEventHandlers)</script>
+</head>
+
+<body class="htmlNoPages">
+  <img src="assets/bg.jpg" class="gwd-img-1984" id="bg">
+  <div class="gwd-div-i3bd" id="bttn_left"></div>
+  <div class="gwd-div-hd6w" id="bttn_right"></div>
+  <div class="gwd-div-1noj" id="slideShow" style="cursor: pointer;">
+    <div class="gwd-div-1bgx" id="slideShowContainer">
+      <div class="gwd-div-1i6s" id="con8" data-title="karmsund">
+        <img src="assets/8_karmsund.jpg" class="gwd-img-y1ho gwd-img-18my gwd-img-1wt9 gwd-img-nzl3" id="image8">
+      </div>
+      <div class="gwd-div-1x8m" id="con7" data-title="fagerginst">
+        <img src="assets/7_fagerginst.jpg" class="gwd-img-y1ho gwd-img-18my gwd-img-1wt9 gwd-img-1tkq" id="image7">
+        <img src="assets/new_product.png" class="gwd-img-1ayr" id="new_product_2">
+      </div>
+      <div class="gwd-div-5a4k" id="con6" data-title="gjora">
+        <img src="assets/6_gjora.jpg" class="gwd-img-y1ho gwd-img-18my gwd-img-1wt9 gwd-img-duvi" id="image6">
+      </div>
+      <div class="gwd-div-1vri" id="con5" data-title="dunang">
+        <img src="assets/5_dunang.jpg" class="gwd-img-y1ho gwd-img-18my gwd-img-1wt9 gwd-img-srjp" id="image5">
+        <img src="assets/new_product.png" class="gwd-img-1ayr" id="new_product_1">
+      </div>
+      <div class="gwd-div-1op1" id="con4" data-title="spoka">
+        <img src="assets/4_spoka.jpg" class="gwd-img-y1ho gwd-img-18my gwd-img-y1c2" id="image4">
+        <img src="assets/new_lower_price.png" class="gwd-img-i8ms" id="new_lower_price_2">
+      </div>
+      <div class="gwd-div-13g0" id="con3" data-title="malm">
+        <img src="assets/3_malm.jpg" class="gwd-img-mpfl gwd-img-1d0r gwd-img-1jyj" id="image3">
+        <img src="assets/new_lower_price.png" class="gwd-img-i8ms" id="new_lower_price_1">
+      </div>
+      <div class="gwd-div-14md" id="con2" data-title="gilhov">
+        <img src="assets/2_gilhov.jpg" class="gwd-img-y1ho gwd-img-18fu" id="image2">
+        <img src="assets/new_product.png" class="gwd-img-1ayr" id="new_product">
+      </div>
+      <div class="gwd-div-14vq" id="con1" data-title="ljusoga">
+        <img src="assets/1_ljusoga.jpg" class="gwd-img-mpfl gwd-img-150i" id="image1">
+        <img src="assets/new_lower_price.png" class="gwd-img-i8ms" id="new_lower_price">
+      </div>
+    </div>
+  </div>
+  <div class="gwd-div-15p6" id="view_full_catalogue"></div>
+
+
+</body></html>
